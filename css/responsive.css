@@ -1,0 +1,244 @@
+@media (max-width:400px){
+    .phone-feedback-link{
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }   
+    #about {
+        background: url("../img/3-bg.jpg") no-repeat;
+        /* background-size: 150%; */
+        background-position-x: 50%; 
+        }
+    #about_acess {
+        background: url("../img/product-bg.jpg") no-repeat;
+        background-size: 150%;
+        background-position-x: 50%; 
+    }
+    .about-title{
+        font-size: 44px;
+        text-align: center;
+    }
+    .right-1-catalog{
+        margin-right: auto;
+    }
+    .left-3-catalog{
+        margin-left: auto
+    }
+    #advantages {
+        padding-top: 3%;
+
+    }
+    #advantages .title {
+        font-size: 38px;
+    }
+    #advantages .adv-right-ul > li:before {
+        left: 12%;
+    }
+    #advantages .adv-wrong-ul > li:before {
+        left: 12%;
+    }
+    #contacts {
+        text-align: center;
+    }
+    .map{
+        width: 10%;
+    }
+    .takein-iqos input {
+        width: 300px;
+    }
+    .gift-iqos input{
+        width: 300px;
+    }
+    .item-text {
+        text-align: center;
+    }
+    .reason-text {
+        text-align: center;
+    }
+    #maintenance {
+        background: none;
+    }
+    #maintenance p {
+        text-align: center;
+    }
+    #maintenance .description {
+        font-size: 24px;
+    }
+    #maintenance h3 {
+        text-align: center;
+    }
+    #maintenance .title {
+        font-size: 38px !important;    
+        text-align: center;
+    }
+    .prices .title {
+        font-size: 38px;
+    }
+    .about-title{
+        font: 44px P22-Heavy !important;
+        
+    }
+    
+    .iqos-title{
+        font: 2em P22-Heavy !important;
+    }
+    .prices th {
+        font: 0.9em P22-Book;
+    }
+    .prices .column{
+        font: 0.9em P22-Demi !important;
+    }
+    
+    .prices td {
+        font: 0.9em P22-Book;
+    }
+    .prices .btn-block {
+        padding-bottom: 5%;
+    }
+    input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+    input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+    input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+    input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+    input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+    input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+    input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+    input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+    .prices button {
+        background: #207a34;
+        /* padding-top: %; */
+        width: 60%;
+        font: 1.2em P22-Demi;
+        height: 8%;
+    }
+    .howit-service .title{
+        text-align: center;
+    }
+    .howit-service .howit-text {
+        text-align: center;
+        margin-left: 50px;
+    }
+    .product-service .title {
+        font-size: 38px;
+    }
+    .product-service .item-text h3{
+        font-size: 24px;
+    }
+    .howit-service .title{
+        font-size: 38px;
+    }
+    #takein {
+        background: url("../img/about_bg.jpg") no-repeat;
+        background-position-x: 72%;
+        text-align: center;
+    
+    }
+    .navbar-toggler {
+        display: block;
+    }
+    .rowall {display: flex;flex-flow: wrap;}
+    .col1 {order: 1;}
+    .col2 {order: 0;}
+    #takein input {
+        text-align: center;
+        width: 100%;
+    }
+    #takein .btn {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    #gift {
+        background: url("../img/iqos_bg.jpg") no-repeat;
+        background-position-x: 72%;
+        text-align: center;
+    }
+    .gift-iqos .title{
+        font-size: 38px;
+    }
+    #gift input {
+        text-align: center;
+        width: 100%;
+    }
+    #gift .btn {
+        width: 100%;
+        font-size: 18px;
+    }
+    .product-service .title {
+        font-size: 38px;
+    }
+    #faults .reason-text {
+        padding-left: 50px;
+    }
+    #faults .about {
+        font-size: 24px;
+    }
+    #faults .btn {
+        width: 100%;
+        font-size: 18px;
+    }
+    #faults .title{
+        font-size: 30px !important;
+    }
+    #takein .maintenance{
+        font-size: 30px !important;
+    }
+    #breakage .title {
+        font-size: 38px !important;
+    }
+    
+    #breakage ul > li:before  {
+        left: 12%;
+    }
+    #breakage .middle-image{
+        display: none;
+    }
+
+    .breakage-notification p {
+        font-size: 20px;
+    }
+    .map-container {
+        margin-top: 10%;
+    }
+}
+.list-group a {
+    color: #252a31;
+}
+.list-group a:hover {
+    color: #f5a907;
+    text-decoration: none;
+}
+.list-group a:focus {
+    color: #252a31;
+}
+.list-group.list-group-root {
+    padding: 0;
+    overflow: hidden;
+}
+
+.list-group.list-group-root .list-group {
+    margin-bottom: 0;
+}
+
+.list-group.list-group-root .list-group-item {
+    border-radius: 0;
+    border-width: 1px 0 0 0;
+}
+
+.list-group.list-group-root > .list-group-item:first-child {
+    border-top-width: 0;
+}
+
+.list-group.list-group-root > .list-group > .list-group-item {
+    padding-left: 30px;
+}
+
+.list-group.list-group-root > .list-group > .list-group > .list-group-item {
+    padding-left: 45px;
+}
+
+.list-group-item .glyphicon {
+    margin-right: 5px;
+}
+.just-padding {
+    padding: 15px;
+}
