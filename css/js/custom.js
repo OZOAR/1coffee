@@ -1,4 +1,29 @@
- //Contact Us
+ var modal = document.getElementById('consultModal');
+ var btn123 = document.getElementById("btnconsultModal");
+ var span = document.getElementsByClassName("closebtn")[0];
+
+ btn123.onclick = function modalGo() {
+     modal.style.display = "block";
+    callback();
+ }
+ span.onclick = function () {
+     modal.style.display = "none";
+ }
+ window.onclick = function (event) {
+     if (event.target == modal) {
+        modal.style.display = "none";
+     }
+ }
+ window.onload = function () {
+    setTimeout(function() {
+        modal.style.display = "block";;
+    }, 8000); 
+ }
+
+
+
+//Contact Us
+
 $("#submit_btn").click(function() {
 
     var user_name = $('input[name=first_name]').val();
@@ -50,3 +75,5 @@ $("#submit_btn").click(function() {
 $(document).on('contextmenu', function() {
     return false;
   });
+
+ 

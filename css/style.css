@@ -988,7 +988,7 @@ ul {
     padding-top: 2px;
 }
 .gift-iqos button {
-    height: 60px;
+    height: 80px;
     width:400px;
     font-size: 20px;
     font-weight: 700;
@@ -1140,13 +1140,37 @@ ul {
     color: white;
     background-color: #222222;
 }
+.modal{
+    display: none;
+    position: fixed;
+    text-align: center;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7); 
+
+}
+.modal-content{
+    background-color: white;
+    z-index: 6;
+    width: 60%;
+    height: auto;
+    left: 20%;
+    top: 10%;
+    border-radius: 20px;
+
+}
 .modal-title {
-    font: 54px P22-Heavy !important;
+    font: 35px P22-Heavy !important;
+    margin-top: -5%;
 }
 .modal p {
-    font: 28px P22-Book;
-    padding-top: 30px;
-    padding-bottom: 40px;
+    font: 22px P22-Book;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 .modal .container {
     padding-right: 10%;
@@ -1171,9 +1195,23 @@ ul {
     padding-top: 25px;
     padding-bottom: 40px;
 }
-.modal .close {
-    padding-right: 20px;
+.modal .closebtn {
+    right: 0;
+    font-size: 28px;
+    font-weight: bold;
+    height: 50px;
+    width: 40px;
+    background: none;
+    border: 0;
+    opacity: .5;
 
+}
+.modal-phone-number{
+    font: 28px Ubuntu Regular;
+    padding-bottom: 10px;
+}
+.modal-phone-number > a{
+    color: #149e4e;
 }
 #content p{
     font-family: "Montserrat", Arial, sans-serif;
