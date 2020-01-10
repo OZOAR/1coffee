@@ -1163,7 +1163,6 @@ ul {
 }
 .modal-title {
     font: 35px P22-Heavy !important;
-    margin-top: -5%;
 }
 .modal p {
     font: 22px P22-Book;
@@ -1196,7 +1195,18 @@ ul {
     padding-bottom: 40px;
 }
 .modal .closebtn {
-    right: 0;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    height: 50px;
+    width: 40px;
+    background: none;
+    border: 0;
+    opacity: .5;
+
+}
+.modal .modal-cost__closebtn {
+    float: right;
     font-size: 28px;
     font-weight: bold;
     height: 50px;

@@ -164,13 +164,9 @@
                                             <p>Применяем очищающие средства безопасные для здоровья</p>
                                         </li>
                                     </ul>
-                                    <!-- <div class="about-project-btn">
-                                        <button id="btnconsultModal" class="btn btn-custom">
-                                            Получить консультацию
-                                        </button>
-                                    </div> -->
+                                    
                                     <div class="about-project-btn">
-                                        <a class="btn-custom btn" id="btnconsultModal"> Получить консультацию</a>
+                                        <a class="btn-custom btn consult" id="btn-modal-consult"> Получить консультацию</a>
                                     </div>
                                 </div>
                             </div>
@@ -333,10 +329,7 @@
                                 и обслуживания. ТО производиться строго по регламенту, иначе дорогостоящего ремонта не
                                 избежать.</p>
                             <div class="product-price-btn">
-                                <button type="getModal" class="btn btn-custom" data-toggle="modal"
-                                    data-target="#itemCostModal">
-                                    Стоимость ремонта
-                                </button>
+                                <a class="btn-custom btn cost-repair" id="btn-modal-cost"> Стоимость ремонта</a>
                             </div>
                         </div>
                     </div>
@@ -348,10 +341,7 @@
                                 неправильной эксплуатации: при попадании воды и мусора в кофемолку и т.д. Своевременное
                                 обслуживание, предотвратит ремонт и некорректную работу.</p>
                             <div class="product-price-btn">
-                                <button type="getModal" class="btn btn-custom" data-toggle="modal"
-                                    data-target="#itemCostModal">
-                                    Стоимость ремонта
-                                </button>
+                                <a class="btn-custom btn cost-repair" id="btn-modal-cost"> Стоимость ремонта</a>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12">
@@ -369,10 +359,7 @@
                                 декальцинация и чистка группы. Нередки отказы работы насоса, различные протечки, слабое
                                 давление подачи.</p>
                             <div class="product-price-btn">
-                                <button type="getModal" class="btn btn-custom" data-toggle="modal"
-                                    data-target="#itemCostModal">
-                                    Стоимость ремонта
-                                </button>
+                                <a class="btn-custom btn cost-repair" id="btn-modal-cost"> Стоимость ремонта</a>
                             </div>
                         </div>
                     </div>
@@ -459,10 +446,7 @@
                             </div>
                             <div class="row repair-btn">
                                 <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-                                    <button type="getModal" class="btn btn-custom" data-toggle="modal"
-                                        data-target="#callbackModal">
-                                        Не ждите. Вызовите мастера!
-                                    </button>
+                            <a class="btn-custom btn" class="" id="btn-modal-call"> Не ждите. Вызовите мастера!</a>
                                 </div>
                             </div>
                         </div>
@@ -545,10 +529,8 @@
                             Не пытайтесь починить самостоятельно
                         </p>
                         <div class="maintenance-btn">
-                            <button type="getModal" class="btn btn-custom" data-toggle="modal"
-                                data-target="#serviceCostModal">
-                                Узнать стоимость обслуживания
-                            </button>
+                    <a class="btn-custom btn" class="" id="btn-modal-cost"> Узнать стоимость обслуживания</a>
+
                         </div>
                     </div>
                 </div>
@@ -604,10 +586,8 @@
                     </div>
                     <div class="row repair-btn">
                         <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-                            <button id="btnconsultModal"  class="btn btn-custom btnconsultModal" 
-                                >
-                                Получить консультацию
-                            </button>
+                            <a class="btn-custom btn consult"  id="btn-modal-consult">Получить консультацию </a>
+
                         </div>
                     </div>
                 </div>
@@ -829,11 +809,9 @@
                                 +375(29)107-55-52
                             </a>
                         </div>
-                        <div class="takein-btn">
-                            <button data-toggle="modal" data-target="#callbackModal" type="getModal"
-                                class="btn btn-custom getModal">
-                                Заказать звонок
-                            </button>
+                        <div class="takein-btn">       
+                        <a class="btn-custom btn" class="" id="btn-modal-call">Заказать звонок </a>
+
                         </div>
                     </div>
                     <div class="col-lg-8 col-md-8 col-sm-12 ">
@@ -860,53 +838,12 @@
             </div>
         </div>
     </footer>
-    <!--Заказ звонка-->
-    <div class="modal fade bd-example-modal-lg" id="callbackModal" tabindex="-1" role="dialog"
-        aria-labelledby="ModalLabel" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-body text-center">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <p class="modal-title">Заказать звонок</p>
-                    <p>Заполните форму и наш менеджер<br>
-                        свяжется с вами для уточнения всех деталей
-               </p> <div class="modal-phone-number"><a href="tel:+375(44)555-03-77">+375 (44) 555-03-77</a></div>
-                    <div class="contactus-form">
-                        <form class="name-form" action="https://formspree.io/vadimrezunik@gmail.com" method="POST">
-                            <div class="container">
-                                <div class="col-12 text-center inputs">
-                                    <input class="form-control form-control-lg" type="text" placeholder="Как к вам обращаться?"
-                                        required id="first_name" name="first_name">
-                                    <input class="form-control form-control-lg" type="tel" id="phone" name="phone"
-                                        required placeholder="Введите ваш телефон">
-                                    <input type="hidden" name="_next" value="index.html" />
-                                    <input type="hidden" name="_subject" value="Сообщение с моего сайта" />
-                                    <input type="text" name="_gotcha" style="display:none" />
-                                </div>
-                                <div class="col-12 text-center">
-                                    <button type="submit" id="submit_btn" class="btn btn-custom getModal">
-                                        Заказать звонок
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="notification">
-                        <small>
-                            Оформление заявки вас ни к чему не обязывает
-                        </small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+  
     <!--Заказать консультацию-->
     <div class="modal" id="consultModal">
         <div class="modal-content">
             <button type="button" class="closebtn"><span aria-hidden="true">&times;</span></button>
-            <p class="modal-title">Получить консультацию</p>
+            <p class="modal-title" id="modal-title1"></p>
                     <p>Заполните форму и наш менеджер<br>
 свяжется с Вами для уточнения всех деталей, или позвоните о номеру:  
     </p>         <div class="modal-phone-number"><a href="tel:+375(44)555-03-77">+375 (44) 555-03-77</a></div> 
@@ -935,131 +872,6 @@
                 Оформление заявки вас ни к чему не обязывает
             </small>
         </div>
-        </div>
-    </div>
-
-    <!-- <div class="modal fade bd-example-modal-lg"  id="consultModal" tabindex="-1" role="dialog"
-        aria-labelledby="ModalLabel" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-body text-center">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <p class="modal-title">Получить консультацию</p>
-                    <p>Заполните форму и наш менеджер<br>
-свяжется с Вами для уточнения всех деталей, или позвоните о номеру:  
-    </p>         <div class="modal-phone-number"><a href="tel:+375(44)555-03-77">+375 (44) 555-03-77</a></div> 
-        <div class="contactus-form">
-                        <form class="name-form" action="https://formspree.io/vadimrezunik@gmail.com" method="POST">
-                            <div class="container">
-                                <div class="col-12 text-center inputs">
-                                    <input class="form-control form-control-lg" type="text" placeholder="Как к вам обращаться?"
-                                        required id="first_name" name="first_name">
-                                    <input class="form-control form-control-lg" type="tel" id="phone" name="phone"
-                                        required placeholder="Введите ваш телефон">
-                                    <input type="hidden" name="_next" value="index.html" />
-                                    <input type="hidden" name="_subject" value="Сообщение с моего сайта" />
-                                    <input type="text" name="_gotcha" style="display:none" />
-                                </div>
-                                <div class="col-12 text-center">
-                                    <button type="submit" id="submit_btn" class="btn btn-custom getModal">
-                                        Перезвоните мне
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="notification">
-                        <small>
-                            Оформление заявки вас ни к чему не обязывает
-                        </small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!--Узнать стоимости-->
-    <div class="modal fade bd-example-modal-lg" id="itemCostModal" tabindex="-1" role="dialog"
-        aria-labelledby="ModalLabel" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-body text-center">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <p class="modal-title">Узнать стоимость</p>
-                    <p>Заполните форму и наш менеджер<br>
-свяжется с Вами для уточнения всех деталей, или позвоните о номеру:   </p> 
- <div class="modal-phone-number"><a href="tel:+375(44)555-03-77">+375 (44) 555-03-77</a></div>                 <div class="contactus-form">
-                        <form class="name-form" action="https://formspree.io/vadimrezunik@gmail.com" method="POST">
-                            <div class="container">
-                                <div class="col-12 text-center inputs">
-                                    <input class="form-control form-control-lg" type="text" placeholder="Как к вам обращаться?"
-                                        required id="first_name" name="first_name">
-                                    <input class="form-control form-control-lg" type="tel" id="phone" name="phone"
-                                        required placeholder="Введите ваш телефон">
-                                    <input type="hidden" name="_next" value="index.html" />
-                                    <input type="hidden" name="_subject" value="Сообщение с моего сайта" />
-                                    <input type="text" name="_gotcha" style="display:none" />
-                                </div>
-                                <div class="col-12 text-center">
-                                    <button type="submit" id="submit_btn" class="btn btn-custom getModal">
-                                        Узнать стоимость
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="notification">
-                        <small>
-                            Оформление заявки вас ни к чему не обязывает
-                        </small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Стоимость обслуги-->
-    <div class="modal fade bd-example-modal-lg" id="serviceCostModal" tabindex="-1" role="dialog"
-        aria-labelledby="ModalLabel" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-body text-center">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <p class="modal-title">Узнать стоимость сервисного обслуживания</p>
-                    <p>Заполните форму и наш менеджер<br>
-свяжется с Вами для уточнения всех деталей, или позвоните о номеру:   </p>
-<div class="modal-phone-number"><a href="tel:+375(44)555-03-77">+375 (44) 555-03-77</a></div>
-                 <div class="contactus-form">
-                        <form class="name-form" action="https://formspree.io/vadimrezunik@gmail.com" method="POST">
-                            <div class="container">
-                                <div class="col-12 text-center inputs">
-                                    <input class="form-control form-control-lg" type="text" placeholder="Как к вам обращаться?"
-                                        required id="first_name" name="first_name">
-                                    <input class="form-control form-control-lg" type="tel" id="phone" name="phone"
-                                        required placeholder="Введите ваш телефон">
-                                    <input type="hidden" name="_next" value="index.html" />
-                                    <input type="hidden" name="_subject" value="Сообщение с моего сайта" />
-                                    <input type="text" name="_gotcha" style="display:none" />
-                                </div>
-                                <div class="col-12 text-center">
-                                    <button type="submit" id="submit_btn" class="btn btn-custom getModal">
-                                        Узнать стоимость
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="notification">
-                        <small>
-                            Оформление заявки вас ни к чему не обязывает
-                        </small>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     <!-- Google Tag Manager (noscript) -->

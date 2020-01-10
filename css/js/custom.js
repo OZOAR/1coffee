@@ -1,11 +1,33 @@
+ //Consult Modal
+ let title = document.getElementById('modal-title1');
  var modal = document.getElementById('consultModal');
- var btn123 = document.getElementById("btnconsultModal");
  var span = document.getElementsByClassName("closebtn")[0];
+ var btnModalConsult = document.querySelectorAll("#btn-modal-consult");
+ var btnModalCost = document.querySelectorAll("#btn-modal-cost");
+ var btnModalCallBack = document.querySelectorAll("#btn-modal-call");
+ const consult = 'Получить консультацию';
+ const cost = 'Узнать стоимость';
+ const callback ='Выховите мастера прямо сейчас';
 
- btn123.onclick = function modalGo() {
-     modal.style.display = "block";
-    callback();
- }
+
+for (var i = 0; i < btnModalConsult.length; i++){
+    btnModalConsult[i].onclick = function () {
+            modal.style.display = "block";
+            title.innerHTML= consult;
+ } }
+ for (var i = 0; i < btnModalCost.length; i++){
+    btnModalCost[i].onclick = function () {
+            modal.style.display = "block";
+             title.innerHTML= cost;
+ } }
+ for (var i = 0; i < btnModalCallBack.length; i++){
+    btnModalCallBack[i].onclick = function () {
+            modal.style.display = "block";
+             title.innerHTML= callback;
+ } }
+
+            
+   
  span.onclick = function () {
      modal.style.display = "none";
  }
@@ -16,9 +38,12 @@
  }
  window.onload = function () {
     setTimeout(function() {
-        modal.style.display = "block";;
-    }, 8000); 
+        modal.style.display = "block";
+        title.innerHTML= consult;
+
+    }, 1454565554000); 
  }
+ 
 
 
 
@@ -75,5 +100,3 @@ $("#submit_btn").click(function() {
 $(document).on('contextmenu', function() {
     return false;
   });
-
- 
