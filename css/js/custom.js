@@ -1,4 +1,4 @@
- //Consult Modal
+ //Dinamic Modal
  let title = document.getElementById('modal-title1');
  var modal = document.getElementById('consultModal');
  var span = document.getElementsByClassName("closebtn")[0];
@@ -12,41 +12,34 @@
 
 for (var i = 0; i < btnModalConsult.length; i++){
     btnModalConsult[i].onclick = function () {
-            modal.style.display = "block";
-            title.innerHTML= consult;
- } }
- for (var i = 0; i < btnModalCost.length; i++){
+        modal.style.display = "block";
+        title.innerHTML= consult;
+}};
+for (var i = 0; i < btnModalCost.length; i++){
     btnModalCost[i].onclick = function () {
-            modal.style.display = "block";
-             title.innerHTML= cost;
- } }
- for (var i = 0; i < btnModalCallBack.length; i++){
+        modal.style.display = "block";
+        title.innerHTML= cost;
+}};
+for (var i = 0; i < btnModalCallBack.length; i++){
     btnModalCallBack[i].onclick = function () {
-            modal.style.display = "block";
-             title.innerHTML= callback;
- } }
-
-            
-   
- span.onclick = function () {
-     modal.style.display = "none";
- }
- window.onclick = function (event) {
-     if (event.target == modal) {
+        modal.style.display = "block";
+        title.innerHTML= callback;
+}};
+span.onclick = function () {
+    modal.style.display = "none";
+};
+window.onclick = function (event) {
+    if (event.target == modal) {
         modal.style.display = "none";
-     }
- }
- window.onload = function () {
+    }
+};
+window.onload = function () {
     setTimeout(function() {
         modal.style.display = "block";
         title.innerHTML= consult;
 
-    }, 1454565554000); 
- }
- 
-
-
-
+    },15000); 
+};
 //Contact Us
 
 $("#submit_btn").click(function() {
