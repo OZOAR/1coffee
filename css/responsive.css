@@ -14,7 +14,7 @@
     }
     .modal .btn {
         width: 70% !important;
-        height: 100% !important;
+        height: 50px !important;
     }
     .modal-phone-number > a {
         font-weight: 700;
@@ -271,7 +271,7 @@
     padding: 15px;
 }
 .header-logo{
-    width: 60%;
+    width: 60% !important;
 }
 .header-logo > span {
     margin-left: 20%;
