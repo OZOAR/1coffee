@@ -122,7 +122,7 @@ p {
 }
 .size-min{
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.65em;
     font-style: normal;
     font-weight: 400;
@@ -168,7 +168,7 @@ p {
 }
 .drp-color{
     color: #000000 !important;
-    font-size: 20px !important; 
+    font-size: 16px !important; 
     padding: 20px !important; 
 }
 
@@ -314,7 +314,7 @@ p {
     padding-left: 5%;
 }
 .site-header a{
-    font-size: 20px;
+    font-size: 14px;
     padding: 40px;
     text-decoration: none;
     color: #ffffff;
@@ -335,7 +335,7 @@ p {
 
 
 .second-header p span{
-    font-size: 35px;
+    font-size: 29px;
     font-weight: 700;
     
 }
@@ -347,15 +347,15 @@ p {
     /* padding-bottom: 10px; */
 }
 .second-header small{
-    font-size: 15px;
+    font-size: 13px;
 }
 .second-header small span{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
     color: #f89c11;
 }
 #header-contacts{
-    font-size: 18px;
+    font-size: 16px;
     padding-top: 10px;
 }
 .phone-number {
@@ -431,7 +431,7 @@ p {
 }
 .remont p{
     font-family: "Montserrat", Arial, sans-serif !important;
-    font-size: 16px !important;
+    font-size: 14px !important;
     line-height: 1.65em !important;
     font-style: normal !important;
     font-weight: 400 !important;
@@ -504,7 +504,7 @@ p {
     padding: 10px
 }
 .about-title {
-    font: 62px P22-Heavy;
+    font: 45px P22-Heavy;
     font-weight: 700;
     color: #000000;
 }
@@ -524,7 +524,7 @@ ul {
 .about-project-ul {
     padding-top: 3%;
     position: relative;
-    font: 24px P22-Medium;
+    font: 20px P22-Medium;
     font-style: normal;
     font-variant-ligatures: normal;
     font-variant-caps: normal;
@@ -532,7 +532,7 @@ ul {
     font-variant-east-asian: normal;
     font-weight: normal;
     font-stretch: normal;
-    font-size: 24px;
+    font-size: 18px;
     line-height: normal;
     font-family: P22-Medium;
     color: #000000;
@@ -558,14 +558,14 @@ ul {
     margin-bottom: 100px;
 }
 #advantages .title{
-    font-size: 54px ;
+    font-size: 46px ;
     margin-bottom: 27px;
     font-weight: bold;
     line-height: 1.3;
 }
 .adv-title{
     font: P22-Heavy;
-    font-size: 2em !important;
+    font-size: 1.8em !important;
     font-weight: 700;
     padding-bottom: 30px;
 }
@@ -632,7 +632,7 @@ ul {
     /* padding-bottom: 4%; */
 }
 .product-service .title {
-    font-size: 54px;
+    font-size: 45px;
     font-weight: bold;
     line-height: 1.3;
 }
@@ -651,7 +651,7 @@ ul {
     font-weight: 700;
 }
 #products .item-text p {
-    font: 24px P22-Book;
+    font: 21px P22-Book;
 }
 #partners{
     align-self: center;
@@ -670,7 +670,7 @@ ul {
     border-width: 0px !important;
 }
 .iqos-title{
-    font: 2.4em P22-Heavy;
+    font: 2.2em P22-Heavy;
     text-transform: uppercase;
 } 
 #partners{
@@ -693,17 +693,17 @@ ul {
     /* padding-bottom: 6%; */
 }
 .product-service .title {
-    font-size: 54px;
+    font-size: 45px;
     font-weight: bold;
     line-height: 1.3;
 }
 #faults .about {
-    font-size: 28px;
+    font-size: 24px;
     /* padding-top: 20px; */
     margin-bottom:56px;
 }
 #faults .reason-text {
-    font:21px P22-Book;
+    font: 19px P22-Book;
     line-height:1.6;
     padding-right:50px;
 }
@@ -726,7 +726,7 @@ ul {
 }
 
 .repair-notification {
-    font-size: 28px;
+    font-size: 23px;
     padding-top: 70px;
 }
 .repair-notification button {
@@ -760,7 +760,7 @@ ul {
     /* padding-bottom: 4%; */
 }
 .takein-iqos .about-title {
-    font: 54px P22-Heavy;
+    font: 45px P22-Heavy;
     padding-bottom: 20px;
     font-weight: 700;
     color: #ffffff;
@@ -768,7 +768,7 @@ ul {
 
 .takein-iqos p{
     color: #ffffff;
-    font-size: 28px;
+    font-size: 21px;
     padding-bottom: 20px;
 
 }
@@ -816,12 +816,12 @@ ul {
     height: 50px;
 }
 #maintenance .title {
-    font-size: 54px;
+    font-size: 45px;
     font-weight: 700;
     /* padding-bottom: 30px; */
 }
 #maintenance .description {
-    font-size: 28px;
+    font-size: 21px;
     padding-bottom: 30px;
 }
 #maintenance .content .title  {
@@ -829,7 +829,7 @@ ul {
     font-weight: bolder;
 }
 #maintenance .serious-breakage {
-    font:2.0em P22-Heavy;
+    font: 1.6em P22-Heavy;
 }
 .maintenance-text {
     font-size: 24px;
@@ -859,7 +859,7 @@ ul {
 }
 
 #breakage .title {
-    font: 54px P22-Heavy;
+    font: 45px P22-Heavy;
     font-weight: 700;
 }
   
@@ -902,7 +902,7 @@ ul {
     /* height: 215px; */
 }
 #breakage li{
-    font: 24px P22-Book;
+    font: 19px P22-Book;
     padding-bottom: 30px;
 }
 #breakage .main-row {
@@ -913,7 +913,7 @@ ul {
     padding-bottom: 15px;
 }
 .breakage-notification p {
-    font: 28px P22-Book;
+    font: 21px P22-Book;
     padding-top: 30px;
 }
 #breakage .btn {
@@ -966,7 +966,7 @@ ul {
     margin-inline-end: 0px;
 }
 .gift-iqos .title {
-    font: 54px P22-Heavy;
+    font: 45px P22-Heavy;
     padding-bottom: 10px;
     font-weight: 700;
     color: #ffffff;
@@ -974,7 +974,7 @@ ul {
 
 .gift-iqos p{
     color: #ffffff;
-    font-size: 28px;
+    font-size: 21px;
     padding-bottom: 20px;
 }
 .gift-iqos input {
@@ -1086,18 +1086,18 @@ ul {
     background: rgba(0, 0, 0, 0.4)
 }
 #contacts .title{
-    font-size: 54px;
+    font-size: 45px;
     font-weight: bold;
     line-height: 1.3;
     padding-bottom: 10px;
 }
 #contacts label {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
     line-height: 1.3;
 }
 #contacts p {
-    font-size: 22px;
+    font-size: 18px;
 }
 .contact-phone a {
     font: 20px P22-Book;
@@ -1159,6 +1159,14 @@ ul {
     left: 20%;
     top: 10%;
     border-radius: 20px;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    pointer-events: auto;
+    background-clip: padding-box;
+    outline: 0;
 
 }
 .modal-title {
@@ -1207,7 +1215,7 @@ ul {
 }
 .modal .modal-cost__closebtn {
     float: right;
-    font-size: 28px;
+    font-size: 22px;
     font-weight: bold;
     height: 50px;
     width: 40px;
@@ -1225,7 +1233,7 @@ ul {
 }
 #content p{
     font-family: "Montserrat", Arial, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.65em;
     font-style: normal;
     font-weight: 400;
@@ -1320,7 +1328,7 @@ ul {
     font-style: normal;
 }s
 .description-text p{
-    font-size: 16px !important;
+    font-size: 14px !important;
     line-height: 1.65em !important;
     font-style: normal !important;
     font-weight: 400 !important;

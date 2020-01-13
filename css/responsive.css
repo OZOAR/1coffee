@@ -1,4 +1,9 @@
 @media (max-width:400px){
+    .modal-content {
+        width: 90% ;
+        left: 5% ;
+        top: 7% ;
+    }
     .phone-feedback-link{
         text-align: center;
         padding-top: 10px;
@@ -241,4 +246,10 @@
 }
 .just-padding {
     padding: 15px;
+}
+.header-logo{
+    width: 60%;
+}
+.header-logo > span {
+    margin-left: 20%;
 }
