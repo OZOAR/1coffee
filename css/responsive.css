@@ -1,9 +1,28 @@
-@media (max-width:400px){
+@media (max-width:450px){
     .modal-content {
-        width: 90% ;
-        left: 5% ;
-        top: 7% ;
+        width: 90% !important ;
+        left: 5% !important;
+        top: 7% !important ;
     }
+    #modal-title1 {
+        font: 28px P22-Heavy !important;
+    }
+    .modal p {
+        font-size: 20px !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    .modal .btn {
+        width: 70% !important;
+        height: 100% !important;
+    }
+    .modal-phone-number > a {
+        font-weight: 700;
+    }
+    .maintenance-btn{
+        text-align: center;
+    }
+
     .phone-feedback-link{
         text-align: center;
         padding-top: 10px;
@@ -20,7 +39,7 @@
         background-position-x: 50%; 
     }
     .about-title{
-        font-size: 44px;
+        font-size: 37px;
         text-align: center;
     }
     .right-1-catalog{
@@ -80,7 +99,7 @@
         font-size: 38px;
     }
     .about-title{
-        font: 44px P22-Heavy !important;
+        font: 37px P22-Heavy !important;
         
     }
     
@@ -192,10 +211,14 @@
     }
     
     #breakage ul > li:before  {
-        left: 12%;
+        left: 12% !important;
     }
     #breakage .middle-image{
         display: none;
+    }
+    #breakage img{
+        width: 327px;
+        height: 311px;
     }
 
     .breakage-notification p {
