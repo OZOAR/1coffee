@@ -828,6 +828,14 @@ ul {
     font-size: 21px;
     padding-bottom: 30px;
 }
+.descriprion__ul > li{
+    font-size: 26px;
+}
+.descriprion__ul li::before{
+    content: '✓' !important;
+    color: #207a34;
+    font-weight: 700;
+}
 #maintenance .content .title  {
     font-size: 32px;
     font-weight: bolder;
@@ -950,7 +958,7 @@ ul {
     /* background-position-x: 28%; */
 }
 #gift .overlay {
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.4);
 }
 .gift-iqos{
     /* padding-top: 8%; */
