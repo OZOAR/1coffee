@@ -12,30 +12,37 @@
 
 for (var i = 0; i < btnModalConsult.length; i++){
     btnModalConsult[i].onclick = function () {
-        modal.style.display = "block";
+        // modal.style.display = "block";
+        modal.style.zIndex = 5;
+        modal.style.opacity = 1;
         title.innerHTML= consult;
 }};
 for (var i = 0; i < btnModalCost.length; i++){
     btnModalCost[i].onclick = function () {
-        modal.style.display = "block";
+        modal.style.zIndex = 5;
+        modal.style.opacity = 1;
         title.innerHTML= cost;
 }};
 for (var i = 0; i < btnModalCallBack.length; i++){
     btnModalCallBack[i].onclick = function () {
-        modal.style.display = "block";
+        modal.style.zIndex = 5;
+        modal.style.opacity = 1;
         title.innerHTML= callback;
 }};
 span.onclick = function () {
-    modal.style.display = "none";
+    modal.style.zIndex = -10;
+    modal.style.opacity = 0;
 };
 window.onclick = function (event) {
     if (event.target == modal) {
-        modal.style.display = "none";
+        modal.style.zIndex = -10;
+        modal.style.opacity = 0;
     }
 };
 window.onload = function () {
     setTimeout(function() {
-        modal.style.display = "block";
+        modal.style.zIndex = 5;
+        modal.style.opacity = 1;
         title.innerHTML= consult;
 
     },15000); 
