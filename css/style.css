@@ -740,20 +740,24 @@ ul {
     padding-top: 40px;
 }
 #takein{
-    background: url("../img/replacement-bg.jpg") no-repeat;
+    /* background: url("../img/coffebackground.jpg") no-repeat;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     -moz-background-size: 100%; /* Firefox 3.6+ */
-    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
-    -o-background-size: 100%; /* Opera 9.6+ */
-    background-size: 100%; /* Современные браузеры */
+    /* -webkit-background-size: 100%; Safari 3.1+ и Chrome 4.0+ */
+    /* -o-background-size: 100%; Opera 9.6+ */
+ /* background-size: 100%; Современные браузеры */
     /* height: 800px; */
-    background-position-y: 58%;
-    /* background-position-x: 28%; */
+    /* background-position-y: 58%; */
+    /* background-position-x: 28%; */ 
+    background-image: url("../img/replacement-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #takein .overlay {
     background: rgba(0, 0, 0, 0.7);
+
 }
 .takein-iqos{
     /* padding-top: 8%; */

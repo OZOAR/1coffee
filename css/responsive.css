@@ -33,6 +33,10 @@
         /* background-size: 150%; */
         background-position-x: 50%; 
         }
+#about .about-project-btn {
+ text-align: center;        
+
+        }
     #about_acess {
         background: url("../img/product-bg.jpg") no-repeat;
         background-size: 150%;
@@ -104,7 +108,7 @@
     }
     
     .iqos-title{
-        font: 2em P22-Heavy !important;
+        font: 1.8em P22-Heavy !important;
     }
     .prices th {
         font: 0.9em P22-Book;
@@ -151,10 +155,10 @@
         font-size: 38px;
     }
     #takein {
-        background: url("../img/about_bg.jpg") no-repeat;
-        background-position-x: 72%;
         text-align: center;
-    
+        background-image: url("../img/coffeebackground.jpg") !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
     }
     .navbar-toggler {
         display: block;
@@ -169,6 +173,7 @@
     #takein .btn {
         font-size: 18px;
         width: 100%;
+            height: 80px;
     }
 
     #gift {
@@ -212,6 +217,7 @@
     
     #breakage ul > li:before  {
         left: 12% !important;
+        padding-top: 5px !important;
     }
     #breakage .middle-image{
         display: none;
@@ -271,8 +277,34 @@
     padding: 15px;
 }
 .header-logo{
-    width: 60% !important;
+    width: 100% !important;
+    padding-right: 0 !important;
 }
-.header-logo > span {
-    margin-left: 20%;
+#header-contacts {
+    padding-top: 0;
+}
+.about-project .btn{
+    font-size: 20px !important;
+}
+.btn {
+    font-size: 20px !important;
+}
+#faults .about {
+    margin-bottom: 20 !important;
+}
+#faults .second-row {
+padding-top: 10px !important;
+}
+.repair-notification {
+    padding-top: 10px !important; 
+}
+#faults .reason-number p {
+padding-top: 10px !important;
+}
+#maintenance{
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+#breakage ul {
+    padding-bottom: 0px !important;
 }
