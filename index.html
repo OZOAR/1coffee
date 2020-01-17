@@ -893,11 +893,13 @@
     [].forEach.call(document.querySelectorAll('img[src]'), function(img) {
         img.setAttribute('src', img.getAttribute('src'));
         img.onload = function() {
-        img.removeAttribute('src');
+        img.removeAttribute('src'); 
         };
         });</script> -->
-        <script src="jqlight.lazyloadxt.js"></script>
-        <script src="jquery.lazyloadxt.js"></script>
+        <!-- <script src="jqlight.lazyloadxt.js"></script>
+        <script src="jquery.lazyloadxt.js"></script> -->
+<script src="jquery.js"></script>
+<script src="jquery.lazyloadxt.js"></script>
 </body>
 
 </html>

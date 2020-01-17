@@ -1366,11 +1366,3 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
     input:focus:-moz-placeholder           {opacity: 0 !important; transition: opacity 0.3s ease !important;}
     input:focus:-ms-input-placeholder      {opacity: 0 !important; transition: opacity 0.3s ease !important;}
 
-    /* img {
-        opacity: 1;
-        transition: opacity 0.3s;
-        }
-        
-        img[data-src] {
-        opacity: 0;
-        } */
