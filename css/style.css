@@ -283,8 +283,10 @@ p {
     transform: none;
 }
 .btn-custom {
-
+    font-size: 20px !important; 
+    font-family: P22 Demi !important;
     background-color: #207a34 !important;
+    padding: 10px 10px;
 }
 .site-header  .active {
     color: #f89c11;
@@ -794,6 +796,7 @@ ul {
     padding-left: 24px;
     background: #207a34;
     border-color: #207a34;
+    width: 400px;
 }
 .takein-iqos .notification {
     color: #ffffff;
@@ -806,7 +809,8 @@ ul {
 
     padding:80px 0 84px;
     border-bottom:1px solid #eaeaea;
-    background:url(../img/maintenance-bg.jpg) right -500px center no-repeat;
+    background:url(../img/maintenance-bg.jpg)no-repeat;
+    background-position-x: 105%;
     background-size:contain;}
 
 #maintenance .row .second-row {
@@ -830,11 +834,13 @@ ul {
 }
 .descriprion__ul > li{
     font-size: 26px;
+    text-indent: -24px;
 }
 .descriprion__ul li::before{
     content: '✓' !important;
     color: #207a34;
     font-weight: 700;
+    margin-left: -5px;
 }
 #maintenance .content .title  {
     font-size: 32px;
@@ -1359,3 +1365,12 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
     input:focus::-moz-placeholder          {opacity: 0 !important; transition: opacity 0.3s ease !important;}
     input:focus:-moz-placeholder           {opacity: 0 !important; transition: opacity 0.3s ease !important;}
     input:focus:-ms-input-placeholder      {opacity: 0 !important; transition: opacity 0.3s ease !important;}
+
+    img {
+        opacity: 1;
+        transition: opacity 0.3s;
+        }
+        
+        img[data-src] {
+        opacity: 0;
+        }

@@ -47,6 +47,7 @@ window.onload = function () {
 
     },15000); 
 };
+
 //Contact Us
 
 $("#submit_btn").click(function() {
