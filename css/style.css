@@ -1167,7 +1167,7 @@ ul {
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.7); 
-    transition:all 1s ease-in-out;
+    transition:all 0.3s ease-in-out;
     opacity: 0;
 }
 .modal-content{
@@ -1366,11 +1366,11 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
     input:focus:-moz-placeholder           {opacity: 0 !important; transition: opacity 0.3s ease !important;}
     input:focus:-ms-input-placeholder      {opacity: 0 !important; transition: opacity 0.3s ease !important;}
 
-    img {
+    /* img {
         opacity: 1;
         transition: opacity 0.3s;
         }
         
         img[data-src] {
         opacity: 0;
-        }
+        } */
