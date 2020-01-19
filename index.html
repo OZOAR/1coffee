@@ -39,7 +39,7 @@
 </head>
 
 <body>
-    <header>
+    <!-- <header>
         <nav class="site-header navbar navbar-expand-md navbar-dark fixed-top  py-1 shadow-sm">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
@@ -128,6 +128,59 @@
                 </div>
             </div>
         </div>
+    </header> -->
+    <header>
+
+        <div class="col-3">
+            <a href="index.html"><img src="/img/logo-title.png" width="100%" style="margin-top: 10%" alt="КофеПрофСервис"></a>   
+        </div>
+        <div class="nav-text col-3">
+            <p class="nav-text__info">
+                <img src="/img/Icons/maps-and-flags.svg" width="7%" alt=""> г. Минск, ул. Раковская 36</p>
+            <p class="nav-text__info">
+                <img src="/img/Icons/schedule.svg" width="7%" alt=""> Ежедневно с 9:00 до 21:00</p>
+        </div>
+        <div class="rigth-nav-bar col-6">
+            <div class="nav-info-mail">
+                <div class="nav-info-mail__text col-4" align="center"><img src="/img/Icons/phone.svg" width="9%" alt="">
+                    <a href="tel:+375(33)35-47-105">+375 (33) 35-47-105</a>
+                </div>
+        <div class="col-4">
+            <button class="btn-nav" onclick="callBackModal()">Заказать звонок</button>
+        </div>
+        <div class="nav-info-mail__text col-4"><img src="/img/Icons/mail.svg" width="11%" alt=""> 
+            <a href="mailto:info@1coffee.by">info@1coffee.by</a>
+            </div>
+            </div>
+            <div class="nav-bar-style">
+                <div class="nav-bar-info">
+                    <a href="">Аренда</a> 
+                </div>
+            <div class="nav-bar-info">
+                <a href="">Ремонт кофемашин</a>
+            </div>
+            <div class="nav-bar-info">
+                <a href="">Кофе</a> 
+            </div>
+            <div class="nav-bar-info dropdown1">
+                <a href="">Каталог</a>
+                    <div class="dropdown-content1">
+                        <div><a href="">
+                            <img src="/img/Delongi/remont-kofemashin-delonghi-delonghi-ecam-24-210.jpg" height="99px" alt="Продажа кофемашин"> Кофемашины</a></div>
+                        <div><a href="">
+                            <img src="" height="99px" alt="Продажа Кофе"> Кофе</a></div>
+                        <div><a href="">
+                            <img src="" height="99px" alt="Продажа аксессуаров"> Аксессуары</a></div>
+                        <div><a href="">
+                            <img src="" height="99px" alt="Продажа комплектующих"> Комплектующие</a></div>
+                    </div> 
+            </div>
+            <div class="nav-bar-info">
+                <a href="">Доставка и оплата</a> 
+            </div>
+    </div>
+    </div>
+
     </header>
     <section id="about">
         <div class="overlay">
@@ -164,7 +217,8 @@
                                     </ul>
                                     
                                     <div class="about-project-btn">
-                                        <a class="btn-custom btn consult" id="btn-modal-consult"> Получить консультацию</a>
+                                        <!-- <a class="btn-custom btn consult" id="btn-modal-consult"> Получить консультацию</a> -->
+                                        <button class="btn-custom btn" onclick="consultModal()">Получить консультацию</button>
                                     </div>
                                 </div>
                             </div>
@@ -327,7 +381,8 @@
                                 и обслуживания. ТО производиться строго по регламенту, иначе дорогостоящего ремонта не
                                 избежать.</p>
                             <div class="product-price-btn">
-                                <a class="btn-custom btn cost-repair" id="btn-modal-cost"> Стоимость ремонта</a>
+                                <!-- <a class="btn-custom btn cost-repair" id="btn-modal-cost"> Стоимость ремонта</a> -->
+                                <button class="btn btn-custom" onclick="costModal()">Стоимость ремонта</button>
                             </div>
                         </div>
                     </div>
@@ -339,7 +394,8 @@
                                 неправильной эксплуатации: при попадании воды и мусора в кофемолку и т.д. Своевременное
                                 обслуживание, предотвратит ремонт и некорректную работу.</p>
                             <div class="product-price-btn">
-                                <a class="btn-custom btn cost-repair" id="btn-modal-cost"> Стоимость ремонта</a>
+                                <!-- <a class="btn-custom btn cost-repair" id="btn-modal-cost"> Стоимость ремонта</a> -->
+                                <button class="btn btn-custom" onclick="costModal()">Стоимость ремонта</button>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12">
@@ -357,7 +413,8 @@
                                 декальцинация и чистка группы. Нередки отказы работы насоса, различные протечки, слабое
                                 давление подачи.</p>
                             <div class="product-price-btn">
-                                <a class="btn-custom btn cost-repair" id="btn-modal-cost"> Стоимость ремонта</a>
+                                <!-- <a class="btn-custom btn cost-repair" id="btn-modal-cost"> Стоимость ремонта</a> -->
+                                <button class="btn btn-custom" onclick="costModal()">Стоимость ремонта</button>
                             </div>
                         </div>
                     </div>
@@ -444,7 +501,8 @@
                             </div>
                             <div class="row repair-btn">
                                 <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-                            <a class="btn-custom btn" class="" id="btn-modal-call"> Не ждите. Вызовите мастера!</a>
+                            <!-- <a class="btn-custom btn" class="" id="btn-modal-call"> Не ждите. Вызовите мастера!</a> -->
+                            <button class="btn btn-custom" onclick="callBackModal()">Не ждите. Вызовите мастера!</button>
                                 </div>
                             </div>
                         </div>
@@ -522,7 +580,8 @@
                             Не пытайтесь починить самостоятельно
                         </p>
                         <div class="maintenance-btn">
-                    <a class="btn-custom btn" class="" id="btn-modal-cost"> Узнать стоимость обслуживания</a>
+                    <!-- <a class="btn-custom btn" class="" id="btn-modal-cost"> Узнать стоимость обслуживания</a> -->
+                    <button class="btn-custom btn" onclick="consultModal()">Узнать стоимость обслуживания</button>
 
                         </div>
                     </div>
@@ -579,7 +638,8 @@
                     </div>
                     <div class="row repair-btn">
                         <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-                            <a class="btn-custom btn consult" id="btn-modal-consult">Получить консультацию </a>
+                            <!-- <a class="btn-custom btn consult" id="btn-modal-consult">Получить консультацию </a> -->
+                            <button class="btn-custom btn" onclick="consultModal()">Получить консультацию</button>
 
                         </div>
                     </div>
@@ -803,8 +863,8 @@
                             </a>
                         </div>
                         <div class="takein-btn">       
-                        <a class="btn-custom btn" class="" id="btn-modal-call">Заказать звонок </a>
-
+                        <!-- <a class="btn-custom btn" class="" id="btn-modal-call">Заказать звонок </a> -->
+                        <button class="btn btn-custom" onclick="callBackModal()">Заказать звонок</button>
                         </div>
                     </div>
                     <div class="col-lg-8 col-md-8 col-sm-12 ">
@@ -896,10 +956,10 @@
         img.removeAttribute('src'); 
         };
         });</script> -->
-        <!-- <script src="jqlight.lazyloadxt.js"></script>
-        <script src="jquery.lazyloadxt.js"></script> -->
-<script src="jquery.js"></script>
-<script src="jquery.lazyloadxt.js"></script>
+        <script src="jqlight.lazyloadxt.js"></script>
+        <script src="jquery.lazyloadxt.js"></script>
+<!-- <script src="jquery.js"></script>
+<script src="jquery.lazyloadxt.js"></script> -->
 </body>
 
 </html>

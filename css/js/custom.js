@@ -2,33 +2,30 @@
  let title = document.getElementById('modal-title1');
  var modal = document.getElementById('consultModal');
  var span = document.getElementsByClassName("closebtn")[0];
- var btnModalConsult = document.querySelectorAll("#btn-modal-consult");
- var btnModalCost = document.querySelectorAll("#btn-modal-cost");
- var btnModalCallBack = document.querySelectorAll("#btn-modal-call");
  const consult = 'Получить консультацию';
  const cost = 'Узнать стоимость';
  const callback ='Выховите мастера прямо сейчас';
-
-
-for (var i = 0; i < btnModalConsult.length; i++){
-    btnModalConsult[i].onclick = function () {
-        // modal.style.display = "block";
-        modal.style.zIndex = 5;
-        modal.style.opacity = 1;
-        title.innerHTML= consult;
-}};
-for (var i = 0; i < btnModalCost.length; i++){
-    btnModalCost[i].onclick = function () {
-        modal.style.zIndex = 5;
-        modal.style.opacity = 1;
-        title.innerHTML= cost;
-}};
-for (var i = 0; i < btnModalCallBack.length; i++){
-    btnModalCallBack[i].onclick = function () {
-        modal.style.zIndex = 5;
-        modal.style.opacity = 1;
-        title.innerHTML= callback;
-}};
+    // Commit change JS
+    //  var btnModalConsult = document.querySelectorAll("#btn-modal-consult");
+    //  var btnModalCost = document.querySelectorAll("#btn-modal-cost");
+    //  var btnModalCallBack = document.querySelectorAll("#btn-modal-call");
+    // for (var i = 0; i < btnModalConsult.length; i++){
+    //     btnModalConsult[i].onclick = 
+function consultModal() {
+    modal.style.zIndex = 5;
+    modal.style.opacity = 1;
+    title.innerHTML= consult;
+};
+function costModal(){
+    modal.style.zIndex = 5;
+    modal.style.opacity = 1;
+    title.innerHTML= cost;
+};
+function callBackModal() {
+    modal.style.zIndex = 5;
+    modal.style.opacity = 1;
+    title.innerHTML= callback;
+};
 span.onclick = function () {
     modal.style.zIndex = -10;
     modal.style.opacity = 0;
@@ -47,6 +44,10 @@ window.onload = function () {
 
     },15000); 
 };
+
+function showAllModels() {
+document.getElementById('full-machine-list').style.display = 'flex';
+}
 
 //Contact Us
 
