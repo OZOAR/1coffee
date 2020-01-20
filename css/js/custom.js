@@ -5,12 +5,6 @@
  const consult = 'Получить консультацию';
  const cost = 'Узнать стоимость';
  const callback ='Выховите мастера прямо сейчас';
-    // Commit change JS
-    //  var btnModalConsult = document.querySelectorAll("#btn-modal-consult");
-    //  var btnModalCost = document.querySelectorAll("#btn-modal-cost");
-    //  var btnModalCallBack = document.querySelectorAll("#btn-modal-call");
-    // for (var i = 0; i < btnModalConsult.length; i++){
-    //     btnModalConsult[i].onclick = 
 function consultModal() {
     modal.style.zIndex = 5;
     modal.style.opacity = 1;
