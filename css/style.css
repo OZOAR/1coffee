@@ -113,6 +113,7 @@ p {
     -ms-box-sizing:content-box;
     -webkit-box-sizing:content-box;
 }
+                        /* HEADER  */
 header{
     width: 100%;
     height: 16%;
@@ -129,9 +130,6 @@ header{
     z-index: 5;
     border-bottom: 1px solid #207a34;
 }
-/* .nav-logo{
-    margin-bottom: 8.5%;
-} */
 .header-logo {
     width: 270px;
     color: #207a34;
@@ -170,9 +168,6 @@ header{
     color: #207a34;
     font-size: 15px;
     display: inline-block;
-    /* padding-right: 5px;
-    padding-left: 5px; */
-
 }
 .nav-info-mail__text > a{
     color: #207a34;
@@ -207,7 +202,6 @@ header{
     color: #eaeaea;
     padding-top: 3%;
     /* margin-left: 3%; */
-    
 }
 .nav-bar-style{
     display: flex;
@@ -224,10 +218,14 @@ header{
 .nav-bar-info > a:hover{
     color: #f89c11; /* Цвет активных ссылок */
 }
-.dropdown1{
-    display: block;
+.messanger{
+    padding: 0 !important;
+    margin-top: -2px;
 }
-.dropdown-content1 {
+                                        /* HEADER CLOSE  */
+
+                                      /* DROPDOWN CONTENT 1 Каталог*/
+.dropdown-catalog {
     display: none;
     position: absolute;
     left: 40%;
@@ -239,73 +237,84 @@ header{
     z-index: -10;
     opacity: 0;
 }
-.dropdown-content1,.dropdown-content2__flex > div > a { 
-    color: #207a34;
-    font-size: 15px;
-    text-align: left;
-}
-.dropdown-content1,.dropdown-content2__flex > div > a:hover { 
-    color: #f89c11;
-}
-.dropdown__img{
-    margin-left: 5%;
-    width: 100px;
-    height: 100px;
-}
-
-.dropdown-content1 > div{ 
+.dropdown-catalog > div{ 
     color: #207a34;
     font-size: 18px;
     width: 350px;
     height: 100px;
     border-bottom: 1px solid #207a34;
 }
-
-.dropdown1:hover > .dropdown-content1 {
-    z-index: 5;
-    opacity: 1;
-    display: block;
-}
-.dropdown-content1:hover {
+.dropdown-catalog:hover {
     z-index: 5;
     opacity: 1;
     display: block; 
 }
-.dropdown-content2 {
+.dropdown-block:hover >.dropdown-catalog{
+    z-index: 5;
+    opacity: 1;
+    display: block;
+}
+                                    /* DROP DONW CONTENT 2 РЕМОНТ КОФЕ МАШИН */
+.dropdown-repair {
     display: none;
     position: absolute;
-    left: 20%;
+    left: 10%;
     top: 85%;
     background-color: white;
-    min-width: 160px;
+    width: 400px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
     z-index: -10;
     opacity: 0;
 }
-.dropdown2:hover > .dropdown-content2{
+.dropdown-repair > div{ 
+    color: #207a34;
+    font-size: 18px;
+    width: 350px;
+    height: 100px;
+    border-bottom: 1px solid #207a34;
+}
+.dropdown-block:hover > .dropdown-repair{
     z-index: 5;
     opacity: 1;
     display: block;
 }
-.dropdown-content2:hover{
-    z-index: 5;
-    opacity: 1;
-    display: block;
-}
-.dropdown-content2__flex{
+                                        /* DROP DOWN ОБЩЕЕ  */
+                                        
+.dropdown__block{
     display: flex;
     flex-direction: row;
 }
-.dropdown-content2__flex > div {
-    height: 100px;
-    width: 150px;
-
+.dropdown__block > div {
+    border-bottom: 1px solid #207a34;
 }
- .messanger{
-     padding: 0 !important;
-     margin-top: -2px;
- }
+            /* DROPDOWN A  */
+.dropdown-catalog, .dropdown__block > div > a { 
+    color: #207a34;
+    font-size: 15px;
+    text-align: left;
+}
+.dropdown-catalog,.dropdown__block > div > a:hover { 
+    color: #f89c11;
+}                                        
+.dropdown__img{
+    margin-left: 2%;
+    padding-top: 5%;
+    padding-left: 5% ;
+    width: 33%;
+    height: 100px;
+}
+.dropdown__text{
+    width: 66%;
+    height: 100px;
+    padding-top: 5%;
+}
+.dropdown__text > p{
+    font-size: 10px;
+    color: #555;
+}
+                                        /* DROP DOWN КОНЕЦ */
+
 .wrap-contact{
     float:none;
 }
