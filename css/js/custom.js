@@ -43,15 +43,20 @@ function showAllModels() {
 document.getElementById('full-machine-list').style.display = 'flex';
 }
 
+// LAZY LOAD
 
-$(function() {
-    $('.lazy').Lazy();
-});
+// $(function() {
+//     $('.lazy').Lazy({
+//         effect: "fadeIn"
+//     });
+// });
+
 $(document).ready(function () {
-    $("img.lazy").lazyload({
+    $("img.lazy").Lazy({
         effect : "fadeIn"
     });
 });
+
 //Contact Us
 
 $("#submit_btn").click(function() {
