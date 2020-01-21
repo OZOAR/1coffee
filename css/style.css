@@ -116,7 +116,7 @@ p {
                         /* HEADER  */
 header{
     width: 100%;
-    height: 16%;
+    height: 14%;
     background: #ffffff;
     display: flex;
     flex-wrap: wrap;
@@ -139,7 +139,7 @@ header{
     padding-top: 10%;
 }
 .nav-text{
-    padding-top: 30;
+    padding-top: 20;
 }
 .nav-text__info{
     font-size: 15px;
@@ -160,7 +160,7 @@ header{
     justify-content: space-between;
     height: 60%;    
     width: 100%;
-    padding-top: 30px;
+    padding-top: 20px;
     padding-left: 0px;
 }
 .nav-info-mail__text{
@@ -207,7 +207,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: -17px;
+    margin-top: -20px;
 }
 .nav-bar-info > A {
     color:#207a34; /* Цвет ссылок */
@@ -652,7 +652,7 @@ header{
     background-size: cover;
     background-position-y: 78%;
     position: relative;
-    top: 16%;
+    top: 14%;
 }
 #about-catalog{
     -moz-background-size: 100%; /* Firefox 3.6+ */
@@ -871,7 +871,7 @@ ul {
     padding: 25px 10px !important;
     border-width: 0px !important;
 }
-.iqos-title{
+.coffee-title{
     font: 2.2em P22-Heavy;
     text-transform: uppercase;
 } 
@@ -961,34 +961,34 @@ ul {
     background: rgba(0, 0, 0, 0.7);
 
 }
-/* .takein-iqos{
+/* .takein-coffee{
     padding-top: 8%;
     padding-bottom: 4%;
 } */
-.takein-iqos .about-title {
+.takein-coffee .about-title {
     font: 45px P22-Heavy;
     padding-bottom: 20px;
     font-weight: 700;
     color: #ffffff;
 }
 
-.takein-iqos p{
+.takein-coffee p{
     color: #ffffff;
     font-size: 21px;
     padding-bottom: 20px;
 
 }
-.takein-iqos input {
+.takein-coffee input {
     width: 400px;
     height: 60px;
 }
-.takein-iqos .name-form {
+.takein-coffee .name-form {
     padding-bottom: 2px;
 }
 .takein-btn {
     padding-top: 2px;
 }
-.takein-iqos button {
+.takein-coffee button {
     height: 60px;
     font-size: 22px;
     /* font-weight: 700; */
@@ -998,7 +998,7 @@ ul {
     border-color: #207a34;
     width: 400px;
 }
-.takein-iqos .notification {
+.takein-coffee .notification {
     color: #ffffff;
     font-size: 15px;
     padding-top: 20px;
@@ -1166,7 +1166,7 @@ ul {
 #gift .overlay {
     background: rgba(0, 0, 0, 0.4);
 }
-/* .gift-iqos{
+/* .gift-coffee{
     padding-top: 8%;
     padding-bottom: 4%;
     padding-left: 10%;
@@ -1183,29 +1183,29 @@ ul {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-.gift-iqos .title {
+.gift-coffee .title {
     font: 45px P22-Heavy;
     padding-bottom: 10px;
     font-weight: 700;
     color: #ffffff;
 }
 
-.gift-iqos p{
+.gift-coffee p{
     color: #ffffff;
     font-size: 21px;
     padding-bottom: 20px;
 }
-.gift-iqos input {
+.gift-coffee input {
     width: 400px;
     height: 60px;
 }
-.gift-iqos .name-form {
+.gift-coffee .name-form {
     padding-bottom: 2px;
 }
 .gift-btn {
     padding-top: 2px;
 }
-.gift-iqos button {
+.gift-coffee button {
     height: 80px;
     width:400px;
     font-size: 20px;
@@ -1215,7 +1215,7 @@ ul {
     background: #207a34;
     border-color: #207a34;
 }
-.gift-iqos .notification {
+.gift-coffee .notification {
     color: #ffffff;
     font-size: 15px;
     padding-top: 20px;
