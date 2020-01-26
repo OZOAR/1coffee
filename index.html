@@ -1,5 +1,4 @@
 <html lang="ru">
-
 <head>
     <meta charset="utf-8">
     <title>Ремонт и обслуживание кофемашин в Минске</title>
@@ -64,7 +63,7 @@
                 </div>
                
         <div class="col-3">
-            <button class="btn-nav" onclick="callBackModal()">Заказать звонок</button>
+            <button class="btn-nav" onclick="modalActive()">Заказать звонок</button>
         </div>
         <div class="nav-info-mail__text col-4"><img class="lazy" data-src="img/Icons/mail.svg" width="11%" alt=""> 
             <a href="mailto:info@1coffee.by">info@1coffee.by</a>
@@ -167,11 +166,11 @@
 
     </header>
     <section id="about">
-        <div class="overlay">
+        <div class="overlay" >
             <div class="wrap">
                 <div class="about-project">
                     <div class="header-main-content wow slideInLeft" data-wow-delay="1.4s">
-                        <div class="container">
+                        <div class="container" >
                             <div class="row">
                                 <div class="col-lg-8 сol-md-8 col-sm-12">
                                     <h1 class="title about-title">
@@ -202,7 +201,7 @@
                                     
                                     <div class="about-project-btn">
                                         <!-- <a class="btn-custom btn consult" id="btn-modal-consult"> Получить консультацию</a> -->
-                                        <button class="btn-custom btn" onclick="consultModal()">Получить консультацию</button>
+                                        <button class="btn-custom btn" onclick="modalActive(1)">Получить консультацию</button>
                                     </div>
                                 </div>
                             </div>
@@ -214,7 +213,7 @@
 
     </section>
     <hr>
-    <section id="products">
+    <!-- <section id="products">
         <div class="wrap">
             <div class="product-service">
                 <div class="container">
@@ -236,7 +235,6 @@
                                 и обслуживания. ТО производиться строго по регламенту, иначе дорогостоящего ремонта не
                                 избежать.</p>
                             <div class="product-price-btn">
-                                <!-- <a class="btn-custom btn cost-repair" id="btn-modal-cost"> Стоимость ремонта</a> -->
                                 <button class="btn btn-custom" onclick="costModal()">Стоимость ремонта</button>
                             </div>
                         </div>
@@ -249,7 +247,6 @@
                                 неправильной эксплуатации: при попадании воды и мусора в кофемолку и т.д. Своевременное
                                 обслуживание, предотвратит ремонт и некорректную работу.</p>
                             <div class="product-price-btn">
-                                <!-- <a class="btn-custom btn cost-repair" id="btn-modal-cost"> Стоимость ремонта</a> -->
                                 <button class="btn btn-custom" onclick="costModal()">Стоимость ремонта</button>
                             </div>
                         </div>
@@ -268,7 +265,6 @@
                                 декальцинация и чистка группы. Нередки отказы работы насоса, различные протечки, слабое
                                 давление подачи.</p>
                             <div class="product-price-btn">
-                                <!-- <a class="btn-custom btn cost-repair" id="btn-modal-cost"> Стоимость ремонта</a> -->
                                 <button class="btn btn-custom" onclick="costModal()">Стоимость ремонта</button>
                             </div>
                         </div>
@@ -277,9 +273,8 @@
 
                 </div>
             </div>
-    </section>
-    <hr>
-    <section id="faults">
+    </section> -->
+    <!-- <section id="faults">
         <div class="wrap">
             <div class="product-service">
                 <div class="container">
@@ -356,7 +351,7 @@
                             </div>
                             <div class="row repair-btn">
                                 <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-                            <button class="btn btn-custom" onclick="callBackModal()">Не ждите. Вызовите мастера!</button>
+                            <button class="btn btn-custom" onclick="3Modal()">Не ждите. Вызовите мастера!</button>
                                 </div>
                             </div>
                         </div>
@@ -364,7 +359,190 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+    <section class="problems bg-grey sec">
+        <div class="container">
+          <div class="sec-header mb-5">
+            <h2 class="sec-title line-bottom">Что случилось с вашей <span class="colored">кофемашиной</span> ?</h2>
+          </div>
+          <div class="row problems__row">
+            <div class="col-6 col-sm-4 col-lg">
+              <div class="problems__item" onclick="showBreakege(1)" >
+                <div class="problems__icon">
+                  <svg class="svg-inline--fa fa-mug-hot fa-w-16 fa-2x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="mug-hot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M127.1 146.5c1.3 7.7 8 13.5 16 13.5h16.5c9.8 0 17.6-8.5 16.3-18-3.8-28.2-16.4-54.2-36.6-74.7-14.4-14.7-23.6-33.3-26.4-53.5C111.8 5.9 105 0 96.8 0H80.4C70.6 0 63 8.5 64.1 18c3.9 31.9 18 61.3 40.6 84.4 12 12.2 19.7 27.5 22.4 44.1zm112 0c1.3 7.7 8 13.5 16 13.5h16.5c9.8 0 17.6-8.5 16.3-18-3.8-28.2-16.4-54.2-36.6-74.7-14.4-14.7-23.6-33.3-26.4-53.5C223.8 5.9 217 0 208.8 0h-16.4c-9.8 0-17.5 8.5-16.3 18 3.9 31.9 18 61.3 40.6 84.4 12 12.2 19.7 27.5 22.4 44.1zM400 192H32c-17.7 0-32 14.3-32 32v192c0 53 43 96 96 96h192c53 0 96-43 96-96h16c61.8 0 112-50.2 112-112s-50.2-112-112-112zm0 160h-16v-96h16c26.5 0 48 21.5 48 48s-21.5 48-48 48z"></path></svg><!-- <i class="fas fa-mug-hot fa-2x"></i> -->
+                </div>
+                <p class="problems__title">Не делает капучино</p>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-lg">
+              <div class="problems__item" onclick="showBreakege(2)">
+                <div class="problems__icon">
+                  <svg class="svg-inline--fa fa-coffee fa-w-20 fa-2x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="coffee" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M192 384h192c53 0 96-43 96-96h32c70.6 0 128-57.4 128-128S582.6 32 512 32H120c-13.3 0-24 10.7-24 24v232c0 53 43 96 96 96zM512 96c35.3 0 64 28.7 64 64s-28.7 64-64 64h-32V96h32zm47.7 384H48.3c-47.6 0-61-64-36-64h583.3c25 0 11.8 64-35.9 64z"></path></svg><!-- <i class="fas fa-coffee fa-2x"></i> -->
+                </div>
+                <p class="problems__title">Не наливает кофе</p>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-lg">
+                <div class="problems__item" onclick="showBreakege(3)">
+                  <div class="problems__icon">
+                    <svg class="svg-inline--fa fa-tint-slash fa-w-20 fa-2x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tint-slash" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M633.82 458.1L494.97 350.78c.52-5.57 1.03-11.16 1.03-16.87 0-111.76-99.79-153.34-146.78-311.82-7.94-28.78-49.44-30.12-58.44 0-15.52 52.34-36.87 91.96-58.49 125.68L45.47 3.37C38.49-2.05 28.43-.8 23.01 6.18L3.37 31.45C-2.05 38.42-.8 48.47 6.18 53.9l588.36 454.73c6.98 5.43 17.03 4.17 22.46-2.81l19.64-25.27c5.41-6.97 4.16-17.02-2.82-22.45zM144 333.91C144 432.35 222.72 512 320 512c44.71 0 85.37-16.96 116.4-44.7L162.72 255.78c-11.41 23.5-18.72 48.35-18.72 78.13z"></path></svg><!-- <i class="fas fa-tint-slash fa-2x"></i> -->
+                  </div>
+                  <p class="problems__title">Протекает</p>
+                </div>
+              </div>
+            <div class="col-6 col-sm-4 col-lg">
+                <div class="problems__item" onclick="showBreakege(4)">
+                  <div class="problems__icon">
+                    <svg class="svg-inline--fa fa-cloud fa-w-20 fa-2x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cloud" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M537.6 226.6c4.1-10.7 6.4-22.4 6.4-34.6 0-53-43-96-96-96-19.7 0-38.1 6-53.3 16.2C367 64.2 315.3 32 256 32c-88.4 0-160 71.6-160 160 0 2.7.1 5.4.2 8.1C40.2 219.8 0 273.2 0 336c0 79.5 64.5 144 144 144h368c70.7 0 128-57.3 128-128 0-61.9-44-113.6-102.4-125.4z"></path></svg><!-- <i class="fas fa-cloud fa-2x"></i> -->
+                  </div>
+                  <p class="problems__title">Не делает пенку</p>
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-lg">
+                <a class="problems__item" onclick="showBreakege(5)">
+                  <div class="problems__icon">
+                    <svg class="svg-inline--fa fa-thermometer-quarter fa-w-8 fa-2x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="thermometer-quarter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M192 384c0 35.346-28.654 64-64 64s-64-28.654-64-64c0-23.685 12.876-44.349 32-55.417V288c0-17.673 14.327-32 32-32s32 14.327 32 32v40.583c19.124 11.068 32 31.732 32 55.417zm32-84.653c19.912 22.563 32 52.194 32 84.653 0 70.696-57.303 128-128 128-.299 0-.609-.001-.909-.003C56.789 511.509-.357 453.636.002 383.333.166 351.135 12.225 321.755 32 299.347V96c0-53.019 42.981-96 96-96s96 42.981 96 96v203.347zM208 384c0-34.339-19.37-52.19-32-66.502V96c0-26.467-21.533-48-48-48S80 69.533 80 96v221.498c-12.732 14.428-31.825 32.1-31.999 66.08-.224 43.876 35.563 80.116 79.423 80.42L128 464c44.112 0 80-35.888 80-80z"></path></svg><!-- <i class="fas fa-thermometer-quarter fa-2x"></i> -->
+                  </div>
+                  <p class="problems__title">Не включается</p>
+                </a>
+              </div>
+            <div class="col-6 col-sm-4 col-lg">
+              <div class="problems__item" onclick="showBreakege(6)">
+                <div class="problems__icon">
+                  <svg class="svg-inline--fa fa-blender fa-w-16 fa-2x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="blender" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M416 384H160c-35.35 0-64 28.65-64 64v32c0 17.67 14.33 32 32 32h320c17.67 0 32-14.33 32-32v-32c0-35.35-28.65-64-64-64zm-128 96c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32zm40-416h166.54L512 0H48C21.49 0 0 21.49 0 48v160c0 26.51 21.49 48 48 48h103.27l8.73 96h256l17.46-64H328c-4.42 0-8-3.58-8-8v-16c0-4.42 3.58-8 8-8h114.18l17.46-64H328c-4.42 0-8-3.58-8-8v-16c0-4.42 3.58-8 8-8h140.36l17.46-64H328c-4.42 0-8-3.58-8-8V72c0-4.42 3.58-8 8-8zM64 192V64h69.82l11.64 128H64z"></path></svg><!-- <i class="fas fa-blender fa-2x"></i> -->
+                </div>
+                <p class="problems__title">Не мелет зерна</p>
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-12" id="dropdown-problem">
+           <p id="text"></p>
+         </div>
+        </div>
+      </section>
+
+        <hr>
+
+        <section class="sec order-now bg-theme" id="order">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-md-4 order-last order-md-first mt-5 mt-md-0">
+                  <div class="order-now__img">
+                    <img src="img/coffeemachinejura.png" width="100%" alt="">
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="order-now__wrap">
+                    <h2 class="order-now__title">Не нашли свою поломку?</h2>
+                   
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, deserunt!</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, nisi.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, deserunt.</li>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, quod.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, nobis!</li>
+                    </ul>
+              <button class="input-order-now" onclick="modalActive(3)">Заказать ремонт</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+<hr>
+<section class="types sec">
+    <div class="container">
+      <div class="sec-header mb-5">
+        <h2 class="sec-title line-bottom">Выберите вашу <span class="colored">кофемашины</span></h2>
+      </div>
+      <div class="row types__row justify-content-center">
+        <div class="col-6 col-sm-4 col-lg my-4">
+          <a href="/remont-rojkovih-kofemashin/" class="types__item">
+            <div class="types__img">
+              <img src="img/rozhkovye_giCSDLC.png" width="100%" alt="">
+            </div>
+            <p class="types__title">Рожковые</p>
+          </a>
+        </div>
+        <div class="col-6 col-sm-4 col-lg my-4">
+          <a href="/remont-avtomaticheskih-kofemashin/" class="types__item">
+            <div class="types__img">
+              <img src="img/automat_fh9HpmK.png" width="100%" alt="">
+            </div>
+            <p class="types__title">Автоматические</p>
+          </a>
+        </div>
+        <div class="col-6 col-sm-4 col-lg my-4">
+          <a href="/remont-kapsulnih-kofemashin/" class="types__item">
+            <div class="types__img">
+              <img src="img/kapsulnye_7hjabmT.png" width="100%" alt="">
+            </div>
+            <p class="types__title">Капсульные</p>
+          </a>
+        </div>
+        <div class="col-6 col-sm-4 col-lg my-4">
+          <a href="/remont-professionalnih-kofemashin/" class="types__item">
+            <div class="types__img">
+              <img src="img/proffesional_gR1OUBq.png" width="100%" alt="">
+            </div>
+            <p class="types__title">Профессиональные</p>
+          </a>
+        </div>
+        <div class="col-6 col-sm-4 col-lg my-4">
+          <a href="/remont-kapelnih-kofevarok/" class="types__item">
+            <div class="types__img">
+              <img src="img/kofemolka.png" style="margin-top: -58px;" width="100%" alt="">
+            </div>
+            <p class="types__title">Кофемолки</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+          <section class="sec brands">
+            <div class="container">
+              <h2 class="sec-title line-bottom">Выберите <span class="colored">ваш бренд</span></h2>
+              <div class="row brands_div">
+                <div class="col-1">
+                  <a href="img/brands/remont-delonghi/" class="brands__item">
+                    <img  src="img/brands/delonghi.png" alt="delonghi">
+                  </a>
+                </div>
+                <div class="col-1">
+                  <a href="img/brands/remont-saeco/" class="brands__item">
+                    <img src="img/brands/saeco.png" alt="saeco">
+                  </a>
+                </div>
+                <div class="col-1">
+                    <a href="/remont-philips/" class="brands__item">
+                      <img src="img/brands/philips.png" alt="philips">
+                    </a>
+                  </div>
+                <div class="col-1">
+                  <a href="img/brands/remont-bosch/" class="brands__item">
+                    <img src="img/brands/bosch.png" alt="Bosch">
+                  </a>
+                </div>
+                <div class="col-1">
+                  <a href="img/brands/remont-krups/" class="brands__item">
+                    <img src="img/brands/krups.png" alt="krups">
+                  </a>
+                </div>
+                <div class="col-1">
+                  <a href="img/brands/remont-jura/" class="brands__item">
+                    <img src="img/brands/jura.png" alt="Jura">
+                  </a>
+              </div>
+              <div class="col-2 brends-more">
+                <a href="№" >
+                  Больше -->
+                </a>
+            </div>
+            </div>
+          </section>
+
     <section id="takein">
         <div class="overlay">
             <div class="wrap">
@@ -410,6 +588,10 @@
             </div>
         </div>
     </section>
+
+
+
+
     <section id="maintenance">
         <div class="wrap">
             <div class="container">
@@ -434,7 +616,7 @@
                             Не пытайтесь починить самостоятельно
                         </p>
                         <div class="maintenance-btn">
-                    <button class="btn-custom btn" onclick="consultModal()">Узнать стоимость обслуживания</button>
+                    <button class="btn-custom btn" onclick="modalActive(1)">Узнать стоимость обслуживания</button>
 
                         </div>
                     </div>
@@ -491,7 +673,7 @@
                     </div>
                     <div class="row repair-btn">
                         <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-                            <button class="btn-custom btn" onclick="consultModal()">Получить консультацию</button>
+                            <button class="btn-custom btn" onclick="modalActive(1)">Получить консультацию</button>
 
                         </div>
                     </div>
@@ -547,6 +729,37 @@
                 </div>
             </div>
     </section>
+    <hr>
+    <section id="How-it-work">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <p>шаг 0</p> 
+                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste sapiente, cum perferendis eligendi minus qui consequatur pariatur odio, quas molestiae sequi aut est suscipit corporis. Autem veniam maxime a velit.</p>
+                
+                </div>
+                <div class="col-2">
+                    <p>шаг 1</p> 
+                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste sapiente, cum perferendis eligendi minus qui consequatur pariatur odio, quas molestiae sequi aut est suscipit corporis. Autem veniam maxime a velit.</p>
+                </div>
+                <div class="col-2">
+                    <p>шаг 2</p> 
+                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste sapiente, cum perferendis eligendi minus qui consequatur pariatur odio, quas molestiae sequi aut est suscipit corporis. Autem veniam maxime a velit.</p>
+                </div>
+                <div class="col-2">
+                    <p>шаг 3</p> 
+                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste sapiente, cum perferendis eligendi minus qui consequatur pariatur odio, quas molestiae sequi aut est suscipit corporis. Autem veniam maxime a velit.</p>
+                </div>
+                <div class="col-3">
+                    <p>шаг 4</p> 
+                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste sapiente, cum perferendis eligendi minus qui consequatur pariatur odio, quas molestiae sequi aut est suscipit corporis. Autem veniam maxime a velit.</p>
+                </div>
+            </div>
+        </div>
+        
+    
+    </section>
+    <hr>
     <section id="content">
         <div class="wrap">
             <div class="container">
@@ -668,7 +881,7 @@
                             </a>
                         </div>
                         <div class="takein-btn">       
-                        <button class="btn btn-custom" onclick="callBackModal()">Заказать звонок</button>
+                        <button class="btn btn-custom" onclick="modalActive(3)">Заказать звонок</button>
                         </div>
                     </div>
                     <div class="col-lg-8 col-md-8 col-sm-12 ">
@@ -793,8 +1006,8 @@
                     <div class="display-row otstup"></div>
                     <div class="display-row block_services">
                       <div class="display-cell">
-                        Выезд мастера в любой район Москвы и в пределах 15 км за МКАД бесплатно
-                      </div>
+                        Выезд курьера в любой район Минска в пределах МКАД бесплатно
+                    </div>
                     </div>
                     <div class="display-row otstup"></div>
                     <div class="display-row block_services">
@@ -810,12 +1023,12 @@
   
     <!--Модальное окно-->
     <div class="modal" id="consultModal">
-        <div class="modal-content">
+        <div class="modal-content" id="content-modal">
             <button type="button" class="closebtn"><span aria-hidden="true">&times;</span></button>
             <p class="modal-title" id="modal-title1"></p>
-                    <p>Заполните форму и наш менеджер<br>
-свяжется с Вами для уточнения всех деталей, или позвоните о номеру:  
-    </p>         <div class="modal-phone-number"><a href="tel:+375(44)555-03-77">+375 (44) 555-03-77</a></div> 
+            <div id="modal-text"><p>Заполните форму и наш менеджер<br>свяжется с Вами для уточнения всех деталей, или позвоните о номеру:</p>         
+            </div>
+                    <div class="modal-phone-number"><a href="tel:+375(44)555-03-77">+375 (44) 555-03-77</a></div> 
         <div class="contactus-form">
             <form class="name-form" action="https://formspree.io/vadimrezunik@gmail.com" method="POST">
                 <div class="container">

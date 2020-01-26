@@ -1,24 +1,47 @@
  //Dinamic Modal
  let title = document.getElementById('modal-title1');
  var modal = document.getElementById('consultModal');
+ var modalContent = document.getElementById('content-modal');
  var span = document.getElementsByClassName("closebtn")[0];
- const consult = 'Получить консультацию';
- const cost = 'Узнать стоимость';
- const callback ='Выховите мастера прямо сейчас';
-function consultModal() {
+//  const consult = 'Получить консультацию';
+//  const cost = 'Узнать стоимость';
+//  const callback ='Выховите мастера прямо сейчас';
+//  const gift = 'При заказе прямо сейчас Вы получите подарок';
+// function consultModal() {
+//     modal.style.zIndex = 5;
+//     modal.style.opacity = 1;
+//     title.innerHTML= consult;
+// };
+// function costModal(){
+//     modal.style.zIndex = 5;
+//     modal.style.opacity = 1;
+//     title.innerHTML= cost;
+// };
+// function callBackModal() {
+//     modal.style.zIndex = 5;
+//     modal.style.opacity = 1;
+//     title.innerHTML= callback;
+// };
+function modalActive(ModalTitle) {
+    let modaltext;
+    switch (ModalTitle) {
+        case 1:
+            modalText = 'Получить консультацию';
+            break;
+        case 2:
+            modalText = 'Узнать стоимость';
+            break;
+        case 3:
+            modalText = 'Вызовите мастера прямо сейчас';
+            break;
+        default:
+            modalText = "EROR 404";
+            break;
+    };
     modal.style.zIndex = 5;
     modal.style.opacity = 1;
-    title.innerHTML= consult;
-};
-function costModal(){
-    modal.style.zIndex = 5;
-    modal.style.opacity = 1;
-    title.innerHTML= cost;
-};
-function callBackModal() {
-    modal.style.zIndex = 5;
-    modal.style.opacity = 1;
-    title.innerHTML= callback;
+    title.innerHTML= modalText;
+    // title.style.fontFamily = 'Ubuntu';
 };
 span.onclick = function () {
     modal.style.zIndex = -10;
@@ -31,18 +54,61 @@ window.onclick = function (event) {
     }
 };
 window.onload = function () {
-    setTimeout(function() {
-        modal.style.zIndex = 5;
-        modal.style.opacity = 1;
-        title.innerHTML= consult;
-
-    },15000); 
+    setTimeout(modalActive(1),1000); 
 };
-
+                        // DROPDOWN CM
 function showAllModels() {
 document.getElementById('full-machine-list').style.display = 'flex';
+document.getElementById('button-showall').style.display = 'none';
+document.getElementById('button-close').style.display = 'flex';
 }
+function closeAllModels() {
+    document.getElementById('full-machine-list').style.display = 'none';
+    document.getElementById('button-showall').style.display = 'flex';
+    document.getElementById('button-close').style.display = 'none';
+}
+                    // DROPDOWN CM CLOSE
 
+
+//                                 DROPDOWN PROBLEM
+
+function showBreakege(textDivId) {
+    let text;
+    dropdownProblemId = document.getElementById('dropdown-problem');
+    switch (textDivId) {
+        case 1 : 
+            text = 'VODA TECHET';
+            break;
+        case 2 : 
+            text = 'VODA TECHET2';
+            break;
+        case 3 : 
+            text = 'VODA TECHET3';
+            break;
+        case 4 : 
+            text = 'VODA TECHET4';
+            break;
+        case 5 : 
+            text = 'VODA TECHET5';
+            break;
+        case 6 : 
+            text = 'VODA TECHET6';
+            break;
+        default: 
+            text = 'ТАКОГО ТЕКСТА НЕ СУЩЕСТВУЕТ';
+            break;
+    };
+    document.getElementById('text').innerHTML = text;
+    if (dropdownProblemId.classList.contains('show') == 0) {
+            dropdownProblemId.classList.add('show');
+            dropdownProblemId.style.display = 'flex';     
+        }else if (dropdownProblemId.classList.contains('show')) {
+            dropdownProblemId.classList.remove('show');
+            dropdownProblemId.style.display = 'none';
+        };
+};
+
+//                                    DROPDOWN PROBLEM CLOSE
 // LAZY LOAD
 
 // $(function() {
