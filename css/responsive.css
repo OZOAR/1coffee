@@ -150,7 +150,7 @@
      border: 0;
     }
     .navbar-collapse{
-    background-color: #0f0f0f !important;
+        background-color: #0f0f0f !important;
 
     }
     .nav-link{
@@ -322,8 +322,8 @@
     }
 
     #gift {
-        /* background: url("../img/iqos_bg.jpg") no-repeat;
-        background-position-x: 72%; */
+        background: url("../img/gift-block-bg.jpg") no-repeat;
+        background-position-x: 72%;
         text-align: center;
     }
     .gift-iqos .title{
