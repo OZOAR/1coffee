@@ -2,8 +2,6 @@
  let title = document.getElementById('modal-title1');
  var modal = document.getElementById('consultModal');
  var modalContent = document.getElementById('content-modal');
- var span = document.getElementsByClassName("closebtn")[0];
-
 function modalActive(ModalTitle) {
     let modaltext;
     switch (ModalTitle) {

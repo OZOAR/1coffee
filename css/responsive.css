@@ -151,7 +151,7 @@
     }
     .navbar-collapse{
         background-color: #0f0f0f !important;
-
+        padding: 5px;
     }
     .nav-link{
         color: black;
