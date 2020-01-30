@@ -30,19 +30,21 @@
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-THZL4MS'); 
     </script>
-    <link rel="stylesheet" href="css/main.css" media="all">
+    <!-- <link rel="stylesheet" href="css/main.css" media="all"> -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
 </head>
 
 <body>
-    <header>
+    <header class="mobile-none">
 
-        <div class="col-3">
+        <div class="col-lg-2 mobile-none">
             <a href="index.html">
-                <img class="lazy" data-src="img/logo-title.png" width="100%" style="margin-top: 8%" alt="КофеПрофСервис">
+                <img class="lazy" data-src="img/logo-title.png" width="100%" style="margin-top: 15%" alt="КофеПрофСервис">
             </a>   
         </div>
-        <div class="nav-text col-3">
+        <div class="nav-text col-lg-3">
             <p class="nav-text__info">
                 <img class="lazy" data-src="img/Icons/maps-and-flags.svg" width="7%" alt=""> <a href="#contacts">г. Минск, ул. Раковская 36</a> 
             </p>
@@ -50,25 +52,27 @@
                 <img class="lazy" data-src="img/Icons/schedule.svg" width="7%" alt=""> Ежедневно с 9:00 до 21:00
             </p>
         </div>
-        <div class="rigth-nav-bar col-6">
-            <div class="nav-info-mail">
-                <div class="nav-info-mail__text col-4" align="center">
+        <div class="rigth-nav-bar col-lg-7 ">
+            <div class="container">
+                <div class="row">
+            <div class="nav-info-mail col-lg-12">
+                <div class="nav-info-mail__text col-lg-4" align="center">
                     <img class="lazy" data-src="img/Icons/phone.svg" width="9%" alt="">
                     <a href="tel:+375(33)35-47-105">+375 (33) 35-47-105</a>
                 </div>
-                <div class="col-2 messanger"> 
-                <a href="tg://resolve?domain=ozoar"><img class="lazy" data-src="img/Icons/telegram.svg" width="25%" alt=""></a>
-                <a href="viber://add?number=375333547105"><img class="lazy" data-src="img/Icons/viber.svg" width="25%" alt=""></a>
-                <a href="whatsapp://send?phone=+375333547105"><img class="lazy" data-src="img/Icons/whatsapp.svg" width="25%" alt=""></a>
+                <div class="col-lg-2 messanger"> 
+                <a href="tg://resolve?domain=ozoar"><img class="lazy icons" data-src="img/Icons/telegram.svg" alt=""></a>
+                <a href="viber://add?number=375333547105"><img class="lazy icons" data-src="img/Icons/viber.svg" alt=""></a>
+                <a href="whatsapp://send?phone=+375333547105"><img class="lazy icons" data-src="img/Icons/whatsapp.svg" alt=""></a>
                 </div>
                
-        <div class="col-3">
-            <button class="btn-nav" onclick="modalActive()">Заказать звонок</button>
+        <div class="col-lg-3">
+            <button class="btn-nav" onclick="modalActive(1)">Заказать звонок</button>
         </div>
-        <div class="nav-info-mail__text col-4"><img class="lazy" data-src="img/Icons/mail.svg" width="11%" alt=""> 
+        <div class="nav-info-mail__text col-lg-3"><img class="lazy" data-src="img/Icons/mail.svg" width="11%" alt=""> 
             <a href="mailto:info@1coffee.by">info@1coffee.by</a>
-        </div>
-            </div>
+        </div></div>
+            </div></div>
             <div class="nav-bar-style">
                 <div class="nav-bar-info">
                     <a href="">Аренда</a> 
@@ -163,10 +167,63 @@
             </div>
     </div>
     </div>
-
     </header>
+    <header class="mobile">
+        <nav class="navbar col-12 navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand col-8" href="#"> <img class="lazy" data-src="img/Icons/Ресурс 3.png" width="130%" alt="КофеПрофСервис"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Аренда <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Ремонт кофемашин
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#">Групповые</a>
+                      <a class="dropdown-item" href="#">Автоматические</a>
+                      <a class="dropdown-item" href="#">Рожковые</a>
+                      <a class="dropdown-item" href="#">Капсульные</a>
+                    </div>
+                  </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Каталог
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#">Кофемашины</a>
+                      <a class="dropdown-item" href="#">Кофе</a>
+                      <a class="dropdown-item" href="#">Аксессуары</a>
+                      <a class="dropdown-item" href="#">Товары</a>
+                    </div>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Доставка и оплата</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+<section class="mobile-subheader">
+    <div class="mobile-subheader__tel" align="center">
+        <!-- <img class="lazy" data-src="img/Icons/smartphone.svg" width="9%" alt=""> -->
+        <a class="colored" href="tel:+375(33)35-47-105">+375 (33) 35-47-105</a>
+    </div>
+    <div class="mobile-messanger"> 
+        <a class="icons" href="tg://resolve?domain=ozoar"><img class="icons" src="img/Icons/telegram.svg" alt=""></a>
+        <a class="icons" href="whatsapp://send?phone=+375333547105"><img class="icons" src="img/Icons/instagram.svg" alt=""></a>
+        <a class="icons" href="https://www.instagram.com/1coffeeservice"><img class="icons" src="img/Icons/viber.svg" alt=""></a>
+        </div>
+        <div class="mobile-subheader__btn">
+            <button class="btn-nav" onclick="modalActive(1)">Заказать звонок</button>
+        </div>
+</section>
     <section id="about">
-        <div class="overlay" >
+        <div class="overlay about-overlay" >
             <div class="wrap">
                 <div class="about-project">
                     <div class="header-main-content wow slideInLeft" data-wow-delay="1.4s">
@@ -434,7 +491,7 @@
                 </div>
                 <div class="col-md-8">
                   <div class="order-now__wrap">
-                    <h2 class="order-now__title">Не нашли свою поломку?</h2>
+                    <h2 class="order-now__title">Не нашли свою <span class="colored">поломку</span> ?</h2>
                    
                     <ul>
                         <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, deserunt!</li>
@@ -491,7 +548,7 @@
         <div class="col-6 col-sm-4 col-lg my-4">
           <a href="/remont-kapelnih-kofevarok/" class="types__item">
             <div class="types__img">
-              <img src="img/kofemolka.png" style="margin-top: -58px;" width="100%" alt="">
+              <img src="img/kofemolkaprof.png" style="margin-top: -58px;" width="65%" alt="">
             </div>
             <p class="types__title">Кофемолки</p>
           </a>
@@ -505,37 +562,37 @@
             <div class="container">
               <h2 class="sec-title line-bottom">Выберите <span class="colored">ваш бренд</span></h2>
               <div class="row brands_div">
-                <div class="col-1">
+                <div class="col-lg-1 col-6 ">
                   <a href="img/brands/remont-delonghi/" class="brands__item">
                     <img  src="img/brands/delonghi.png" alt="delonghi">
                   </a>
                 </div>
-                <div class="col-1">
+                <div class="col-lg-1 col-6">
                   <a href="img/brands/remont-saeco/" class="brands__item">
                     <img src="img/brands/saeco.png" alt="saeco">
                   </a>
                 </div>
-                <div class="col-1">
+                <div class="col-lg-1 col-6">
                     <a href="/remont-philips/" class="brands__item">
                       <img src="img/brands/philips.png" alt="philips">
                     </a>
                   </div>
-                <div class="col-1">
+                <div class="col-lg-1 col-6">
                   <a href="img/brands/remont-bosch/" class="brands__item">
                     <img src="img/brands/bosch.png" alt="Bosch">
                   </a>
                 </div>
-                <div class="col-1">
+                <div class="col-lg-1 col-6">
                   <a href="img/brands/remont-krups/" class="brands__item">
                     <img src="img/brands/krups.png" alt="krups">
                   </a>
                 </div>
-                <div class="col-1">
+                <div class="col-lg-1 col-6">
                   <a href="img/brands/remont-jura/" class="brands__item">
                     <img src="img/brands/jura.png" alt="Jura">
                   </a>
               </div>
-              <div class="col-2 brends-more">
+              <div class="col-lg-2 col-2 brends-more">
                 <a href="№" >
                   Больше -->
                 </a>
@@ -593,7 +650,7 @@
 
 
     <section id="maintenance">
-        <div class="wrap">
+        <div class="wrap wrap-margin">
             <div class="container">
                 <div class="row">
 
@@ -729,28 +786,28 @@
                 </div>
             </div>
     </section>
-    <hr>
+<br>
     <section id="How-it-work">
         <div class="container">
             <div class="row">
-                <div class="col-3">
+                <div class="col-lg-3">
                     <p>шаг 0</p> 
                     <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste sapiente, cum perferendis eligendi minus qui consequatur pariatur odio, quas molestiae sequi aut est suscipit corporis. Autem veniam maxime a velit.</p>
                 
                 </div>
-                <div class="col-2">
+                <div class="col-lg-2 col-4">
                     <p>шаг 1</p> 
                     <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste sapiente, cum perferendis eligendi minus qui consequatur pariatur odio, quas molestiae sequi aut est suscipit corporis. Autem veniam maxime a velit.</p>
                 </div>
-                <div class="col-2">
+                <div class="col-lg-2 col-4">
                     <p>шаг 2</p> 
                     <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste sapiente, cum perferendis eligendi minus qui consequatur pariatur odio, quas molestiae sequi aut est suscipit corporis. Autem veniam maxime a velit.</p>
                 </div>
-                <div class="col-2">
+                <div class="col-lg-2 col-4">
                     <p>шаг 3</p> 
                     <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste sapiente, cum perferendis eligendi minus qui consequatur pariatur odio, quas molestiae sequi aut est suscipit corporis. Autem veniam maxime a velit.</p>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3 col-4">
                     <p>шаг 4</p> 
                     <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste sapiente, cum perferendis eligendi minus qui consequatur pariatur odio, quas molestiae sequi aut est suscipit corporis. Autem veniam maxime a velit.</p>
                 </div>
@@ -774,7 +831,7 @@
                                 неполадку, в компании можно заказать сервисное обслуживание аппаратов</p>
                     </div>
                     <div class="col-lg-12 сol-md-12 col-sm-12 ">
-                        <h2>Квалифицированный ремонт кофейных аппаратов в Минске</h2>
+                        <h2 style="font-size: 28;">Квалифицированный ремонт кофейных аппаратов в Минске</h2>
                     </div>
                     <div class="col-lg-12 сol-md-12 col-sm-12 ">
                         <p>Современная техника с богатым функционалом справляется с приготовлением кофе не хуже
@@ -897,7 +954,7 @@
                 </div>
             </div>
     </section>
-        <footer class="sec-small footer bg-dark edge top-left">
+        <footer class="sec-small footer edge top-left">
             <div class="container">
               <div class="row justify-content-between">
                 <div class="col-lg-3 text-lg-left mb-3 mb-lg-0">
@@ -917,7 +974,7 @@
                     <a href="https://www.instagram.com/aromatkofe.ru/" target="_blank" rel="nofollow"><svg width="10%" class="svg-inline--fa fa-instagram fa-w-14 fa-sm mr-2" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg><!-- <i class="fab fa-instagram fa-sm mr-2"></i> --></a>
                   </p>
                 </div>
-                <div class="col-lg-2 text-lg-left mb-3 mb-lg-0">
+                <div class="col-lg-2 text-lg-left mb-3 mb-lg-0 mobile-none">
                   <p class="mb-3">Принимаем к оплате:</p>
                   <div class="row no-gutters" style="max-width: 210px; margin: auto;">
                     <div class="col-6 pr-1 pb-1">
@@ -934,7 +991,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-2 text-lg-left mb-4 mb-lg-0">
+                <div class="col-lg-2 text-lg-left mb-4 mb-lg-0 mobile-none">
                   <p class="mb-3">Популярные бренды кофемашин:</p>
                   <ul class="footer__brands footer-ul">
                     <li>
@@ -1072,7 +1129,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>    
-        <script src="css/js/custom.js"></script>
+        <script src="js/custom.js"></script>
     </body>
 
 </html>

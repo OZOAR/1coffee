@@ -54,7 +54,7 @@ window.onclick = function (event) {
     }
 };
 window.onload = function () {
-    setTimeout(modalActive(1),1000); 
+    setTimeout(modalActive,15000, 1); 
 };
                         // DROPDOWN CM
 function showAllModels() {
