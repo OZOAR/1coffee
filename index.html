@@ -33,6 +33,8 @@
     <!-- <link rel="stylesheet" href="css/main.css" media="all"> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="libs/owlcarousel2/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/owlcarousel2/assets/owl.theme.default.min.css">
 
 </head>
 
@@ -486,7 +488,7 @@
               <div class="row align-items-center">
                 <div class="col-md-4 order-last order-md-first mt-5 mt-md-0">
                   <div class="order-now__img">
-                    <img src="img/coffeemachinejura.png" width="100%" alt="">
+                    <img class="lazy" data-src="img/coffeemachinejura.png" width="100%" alt="">
                   </div>
                 </div>
                 <div class="col-md-8">
@@ -513,42 +515,42 @@
         <h2 class="sec-title line-bottom">Выберите вашу <span class="colored">кофемашины</span></h2>
       </div>
       <div class="row types__row justify-content-center">
-        <div class="col-6 col-sm-4 col-lg my-4">
+        <div class="col-12 col-sm-12 col-lg my-4">
           <a href="/remont-rojkovih-kofemashin/" class="types__item">
             <div class="types__img">
-              <img src="img/rozhkovye_giCSDLC.png" width="100%" alt="">
+              <img class="lazy" data-src="img/rozhkovye_giCSDLC.png" width="100%" alt="">
             </div>
             <p class="types__title">Рожковые</p>
           </a>
         </div>
-        <div class="col-6 col-sm-4 col-lg my-4">
+        <div class="col-12 col-sm-12 col-lg my-4">
           <a href="/remont-avtomaticheskih-kofemashin/" class="types__item">
             <div class="types__img">
-              <img src="img/automat_fh9HpmK.png" width="100%" alt="">
+              <img class="lazy" data-src="img/automat_fh9HpmK.png" width="100%" alt="">
             </div>
             <p class="types__title">Автоматические</p>
           </a>
         </div>
-        <div class="col-6 col-sm-4 col-lg my-4">
+        <div class="col-12 col-sm-12 col-lg my-4">
           <a href="/remont-kapsulnih-kofemashin/" class="types__item">
             <div class="types__img">
-              <img src="img/kapsulnye_7hjabmT.png" width="100%" alt="">
+              <img class="lazy" data-src="img/kapsulnye_7hjabmT.png" width="100%" alt="">
             </div>
             <p class="types__title">Капсульные</p>
           </a>
         </div>
-        <div class="col-6 col-sm-4 col-lg my-4">
+        <div class="col-12 col-sm-12 col-lg my-4">
           <a href="/remont-professionalnih-kofemashin/" class="types__item">
             <div class="types__img">
-              <img src="img/proffesional_gR1OUBq.png" width="100%" alt="">
+              <img class="lazy" data-src="img/proffesional_gR1OUBq.png" width="100%" alt="">
             </div>
             <p class="types__title">Профессиональные</p>
           </a>
         </div>
-        <div class="col-6 col-sm-4 col-lg my-4">
+        <div class="col-12 col-sm-12 col-lg my-4">
           <a href="/remont-kapelnih-kofevarok/" class="types__item">
             <div class="types__img">
-              <img src="img/kofemolkaprof.png" style="margin-top: -58px;" width="65%" alt="">
+              <img class="lazy" data-src="img/kofemolkaprof.png" style="margin-top: -58px;" width="65%" alt="">
             </div>
             <p class="types__title">Кофемолки</p>
           </a>
@@ -561,7 +563,53 @@
           <section class="sec brands">
             <div class="container">
               <h2 class="sec-title line-bottom">Выберите <span class="colored">ваш бренд</span></h2>
-              <div class="row brands_div">
+              <div class="owl-carousel owl-theme">
+                <div class="item">                  
+                    <a href="img/brands/remont-delonghi/" class="brands__item">
+                    <img class="lazy" data-src="img/brands/delonghi.png" alt="delonghi">
+                  </a></div>
+                <div class="item">
+                    <a href="img/brands/remont-saeco/" class="brands__item">
+                      <img class="lazy" data-src="img/brands/saeco.png" alt="saeco">
+                    </a></div>
+                <div class="item">
+                    <a href="/remont-philips/" class="brands__item">
+                      <img class="lazy" data-src="img/brands/philips.png" alt="philips">
+                    </a></div>
+                <div class="item">
+                    <a href="img/brands/remont-bosch/" class="brands__item">
+                      <img class="lazy" data-src="img/brands/bosch.png" alt="Bosch">
+                    </a></div>
+                <div class="item">
+                    <a href="img/brands/remont-krups/" class="brands__item">
+                      <img class="lazy" data-src="img/brands/krups.png" alt="krups">
+                    </a></div>
+                <div class="item">
+                    <a href="img/brands/remont-jura/" class="brands__item">
+                      <img class="lazy" data-src="img/brands/jura.png" alt="Jura">
+                    </a></div>
+                <div class="item">
+                    <a href="img/brands/remont-siemens/" class="brands__item">
+                      <img class="lazy" data-src="img/brands/siemens.png" alt="Jura">
+                    </a></div>
+                <div class="item">
+                    <a href="img/brands/remont-miele/" class="brands__item">
+                      <img class="lazy" data-src="img/brands/miele.png" alt="Jura">
+                    </a></div>
+                <div class="item">
+                    <a href="img/brands/remont-gaggia/" class="brands__item">
+                      <img class="lazy" data-src="img/brands/gaggia.png" alt="Jura">
+                    </a></div>
+                <div class="item">
+                    <a href="img/brands/remont-wmf/" class="brands__item">
+                      <img class="lazy" data-src="img/brands/wmf.png" alt="Jura">
+                    </a></div>
+                <div class="item">
+                    <a href="img/brands/remont-aeg/" class="brands__item">
+                      <img class="lazy" data-src="img/brands/aeg.png" alt="Jura">
+                    </a></div>
+            </div>
+              <!-- <div class="row brands_div">
                 <div class="col-lg-1 col-6 ">
                   <a href="img/brands/remont-delonghi/" class="brands__item">
                     <img  src="img/brands/delonghi.png" alt="delonghi">
@@ -569,29 +617,29 @@
                 </div>
                 <div class="col-lg-1 col-6">
                   <a href="img/brands/remont-saeco/" class="brands__item">
-                    <img src="img/brands/saeco.png" alt="saeco">
+                    <img class="lazy" data-src="img/brands/saeco.png" alt="saeco">
                   </a>
                 </div>
                 <div class="col-lg-1 col-6">
                     <a href="/remont-philips/" class="brands__item">
-                      <img src="img/brands/philips.png" alt="philips">
+                      <img class="lazy" data-src="img/brands/philips.png" alt="philips">
                     </a>
                   </div>
                 <div class="col-lg-1 col-6">
                   <a href="img/brands/remont-bosch/" class="brands__item">
-                    <img src="img/brands/bosch.png" alt="Bosch">
+                    <img class="lazy" data-src="img/brands/bosch.png" alt="Bosch">
                   </a>
                 </div>
                 <div class="col-lg-1 col-6">
                   <a href="img/brands/remont-krups/" class="brands__item">
-                    <img src="img/brands/krups.png" alt="krups">
+                    <img class="lazy" data-src="img/brands/krups.png" alt="krups">
                   </a>
                 </div>
                 <div class="col-lg-1 col-6">
                   <a href="img/brands/remont-jura/" class="brands__item">
-                    <img src="img/brands/jura.png" alt="Jura">
+                    <img class="lazy" data-src="img/brands/jura.png" alt="Jura">
                   </a>
-              </div>
+              </div> -->
               <div class="col-lg-2 col-2 brends-more">
                 <a href="№" >
                   Больше -->
@@ -790,27 +838,31 @@
     <section id="How-it-work">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-6">
                     <p>шаг 0</p> 
                     <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste sapiente, cum perferendis eligendi minus qui consequatur pariatur odio, quas molestiae sequi aut est suscipit corporis. Autem veniam maxime a velit.</p>
                 
                 </div>
-                <div class="col-lg-2 col-4">
+                <div class="col-lg-3 col-6">
                     <p>шаг 1</p> 
                     <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste sapiente, cum perferendis eligendi minus qui consequatur pariatur odio, quas molestiae sequi aut est suscipit corporis. Autem veniam maxime a velit.</p>
                 </div>
-                <div class="col-lg-2 col-4">
+                <div class="col-lg-3 col-6">
                     <p>шаг 2</p> 
                     <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste sapiente, cum perferendis eligendi minus qui consequatur pariatur odio, quas molestiae sequi aut est suscipit corporis. Autem veniam maxime a velit.</p>
                 </div>
-                <div class="col-lg-2 col-4">
+                <div class="col-lg-3 col-6">
                     <p>шаг 3</p> 
                     <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste sapiente, cum perferendis eligendi minus qui consequatur pariatur odio, quas molestiae sequi aut est suscipit corporis. Autem veniam maxime a velit.</p>
                 </div>
-                <div class="col-lg-3 col-4">
+                <div class="col-lg-3 col-12">
                     <p>шаг 4</p> 
                     <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste sapiente, cum perferendis eligendi minus qui consequatur pariatur odio, quas molestiae sequi aut est suscipit corporis. Autem veniam maxime a velit.</p>
                 </div>
+                <div class="howitwork__background col-lg-9 col-sm-12">
+                    <h2 class="form-title">Оставить заявку на обслуживание <br> вашей <span class="colored">кофемашины</span> ?</h2>
+                    <button class="btn btn-custom" onclick="modalActive(3)">Заказать звонок</button>
+                </div> 
             </div>
         </div>
         
@@ -924,7 +976,6 @@
                             Адрес
                         </label>
                         <p>
-                            г. Минск, ул. Машерова 17/4<br>
                             г. Минск, ул. Раковская 36
 
                         </p>
@@ -978,16 +1029,16 @@
                   <p class="mb-3">Принимаем к оплате:</p>
                   <div class="row no-gutters" style="max-width: 210px; margin: auto;">
                     <div class="col-6 pr-1 pb-1">
-                      <img src="/img/visa.png" width="100%" alt="оплата visa" style="display: block;">
+                      <img class="lazy" data-src="/img/visa.png" width="100%" alt="оплата visa" style="display: block;">
                     </div>
                     <div class="col-6 pr-1 pb-1">
-                      <img src="/img/master-card.png" width="100%" alt="оплата mastecard" style="display: block;">
+                      <img class="lazy" data-src="/img/master-card.png" width="100%" alt="оплата mastecard" style="display: block;">
                     </div>
                     <div class="col-6 pr-1 pb-1">
-                      <img src="/img/sber.png" width="100%" alt="оплата Сбербанк" style="display: block;">
+                      <img class="lazy" data-src="/img/sber.png" width="100%" alt="оплата Сбербанк" style="display: block;">
                     </div>
                     <div class="col-6 pr-1 pb-1">
-                      <img src="/img/cash.png" width="100%" alt="оплата наличными" style="display: block;">
+                      <img class="lazy" data-src="/img/cash.png" width="100%" alt="оплата наличными" style="display: block;">
                     </div>
                   </div>
                 </div>
@@ -1126,9 +1177,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"
         async></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
-        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>    
+        <script src="libs/jquery/jquery-3.4.1.min.js"></script>
+        <script src="libs/owlcarousel2/owl.carousel.min.js"></script>
+        <script src="libs/jquery/jquery.lazy-master/jquery.lazy.min.js"></script> 
+        <script src="libs/jquery/jquery.lazy-master/jquery.lazy.plugins.min.js"></script>
         <script src="js/custom.js"></script>
     </body>
 

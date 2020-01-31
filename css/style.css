@@ -145,6 +145,12 @@ p {
     font-stretch: normal;
     line-height: normal;
 }
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
 .wrap{
     margin:0 auto;
     float:none;
@@ -534,9 +540,9 @@ header{
     transform: none;
 }
 .btn-custom {
-    font-size: 20px !important; 
-    font-family: Ubuntu !important;
-    background-color: #207a34 !important;
+    font-size: 20px; 
+    font-family: Ubuntu;
+    background-color: #207a34;
     padding: 10px 10px;
 }
 .site-header  .active {
@@ -1042,7 +1048,7 @@ ul {
     padding-top: 2px;
 }
 .takein-coffee button {
-    height: 60px;
+    height: 85px;
     font-size: 22px;
     /* font-weight: 700; */
     padding-right: 24px;
@@ -1765,7 +1771,29 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
 .sec-header{
     text-align:center
 }
-    
+.form-title{
+    font-size: 20px;
+}
+.howitwork__background {
+    background: url("../img/chashkacoffee.jpg") no-repeat;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; 
+    background-position-y: 30% ;
+    border-bottom: 1px solid #207a34;
+}
+.line-bottom:after {
+    content: "";
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
+    width: 2px;
+    height: 35px;
+    border-left: 2px dashed black;
+}
+   
 #dropdown-problem{
     display: none;
     background-color: rgba(0,0,0,0.2);
@@ -1923,9 +1951,10 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
     -ms-transform:scale(1);
     transform:scale(1)
 }
-.brands__item img{
-    height:83px
-}
+/* .brands__item img{
+    width:70px;
+    height: auto;
+} */
 
 .show{
     display: flex;
@@ -1956,6 +1985,8 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
 }
 .types__title{
     margin-top: 20px;
+    font-size: 24px;
+    font-family: Ubuntu;
 }
 .types__img{
     padding-bottom: 20px;

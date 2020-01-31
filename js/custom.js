@@ -36,7 +36,7 @@ window.onclick = function (event) {
     }
 };
 window.onload = function () {
-    setTimeout(modalActive,15000, 1); 
+    setTimeout(modalActive,40000, 1); 
 };
                         // DROPDOWN CM
 function showAllModels() {
@@ -91,18 +91,49 @@ function showBreakege(textDivId) {
 };
 
 //                                    DROPDOWN PROBLEM CLOSE
-// LAZY LOAD
 
-// $(function() {
-//     $('.lazy').Lazy({
-//         effect: "fadeIn"
-//     });
-// });
 
-$(document).ready(function () {
-    $("img.lazy").Lazy({
-        effect : "fadeIn"
-    });
+
+//                                          OWL CAROUSEL 2
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:0,
+    nav:true,
+    autoWidth:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+// $('.owl-carousel').owlCarousel({
+//     margin:10,
+//     loop:true,
+//     autoWidth:true,
+//     items:4
+// })
+
+
+
+//                                       OWL CAROUSEL CLOSE
+//                                               LAZY LOAD
+
+
+$('.lazy').Lazy({
+    // your configuration goes here
+    scrollDirection: 'vertical',
+    effect: 'fadeIn',
+    visibleOnly: true,
+    onError: function(element) {
+        console.log('error loading ' + element.data('src'));
+    }
 });
 
 //Contact Us
