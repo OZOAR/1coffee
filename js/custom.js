@@ -98,7 +98,7 @@ function showBreakege(textDivId) {
 
 $('.owl-carousel').owlCarousel({
     loop:true,
-    margin:0,
+    margin: 0,
     nav:true,
     autoWidth:true,
     responsive:{
