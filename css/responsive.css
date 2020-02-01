@@ -148,9 +148,7 @@
     .types__img{
     width: 80%;
 }
-.types__img > img{
-    /* margin-left: 16%; */
-}
+
 .types__title{
     margin-top: 20%;
 }
@@ -173,12 +171,7 @@
     .maintenance-btn button {
         font-size: 18px;
     }
-    .brends__more{
-        /* width: 100%; */
-        /* margin: 0 auto; */
-        /* padding: 10px; */
-        
-    }
+
     .btn-more{
         display: inline-block;
         width: 250px;
@@ -663,7 +656,8 @@ padding-top: 10px;
             height:100px
         } */
     }
-    @media (max-width: 575.98px)
+    @media (max-width: 575.98px){
     .line-bottom:after {
         height: 35px;
     }
+}
