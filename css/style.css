@@ -1771,11 +1771,27 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
 .sec-header{
     text-align:center
 }
+.btn-more{
+    display: inline-block;
+    width: 250px;
+    height: auto;
+    background-color: #207a34;
+    color: white !important;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10;
+    font-size: 25px;
+    font-family: Ubuntu;
+    margin: 0 auto;
+}
+.btn-more:hover{
+    background-color: #f5a907;
+}
 .form-title{
     font-size: 20px;
 }
 .howitwork__background {
-    background: url("../img/chashkacoffee.jpg") no-repeat;
+    background: url("../img/backgroundcoffee.jpg") no-repeat;
     -moz-background-size: 100%; /* Firefox 3.6+ */
     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: 100%; /* Opera 9.6+ */
@@ -1984,17 +2000,24 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
     text-align: center;
 }
 .types__title{
-    margin-top: 20px;
-    font-size: 24px;
+    margin-top: 0px;
+    font-size: 22px;
     font-family: Ubuntu;
 }
 .types__img{
     padding-bottom: 20px;
+    width: 150px;
+    height: 150px;
 }
-
+.types__img > img{
+    margin-left: 16%;
+}
 .types__item:hover{
     color:#207a34
 }
 .colored{
     color: #207a34;
+}
+.order-now [type=text] {
+    width: 58%;
 }

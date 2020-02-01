@@ -494,15 +494,15 @@
                 <div class="col-md-8">
                   <div class="order-now__wrap">
                     <h2 class="order-now__title">Не нашли свою <span class="colored">поломку</span> ?</h2>
-                   
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, deserunt!</li>
-                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, nisi.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, deserunt.</li>
-                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, quod.</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, nobis!</li>
-                    </ul>
-              <button class="input-order-now" onclick="modalActive(3)">Заказать ремонт</button>
+                    <form class="mobile-form">
+                        <input class="form-control form-control-lg" type="text" placeholder="Введите Ваш телефон">
+                    </form>
+                    <div class="takein-btn">
+                        <button data-toggle="modal" data-target="#modal_calling_master" type="getModal" class="btn btn-custom getModal">
+                            Заказать консультацию о поломке
+                        </button>
+                    </div>
+              <!-- <button class="input-order-now" onclick="modalActive(3)">Заказать ремонт</button> -->
                   </div>
                 </div>
               </div>
@@ -512,9 +512,17 @@
 <section class="types sec">
     <div class="container">
       <div class="sec-header mb-5">
-        <h2 class="sec-title line-bottom">Выберите вашу <span class="colored">кофемашины</span></h2>
+        <h2 class="sec-title line-bottom">Выберите вашу <span class="colored">кофемашину</span></h2>
       </div>
       <div class="row types__row justify-content-center">
+        <div class="col-12 col-sm-12 col-lg my-4">
+            <a href="/remont-professionalnih-kofemashin/" class="types__item">
+              <div class="types__img">
+                <img class="lazy" data-src="img/proffesional_gR1OUBq.png" width="100%" alt="">
+              </div>
+              <p class="types__title">Профессиональные</p>
+            </a>
+          </div>
         <div class="col-12 col-sm-12 col-lg my-4">
           <a href="/remont-rojkovih-kofemashin/" class="types__item">
             <div class="types__img">
@@ -540,19 +548,11 @@
           </a>
         </div>
         <div class="col-12 col-sm-12 col-lg my-4">
-          <a href="/remont-professionalnih-kofemashin/" class="types__item">
-            <div class="types__img">
-              <img class="lazy" data-src="img/proffesional_gR1OUBq.png" width="100%" alt="">
-            </div>
-            <p class="types__title">Профессиональные</p>
-          </a>
-        </div>
-        <div class="col-12 col-sm-12 col-lg my-4">
           <a href="/remont-kapelnih-kofevarok/" class="types__item">
             <div class="types__img">
-              <img class="lazy" data-src="img/kofemolkaprof.png" style="margin-top: -58px;" width="65%" alt="">
+              <img class="lazy" data-src="img/kofemolkaprof.png" style="margin-top: -40px;" width="65%" alt="">
             </div>
-            <p class="types__title">Кофемолки</p>
+            <p class="types__title types__title__kofemolki">Кофемолки</p>
           </a>
         </div>
       </div>
@@ -562,7 +562,10 @@
   <hr>
           <section class="sec brands">
             <div class="container">
-              <h2 class="sec-title line-bottom">Выберите <span class="colored">ваш бренд</span></h2>
+              <h2 class="sec-title">Выберите <span class="colored">ваш бренд</span></h2>
+              <div class="col-lg-2 col-12 brends__more">
+                    <a class="btn-more" href="#"> Все бренды</a>
+             </div>
               <div class="owl-carousel owl-theme">
                 <div class="item" style="margin-left: -20px;">                  
                     <a href="img/brands/remont-delonghi/" class="brands__item">
@@ -640,11 +643,6 @@
                     <img class="lazy" data-src="img/brands/jura.png" alt="Jura">
                   </a>
               </div> -->
-              <div class="col-lg-2 col-2 brends-more">
-                <a href="№" >
-                  Больше -->
-                </a>
-            </div>
             </div>
           </section>
 
@@ -836,7 +834,7 @@
     </section>
 <br>
     <section id="How-it-work">
-        <div class="container">
+        <div class="container howitwork__background">
             <div class="row">
                 <div class="col-lg-3 col-6">
                     <p>шаг 0</p> 
@@ -859,7 +857,7 @@
                     <p>шаг 4</p> 
                     <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste sapiente, cum perferendis eligendi minus qui consequatur pariatur odio, quas molestiae sequi aut est suscipit corporis. Autem veniam maxime a velit.</p>
                 </div>
-                <div class="howitwork__background col-lg-9 col-sm-12">
+                <div class=" col-lg-9 col-sm-12">
                     <h2 class="form-title">Оставить заявку на обслуживание <br> вашей <span class="colored">кофемашины</span> ?</h2>
                     <button class="btn btn-custom" onclick="modalActive(3)">Заказать звонок</button>
                 </div> 
@@ -868,7 +866,7 @@
         
     
     </section>
-    <hr>
+    
     <section id="content">
         <div class="wrap">
             <div class="container">

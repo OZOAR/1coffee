@@ -136,6 +136,11 @@ $('.lazy').Lazy({
     }
 });
 
+
+// BTN
+// function transitionMoreBrands() {
+//     location.href = 'http://www.yandex.ru/';
+// }
 //Contact Us
 
 $("#submit_btn").click(function() {

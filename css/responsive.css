@@ -38,6 +38,7 @@
     }
     .sec-title {
         font-size: 1.5rem;
+        text-align: center;
     }
     .input-order-now{
         margin-left: 30%;
@@ -135,22 +136,64 @@
     #contacts {
         text-align: center;
     }
+    .order-now [type=text] {
+        width: 100%;
+    }
     .map{
         width: 10%;
     }
     .takein-iqos input {
         width: 300px;
     }
+    .types__img{
+    width: 80%;
+}
+.types__img > img{
+    /* margin-left: 16%; */
+}
+.types__title{
+    margin-top: 20%;
+}
+.types__title__kofemolki{
+    margin-top: 30%;
+
+}
+
     .gift-iqos input{
         width: 300px
     }
     .owl-carousel .owl-item img {
         width: 70% !important;
         /* margin-right: 10px !important; */
-
+    }
+    .style-form-breakage{
+        height: 120px;
+        vertical-align: text-top;
     }
     .maintenance-btn button {
         font-size: 18px;
+    }
+    .brends__more{
+        /* width: 100%; */
+        /* margin: 0 auto; */
+        /* padding: 10px; */
+        
+    }
+    .btn-more{
+        display: inline-block;
+        width: 250px;
+        height: auto;
+        background-color: #207a34;
+        color: white !important;
+        border-radius: 5px;
+        text-align: center;
+        padding: 10;
+        font-size: 25px;
+        font-family: Ubuntu;
+        margin-left: 136%;
+    }
+    .btn-more:hover{
+        background-color: #f5a907;
     }
     .navbar {
      background-color: #0f0f0f !important;
