@@ -41,39 +41,39 @@
 <body>
     <header class="mobile-none">
 
-        <div class="col-lg-2 mobile-none">
+        <div class="header-img">
             <a href="index.html">
-                <img class="lazy" data-src="img/logo-title.png" width="100%" style="margin-top: 15%" alt="КофеПрофСервис">
+                <img class="lazy" data-src="img/Icons/Ресурс 3.png" width="100%" alt="КофеПрофСервис">
             </a>   
         </div>
-        <div class="nav-text col-lg-3">
+        <div class="nav-text text-center">
             <p class="nav-text__info">
-                <img class="lazy" data-src="img/Icons/maps-and-flags.svg" width="7%" alt=""> <a href="#contacts">г. Минск, ул. Раковская 36</a> 
+                <img class="lazy" data-src="img/Icons/Path_14.png" width="7%" alt=""> <a href="#contacts"> г. Минск, ул. Раковская 36</a> 
             </p>
             <p class="nav-text__info">
-                <img class="lazy" data-src="img/Icons/schedule.svg" width="7%" alt=""> Ежедневно с 9:00 до 21:00
+                <img class="lazy" data-src="img/Icons/2-layers.png" width="7%" alt=""> Ежедневно с 8:00 до 22:00
             </p>
         </div>
-        <div class="rigth-nav-bar col-lg-7 ">
-            <div class="container">
+        <div class="rigth-nav-bar">
+
                 <div class="row">
-            <div class="nav-info-mail col-lg-12">
-                <div class="nav-info-mail__text col-lg-4" align="center">
-                    <img class="lazy" data-src="img/Icons/phone.svg" width="9%" alt="">
-                    <a href="tel:+375(33)35-47-105">+375 (33) 35-47-105</a>
+            <div class="nav-info-mail">
+                <div class="nav-info-mail__text">
+                    <img class="lazy" data-src="img/Icons/24call.png" width="9%" alt="">
+                    <a href="tel:+375(33)35-47-105">+375(29)107-55-52</a>
                 </div>
-                <div class="col-lg-2 messanger"> 
-                <a href="tg://resolve?domain=ozoar"><img class="lazy icons" data-src="img/Icons/telegram.svg" alt=""></a>
-                <a href="viber://add?number=375333547105"><img class="lazy icons" data-src="img/Icons/viber.svg" alt=""></a>
-                <a href="whatsapp://send?phone=+375333547105"><img class="lazy icons" data-src="img/Icons/whatsapp.svg" alt=""></a>
+                <div class="button-call">
+                    <button class="btn-nav" onclick="modalActive(1)">Заказать звонок</button>
                 </div>
+                <div class="messanger"> 
+                <a href="viber://add?number=375333547105"><img class="lazy icons" data-src="img/Icons/viber.png" alt=""></a>
+                <a href="tg://resolve?domain=ozoar"><img class="lazy icons" data-src="img/Icons/telegram.png" alt=""></a>
+                <a href="https://www.instagram.com/1coffeeservice/"><img class="lazy icons-size" data-src="img/Icons/Group_24.png" alt=""></a>
+
+            </div>
                
-        <div class="col-lg-3">
-            <button class="btn-nav" onclick="modalActive(1)">Заказать звонок</button>
-        </div>
-        <div class="nav-info-mail__text col-lg-3"><img class="lazy" data-src="img/Icons/mail.svg" width="11%" alt=""> 
-            <a href="mailto:info@1coffee.by">info@1coffee.by</a>
-        </div></div>
+        
+    
             </div></div>
             <div class="nav-bar-style">
                 <div class="nav-bar-info">
@@ -120,9 +120,6 @@
                         </div>
                     </div> 
             </div>
-            <div class="nav-bar-info">
-                <a href="">Кофе</a> 
-            </div>
             <div class="nav-bar-info dropdown-block">
                 <a href="">Каталог</a>
                     <div class="dropdown-catalog">
@@ -163,6 +160,9 @@
                             </div>
                         </div> 
                         <!-- DROP DOWN CLOSE  -->
+            </div>
+            <div class="nav-bar-info">
+                <a href="">Кофе</a> 
             </div>
             <div class="nav-bar-info">
                 <a href="">Доставка и оплата</a> 
@@ -488,7 +488,7 @@
               <div class="row align-items-center">
                 <div class="col-md-4 order-last order-md-first mt-5 mt-md-0">
                   <div class="order-now__img">
-                    <img class="lazy" data-src="img/coffeemachinejura.png" width="100%" alt="">
+                    <img class="lazy" data-src="img/coffeemachinejura.png" width="90%" alt="">
                   </div>
                 </div>
                 <div class="col-md-8">
@@ -560,7 +560,195 @@
   </section>
 
   <hr>
-          <section class="sec brands">
+
+        <section class="sec brands">
+            <div class="container">
+              <h2 class="sec-title text-center">Выберите <span class="colored">ваш бренд</span></h2>
+              <div class="row justify-content-center">
+                <div class="col-auto">
+                  <a href="img/brands/" class="brands__item">
+                    <img width="90%" src="img/brands/delonghi.png" alt="delonghi">
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <a href="/remont-saeco/" class="brands__item">
+                    <img width="90%" src="img/brands/saeco.png" alt="saeco">
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <a href="/remont-bosch/" class="brands__item">
+                    <img width="90%" src="img/brands/bosch.png" alt="Bosch">
+                  </a>
+                </div>
+                  <div class="col-auto">
+                    <a href="/remont-jura/" class="brands__item">
+                      <img width="90%" src="img/brands/jura.png" alt="Jura">
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <a href="/remont-melitta/" class="brands__item">
+                      <img width="90%" src="img/brands/melitta.png" alt="Melitta">
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <a href="/remont-aeg/" class="brands__item">
+                      <img width="90%" src="img/brands/aeg.png" alt="aeg">
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <a href="/remont-philips/" class="brands__item">
+                      <img width="90%" src="img/brands/philips.png" alt="philips">
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <a href="/remont-miele/" class="brands__item">
+                      <img width="90%" src="img/brands/miele.png" alt="Miele">
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <a href="/remont-krups/" class="brands__item">
+                      <img width="90%" src="img/brands/krups.png" alt="krups">
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                  <a href="/remont-nivona/" class="brands__item">
+                    <img width="90%" src="img/brands/nivona.png" alt="Nivona">
+                  </a>
+                </div>
+                <div class="col-auto">
+                    <a href="/remont-vitek/" class="brands__item">
+                      <img width="90%" src="img/brands/vitek.png" alt="vitek">
+                    </a>
+                  </div>
+                <div class="col-auto">
+                  <a href="/remont-gaggia/" class="brands__item">
+                    <img width="90%" src="img/brands/gaggia.png" alt="gaggia">
+                  </a>
+                </div>
+                <div class="col-auto">
+                    <a href="/remont-siemens/" class="brands__item">
+                      <img width="90%" src="img/brands/siemens.png" alt="siemens">
+                    </a>
+                  </div>
+                <div class="col-auto">
+                    <a href="/remont-nespresso/" class="brands__item">
+                      <img width="90%" src="img/brands/nespresso.png" alt="nespresso">
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <a href="/remont-bork/" class="brands__item">
+                      <img width="90%" src="img/brands/bork.png" alt="bork">
+                    </a>
+                  </div>   
+                  <div class="col-auto">
+                    <a href="/remont-nuova-simonelli/" class="brands__item">
+                      <img width="100%" src="img/brands/nuova.png" alt="nuova">
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <a href="/remont-nuova-simonelli/" class="brands__item">
+                      <img width="90%" src="img/brands/FRANKE.png" alt="franke">
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <a href="/remont-wmf/" class="brands__item">
+                      <img width="80%" src="img/brands/wmf.png" alt="wmf">
+                    </a>
+                  </div>
+                <div class="col-auto">
+                    <a href="/remont-la-cimbali/" class="brands__item">
+                      <img width="100%" src="img/brands/lacimbali.png" alt="lacimbali">
+                    </a>
+                  </div>
+                <div class="col-auto">
+                    <a href="/remont-faema/" class="brands__item">
+                      <img width="100%" src="img/brands/faema.png" alt="faema">
+                    </a>
+                  </div>
+  
+<!-- 
+
+                <div class="col-auto">
+                  <a href="/remont-rancilio/" class="brands__item">
+                    <img width="90%" src="img/brands/rancilio.png" alt="rancilio">
+                  </a>
+                </div>
+          
+
+                <div class="col-auto">
+                  <a href="/remont-kuppersbusch/" class="brands__item">
+                    <img width="90%" src="img/brands/kuppersbusch.png" alt="kuppersbusch">
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <a href="/remont-tassimo/" class="brands__item">
+                    <img width="90%" src="img/brands/tassimo.png" alt="tassimo">
+                  </a>
+                </div>
+
+                <div class="col-auto">
+                  <a href="/remont-dolce-gusto/" class="brands__item">
+                    <img width="90%" src="img/brands/dolce-gusto.png" alt="dolce-gusto">
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <a href="/remont-spidem/" class="brands__item">
+                    <img width="90%" src="img/brands/spidem.png" alt="spidem">
+                  </a>
+                </div>
+
+
+                <div class="col-auto">
+                  <a href="/remont-squesito/" class="brands__item">
+                    <img width="90%" src="img/brands/squesito.png" alt="squesito">
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <a href="/remont-berloni/" class="brands__item">
+                    <img width="90%" src="img/brands/berloni-2.png" alt="berloni">
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <a href="/remont-kaffit/" class="brands__item">
+                    <img width="90%" src="img/brands/kaffit.png" alt="kaffit">
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <a href="/remont-rotel/" class="brands__item">
+                    <img width="90%" src="img/brands/rotel.png" alt="rotel">
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <a href="/remont-neff/" class="brands__item">
+                    <img width="90%" src="img/brands/neff.png" alt="neff">
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <a href="/remont-beko/" class="brands__item">
+                    <img width="90%" src="img/brands/beko.png" alt="beko">
+                  </a>
+                </div>
+
+                <div class="col-auto">
+                  <a href="/remont-merol/" class="brands__item">
+                    <img width="90%" src="img/brands/merol.png" alt="merol">
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <a href="/remont-polaris/" class="brands__item">
+                    <img width="90%" src="img/brands/polaris.png" alt="polaris">
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <a href="/remont-zelmer/" class="brands__item">
+                    <img width="90%" src="img/brands/zelmer.png" alt="zelmer">
+                  </a>
+                </div> -->
+              </div>
+            </div>
+          </section>
+
+          <section class="sec brands-mobile">
             <div class="container">
               <h2 class="sec-title">Выберите <span class="colored">ваш бренд</span></h2>
               <div class="col-lg-2 col-12 brends__more">

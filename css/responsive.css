@@ -161,7 +161,8 @@
         width: 300px
     }
     .owl-carousel .owl-item img {
-        width: 70% !important;
+
+        width: 120% !important;
         /* margin-right: 10px !important; */
     }
     .style-form-breakage{
@@ -171,7 +172,12 @@
     .maintenance-btn button {
         font-size: 18px;
     }
-
+    .brands-mobile{
+        display: block;
+    }
+    .brands{
+        display: none;
+    }
     .btn-more{
         display: inline-block;
         width: 250px;
@@ -184,6 +190,7 @@
         font-size: 25px;
         font-family: Ubuntu;
         margin-left: 136%;
+        margin-bottom: 40px;
     }
     .btn-more:hover{
         background-color: #f5a907;

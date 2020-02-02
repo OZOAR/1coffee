@@ -49,12 +49,13 @@
 }
 @font-face {
     font-family: 'Ubuntu Med1um';
-    src: 
-      url('fonts/Robotomedium.woff2') format('woff2'), 
-      url('fonts/Robotomedium.woff') format('woff'), 
-      url('fonts/Robotomedium.ttf') format('truetype');
-    font-weight: 500;
+    src: url('../css/fonts/Ubuntu-Medium.eot');
+    src: url('../css/fonts/Ubuntu-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../css/fonts/Ubuntu-Medium.woff') format('woff'),
+    url('../css/fonts/Ubuntu-Medium.ttf') format('truetype');
+    font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Ubuntu';
@@ -168,22 +169,27 @@ a:hover{
 }
 header{
     width: 100%;
-    height: 14%;
-    background: rgb(252, 252, 252);
+    height: 16%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    padding-left: 3%;
-    padding-right: 4%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 5;
-    border-bottom: 1px solid #207a34;
+    border: 1px solid #707070;
+    background-color: #333237;
+    padding: 0 40 0 40;
 }
+.header-img{
+    margin-top: 20px;
+    width: 30%;
+    height: 100%;
+
+}
+
 .header-logo {
-    width: 270px;
     color: #207a34;
     font: 32px Ubuntu Med1um;
     text-transform: uppercase;
@@ -194,11 +200,14 @@ header{
     margin-top: 15%;
 }
 .nav-text{
-    padding-top: 17px;
+    margin-top: 30px;
+    width: 17%;
+    height: 100%;
 }
 .nav-text__info{
+    color: #ffffff;
+    font-family: "Ubuntu";
     font-size: 15px;
-    color: #207a34;
     font-weight: 500;
     margin-bottom: 3px !important;
     padding-bottom: 12px;
@@ -207,12 +216,13 @@ header{
 .rigth-nav-bar{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 45%;
+    height: 100%;
 }
 .nav-info-mail{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 60%;    
     width: 100%;
     padding-top: 20px;
@@ -220,22 +230,28 @@ header{
 }
 .nav-info-mail__text{
     font-weight: 600;
-    color: #207a34;
+    color: #f89c11;
     font-size: 15px;
     display: inline-block;
+    width: 38%;
+    height: 50%;
+    text-align: start;
+    margin-left: 10px;
 }
 .nav-info-mail__text > a{
-    color: #207a34;
-    font-size: 14px;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: normal;
+    font-family: Ubuntu Med1um;
 }
 .nav-info-mail__text > a:hover{
     color: #f89c11;
 }
 .nav-text__info > a {
-    color: #207a34;
+    color: #ffffff
 }
 .nav-text__info > a:hover{
-    color: #f89c11;
+    color: #fff;
 }
 .btn-nav{
     font-size: 15px;
@@ -244,10 +260,9 @@ header{
     border-radius: 5px;
     border: 0;
     text-align: center;
-    width: 140px;
-    height: 30px;
-    margin-top: -3;
-    margin-left: -10px;
+    width: 165px;
+    height: 27px;
+    margin-left: -30px;
 }
 .btn-nav:hover{
     background-color: #f89c11;
@@ -261,27 +276,37 @@ header{
 .nav-bar-style{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin-top: -20px;
+    justify-content: space-between;
+    margin-top: -10px;
 }
 .nav-bar-info > A {
-    color:#207a34; /* Цвет ссылок */
+    color:#ffffff; /* Цвет ссылок */
    }
 .nav-bar-info > A:active {
-    color: #f89c11; /* Цвет активных ссылок */
+    color: #ffffff; /* Цвет активных ссылок */
    }
 .nav-bar-info > a:hover{
-    color: #f89c11; /* Цвет активных ссылок */
+    color: #ffffff; /* Цвет активных ссылок */
 }
 .messanger{
     padding: 0 !important;
     margin-top: -2px;
+    width: 30%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
 }
 .messanger > a > .icons{
-    width: 20%;
+    width: 73%;
+}
+.messanger > a > .icons-size{
+    width: 103%;
 }
 .mobile-subheader{
     display: none;
+}
+.button-call{
+    width: 27.5%;
 }
                                         /* HEADER CLOSE  */
 
@@ -309,6 +334,10 @@ header{
     z-index: 5;
     opacity: 1;
     display: block; 
+}
+.dropdown-block > a:after{
+    content: url(data:img/Icons/chevrone.svg);
+    width: 100%;
 }
 .dropdown-block:hover >.dropdown-catalog{
     z-index: 5;
@@ -1931,8 +1960,11 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
     background-position:50%;
 }
 
-
+/* .sec-title{font-size:4rem;margin-bottom:3rem}.sec-title .colored{white-space:nowrap}.sec-title .small{font-size:3rem}@media (max-width:1199.98px){.sec-title .small{font-size:2.3rem}}.sec-title.line-bottom{margin-bottom:1.5rem}@media (max-width:1199.98px){.sec-title{font-size:3rem}}.sec-header{text-align:center}@media (max-width:767.98px){.sec-header br{display:none}} */
 /* BRANDS */
+.brands-mobile{
+    display: none;
+}
 .brands__item{
     display:-webkit-box;
     display:-ms-flexbox;
@@ -1960,7 +1992,8 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
     transition-timing-function:ease;
     -webkit-transition-delay:0s;
     -o-transition-delay:0s;
-    transition-delay:0s
+    transition-delay:0s;
+    width: 170px;
 }
 .brands__item:hover{
     -webkit-transform:scale(1);
