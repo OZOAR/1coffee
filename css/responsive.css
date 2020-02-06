@@ -43,6 +43,7 @@
     cursor: pointer;
     margin-top: 29px;
     margin-right: 10px;
+    transform: rotate(90deg);
   }
   
   .bar {
@@ -68,15 +69,16 @@
     -webkit-border-radius: 100%;
     border-radius: 100%;
   }
-  .model-4 .menu:hover .bar {
-    top: 2px;
+  .showburger__arrow{
+    top: 2px !important;
   }
-  .model-4 .menu:hover .bar:nth-of-type(2) {
+  .showburger{
     -moz-transform: rotate(225deg);
     -ms-transform: rotate(225deg);
     -webkit-transform: rotate(225deg);
-    transform: rotate(225deg);
+    transform: rotate(225deg) !important;
     transform-origin: 73% 102% 0;
+    top: 2px !important;
   }
   .model-4 .bar {
     height: 15px;
@@ -93,7 +95,7 @@
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     margin: auto;
-    top: 7px;
+    top: 8px;
     right: 0;
     left: 0;
   }
@@ -248,6 +250,7 @@
         width: 90% ;
         left: 5%;
         top: 3% ;
+        border-radius: 10px;
     }
     #modal-title1 {
         font: 28px Ubuntu;
@@ -272,6 +275,7 @@
     }
    .notification{
         padding-top: 0;
+        padding-bottom: 20px;
     }
     .maintenance-btn{
         text-align: center;

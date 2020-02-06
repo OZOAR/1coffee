@@ -96,14 +96,20 @@ function slidebar() {
     let slidebar = document.getElementById('slide-bar');
     let list = document.getElementById('list');
     let mobile = document.getElementById('mobile');
+    let cross = document.getElementById('cross');
+    let arrow = document.getElementById('arrow');
         if (slidebar.classList.contains('click') == 0) {
             slidebar.classList.add('click');
+            cross.classList.add('showburger');
+            arrow.classList.add('showburger__arrow');
             slidebar.style.zIndex = 10;
             slidebar.style.width = '100%';
             mobile.style.zIndex = 10; 
             setTimeout(function(){list.style.display= 'block';},500); 
         }else if (slidebar.classList.contains('click')) {
             slidebar.classList.remove('click');
+            cross.classList.remove('showburger');
+            arrow.classList.remove('showburger__arrow');
             slidebar.style.zIndex = -5;
             slidebar.style.width = 0;
             list.style.display= 'none';  
