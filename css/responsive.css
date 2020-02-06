@@ -15,9 +15,10 @@
 .header-img{
     width:300px;
     height: 45px;
-    margin-left: 0;
+    margin-left: 10px;
     margin-top: 8%;
 }
+                                /* BURGER */
 .burger{
     width: 10%;
     height: 10%;
@@ -40,6 +41,7 @@
     transition: 0.3s;
     cursor: pointer;
     margin-top: 29px;
+    margin-right: 10px;
   }
   
   .bar {
@@ -97,10 +99,11 @@
   .model-4 .bar:nth-of-type(3) {
     display: none;
   }
+                            /* BURGER CLOSE */
 .slidebar{
     display: block;
     position: fixed;
-    right: 0; top: 13.2%;
+    right: 0; top: 13%;
     width: 0%;
     height: 100%;
     background-color: #0f0f0f;
@@ -147,8 +150,9 @@
 }
 .slidebar_li{
     color: white !important;
+    height: 20px;
 }
-.chevrone-remont::after{
+/* .chevrone-remont::after{
     content: '';
     background-image: url(../img/Icons/chevrone.svg);
     width: 25px;
@@ -171,9 +175,24 @@
     margin-top: 2%;
     left: 50%; 
     transform: rotate(90deg);
+} */
+.chevrone{
+    transform: rotate(90deg);
 }
 .slidebar-item__border{
-    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+.slidebar-bottom{
+    position: fixed;
+    left: 10%; bottom: 7%;
+    width: 80%;
+}
+.slidebar-messanger{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: 15%;
+    padding: 20 0;
 }
     .nav-text{
         padding-top: 0;
@@ -219,7 +238,8 @@
         width: 100%;
     }
     .nav-text__info{
-        font-size: 12px;
+        font-size: 20px;
+        margin-left: 15px;
     }
     .nav-text{
         width: 20%;

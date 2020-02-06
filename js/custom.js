@@ -128,9 +128,11 @@ function dropdown(dropdownArg) {
     };
     if (dropdownArg.classList.contains('click') == 0) {
         dropdownArg.classList.add('click');
+        dropdownArg.classList.add('slidebar-item__border');
         dropdownArg.style.display = 'flex';     
     }else if (dropdownArg.classList.contains('click')) {
         dropdownArg.classList.remove('click');
+        dropdownArg.classList.remove('slidebar-item__border');
         dropdownArg.style.display = 'none';
     }; 
 };
