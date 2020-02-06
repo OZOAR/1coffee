@@ -1,5 +1,5 @@
 @media (max-width:450px){
-
+    
     header{
         padding: 0;
         width: 100%;
@@ -247,10 +247,12 @@
     .modal-content {
         width: 90% ;
         left: 5%;
-        top: 7% ;
+        top: 3% ;
     }
     #modal-title1 {
         font: 28px Ubuntu;
+        padding-top: 0;
+        margin-top: -10px;
     }
     .modal p {
         font-size: 20px;
@@ -267,6 +269,9 @@
     }
     .modal-phone-number > a {
         font-weight: 700;
+    }
+   .notification{
+        padding-top: 0;
     }
     .maintenance-btn{
         text-align: center;
