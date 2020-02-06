@@ -118,21 +118,27 @@ function slidebar() {
 function dropdown(dropdownArg) {
     let catalog = document.getElementById('catalog');
     let remont = document.getElementById('remont');
+    let dropdownArgPolar;
     switch (dropdownArg){
         case 1 :
             dropdownArg = remont;
+            dropdownArgPolar = catalog;
             break;
         case 2 :
             dropdownArg = catalog;
+            dropdownArgPolar = remont;
+
             break;
     };
-    if (dropdownArg.classList.contains('click') == 0) {
-        dropdownArg.classList.add('click');
-        dropdownArg.classList.add('slidebar-item__border');
-        dropdownArg.style.display = 'flex';     
-    }else if (dropdownArg.classList.contains('click')) {
-        dropdownArg.classList.remove('click');
-        dropdownArg.classList.remove('slidebar-item__border');
+    if (dropdownArg.classList.contains('click-list') == 0) {
+        dropdownArg.classList.add('click-list');
+        dropdownArg.style.display = 'flex';   
+        if (dropdownArgPolar.classList.contains('click-list')) {
+            dropdownArgPolar.classList.remove('click-list');
+            dropdownArgPolar.style.display = 'none';
+        };
+    } else if (dropdownArg.classList.contains('click-list')) {
+        dropdownArg.classList.remove('click-list');
         dropdownArg.style.display = 'none';
     }; 
 };

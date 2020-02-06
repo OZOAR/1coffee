@@ -179,13 +179,13 @@
 .chevrone{
     transform: rotate(90deg);
 }
-.slidebar-item__border{
+.click-list{
     border-top: 1px solid white;
 }
 .slidebar-bottom{
-    position: fixed;
-    left: 10%; bottom: 7%;
     width: 80%;
+    position: fixed;
+    left: 10%; bottom: 5%;
 }
 .slidebar-messanger{
     display: flex;
@@ -193,6 +193,9 @@
     width: 70%;
     margin-left: 15%;
     padding: 20 0;
+}
+.order-now__img > img {
+    margin-left: 5%;
 }
     .nav-text{
         padding-top: 0;
@@ -533,7 +536,7 @@
     }
 
     #gift {
-        background: url("../img/gift-block-bg.jpg") no-repeat;
+        background: url("../img/gift-block-bg.jpg") fixed;
         background-position-x: 72%;
         text-align: center;
     }
