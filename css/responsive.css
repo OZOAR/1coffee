@@ -152,34 +152,29 @@
     font-size: 18px;
     font-weight: 400;
 }
+.slidebar-item:hover {
+    color: #f5a907;
+}
+.slidebar-item:visited{
+    color: white;
+}
+.slidebar-item:active{
+    color: #f5a907;
+}
 .slidebar_li{
     color: white !important;
     height: 18px;
 }
-/* .chevrone-remont::after{
-    content: '';
-    background-image: url(../img/Icons/chevrone.svg);
-    width: 25px;
-    height: 25px;
-    background-size: cover;
-    z-index: 11;
-    position: absolute;
-    margin-top: 2%;
-    left: 85%; 
-    transform: rotate(90deg);
+.slidebar_li:hover {
+    color: #f5a907;
 }
-.chevrone-catalog::after{
-    content: '';
-    background-image: url(../img/Icons/chevrone.svg);
-    width: 25px;
-    height: 25px;
-    background-size: cover;
-    z-index: 11;
-    position: absolute;
-    margin-top: 2%;
-    left: 50%; 
-    transform: rotate(90deg);
-} */
+.slidebar_li:visited{
+    color: white;
+}
+.slidebar_li:active{
+    color: #f5a907;
+}
+
 .chevrone{
     transform: rotate(90deg);
 }
@@ -189,7 +184,7 @@
 .slidebar-bottom{
     width: 80%;
     position: fixed;
-    left: 10%; bottom: 5%;
+    left: 10%; bottom: 2%;
 }
 .slidebar-messanger{
     display: flex;
@@ -245,7 +240,7 @@
         width: 100%;
     }
     .nav-text__info{
-        font-size: 20px;
+        font-size: 18px;
         margin-left: 15px;
     }
     .nav-text{
