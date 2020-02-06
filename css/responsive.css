@@ -6,21 +6,85 @@
         -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
         -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
         box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+        height: 13%;
     }
-    .mobile{
+    #mobile{
         display: flex;
         background-color: #0f0f0f;
     }
+.header-img{
+    width:300px;
+    height: 45px;
+    margin-left: 0;
+    margin-top: 8%;
+}
+.burger{
+    width: 10%;
+    height: 10%;
+    margin-top: 8%;
+    margin-right: 0;
+}
 
+.slidebar{
+    display: block;
+    position: fixed;
+    right: 0; top: 13.2%;
+    width: 0%;
+    height: 100%;
+    background-color: #0f0f0f;
+    z-index: -5; 
+    transition: 0.5s ease-in-out;
+}
+#list{
+    display: none;
+    margin-left: 12%;
+    color: #ffffff;
+    font-family: "Segoe UI";
+    font-size: 24px;
+    font-weight: 400;
+}
+.nav-link {
+    color: white !important;
+}
+.dropdown-menu-remont, .dropdown-menu-catalog {
+    width: 218px;
+    display: flex;
+    flex-direction: column;
+    background-color: #0f0f0f;
+    color: white;
+    margin-left: 0px;
+    padding-top: 0;
+    border-bottom: 1px solid white;
+    text-align: right;
+
+
+}
+#remont{
+    display: none;
+}
+#catalog{
+    display: none;
+}
+.slidebar-item {
+    color: white;
+    text-align: right;
+    padding-right: 0;
+    font-family: "Segoe UI";
+    font-size: 24px;
+    font-weight: 400;
+}
+.slidebar_li{
+    color: white !important;
+}
+.chevrone::after{
+    /* content: url('../img/Icons/chevrone.svg'); */
+}
     .nav-text{
         padding-top: 0;
     }
     .mobile-none{
         display: none;
     }
-    /* .brands__item img {
-        height: 160px;
-    } */
     .messanger{
         width: 50; 
         max-width: 50;
@@ -100,7 +164,8 @@
     #about {
         /* background: url("../img/3-bg.jpg") no-repeat; */
         /* background-size: 150%; */
-        background-position-x: 90%; 
+        background-position-x: 90%;
+        top: 13%;
         }
     #about .about-project-btn {
         text-align: center;        
@@ -195,21 +260,7 @@
     .btn-more:hover{
         background-color: #f5a907;
     }
-    .navbar {
-     background-color: #0f0f0f !important;
-     color: black;
-     border: 0;
-    }
-    .navbar-collapse{
-        background-color: #0f0f0f !important;
-        padding: 5px;
-    }
-    .nav-link{
-        color: black;
-    }
-    .navbar-dark .navbar-toggler .about-overlay{
-        background-color: #0f0f0f;
-    }
+
     .about-overlay{
         background-color: rgba(255, 255, 255, 0.4);
     }
@@ -308,21 +359,14 @@
     .navbar-toggler {
         display: block;
     }
-    .navbar-nav .show{
-        display: block;
-        background-color:#0f0f0f;
-        border: 0;
-    }
-    .dropdown-item {
-        color: white;
-    }
+
     .mobile-subheader{
         display: flex;
         flex-direction: column;
         position: relative;
-        top: 14%;
+        top: 13%;
         left: 0;
-        z-index: 4;
+        z-index: 1;
         background-color: #0f0f0f;
         padding: 10px 10px 20px 10px;
         height: 200px;
@@ -349,7 +393,7 @@
         display: flex;
     }
     .mobile-subheader__btn{
-        margin: 0 auto;
+        margin-left: 26%;
         width: auto;
     }
     .btn-nav{

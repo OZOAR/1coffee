@@ -23,7 +23,6 @@ function modalActive(ModalTitle) {
     modal.style.zIndex = 5;
     modal.style.opacity = 1;
     title.innerHTML= modalText;
-    // title.style.fontFamily = 'Ubuntu';
 };
 span.onclick = function () {
     modal.style.zIndex = -10;
@@ -92,13 +91,57 @@ function showBreakege(textDivId) {
 
 //                                    DROPDOWN PROBLEM CLOSE
 
+                                            // SLIDE BAR
+function slidebar() {
+    let slidebar = document.getElementById('slide-bar');
+    let list = document.getElementById('list');
+    let mobile = document.getElementById('mobile');
+        if (slidebar.classList.contains('click') == 0) {
+            slidebar.classList.add('click');
+            slidebar.style.zIndex = 10;
+            slidebar.style.width = '100%';
+            mobile.style.zIndex = 10; 
+            setTimeout(function(){list.style.display= 'block';},500); 
+        }else if (slidebar.classList.contains('click')) {
+            slidebar.classList.remove('click');
+            slidebar.style.zIndex = -5;
+            slidebar.style.width = 0;
+            list.style.display= 'none';  
+            mobile.style.zIndex = 5;  
+        }; 
+}
 
+                                    // SLIDE BAR CLOSE
+
+                                        // DROPDOWN
+
+function dropdown(dropdownArg) {
+    let catalog = document.getElementById('catalog');
+    let remont = document.getElementById('remont');
+    switch (dropdownArg){
+        case 1 :
+            dropdownArg = remont;
+            break;
+        case 2 :
+            dropdownArg = catalog;
+            break;
+    };
+    if (dropdownArg.classList.contains('click') == 0) {
+        dropdownArg.classList.add('click');
+        dropdownArg.style.display = 'flex';     
+    }else if (dropdownArg.classList.contains('click')) {
+        dropdownArg.classList.remove('click');
+        dropdownArg.style.display = 'none';
+    }; 
+};
+
+                                        // DROPDOWN CLOSE
 
 //                                          OWL CAROUSEL 2
 
 $('.owl-carousel').owlCarousel({
     loop:true,
-    margin: 0,
+    margin: 40,
     nav:true,
     autoWidth:true,
     responsive:{
@@ -113,19 +156,11 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
-// $('.owl-carousel').owlCarousel({
-//     margin:10,
-//     loop:true,
-//     autoWidth:true,
-//     items:4
-// })
-
-
 
 //                                       OWL CAROUSEL CLOSE
+
+
 //                                               LAZY LOAD
-
-
 $('.lazy').Lazy({
     // your configuration goes here
     scrollDirection: 'vertical',
@@ -135,13 +170,6 @@ $('.lazy').Lazy({
         console.log('error loading ' + element.data('src'));
     }
 });
-
-
-// BTN
-// function transitionMoreBrands() {
-//     location.href = 'http://www.yandex.ru/';
-// }
-//Contact Us
 
 $("#submit_btn").click(function() {
 
