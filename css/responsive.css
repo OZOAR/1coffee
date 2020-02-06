@@ -277,8 +277,6 @@
         padding-bottom: 20px;
     }   
     #about {
-        /* background: url("../img/3-bg.jpg") no-repeat; */
-        /* background-size: 150%; */
         background-position-x: 90%;
         top: 13%;
         }
@@ -440,7 +438,6 @@
     input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
     .prices button {
         background: #207a34;
-        /* padding-top: %; */
         width: 60%;
         font: 1.2em Ubuntu;
         height: 8%;

@@ -143,7 +143,6 @@ h3 {
     line-height: normal;
 }
 p {
-    /* font-family: Ubuntu Med1um; */
     font-style: normal;
     font-variant-ligatures: normal;
     font-variant-caps: normal;
@@ -277,7 +276,6 @@ header{
     font-size: 15px;
     color: #eaeaea;
     padding-top: 3%;
-    /* margin-left: 3%; */
 }
 .nav-bar-style{
     display: flex;
@@ -580,7 +578,6 @@ header{
 }
 .btn-custom:hover {
     background: #f89c11 !important;
-    /* border: #f89c11 !important; */
     transform: none;
 }
 .btn-custom {
@@ -628,15 +625,9 @@ header{
 
 
 .second-header{
-    /* height: 100px; */
     padding-top: 60px;
     padding-bottom: 10px;
 }
-/* #project_name{
-    width: 150px;
-} */
-
-
 .second-header p span{
     font-size: 29px;
     font-weight: 700;
@@ -647,7 +638,6 @@ header{
 }
 #project_text{
     padding-top: 5px;
-    /* padding-bottom: 10px; */
 }
 .second-header small{
     font-size: 13px;
@@ -726,7 +716,6 @@ header{
 }
 .prices button {
     background: #207a34;
-    /* padding-top: %; */
     width: 40%;
     font: 1.5em Ubuntu;
     height: 8%;
@@ -756,7 +745,6 @@ header{
     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: 100%; /* Opera 9.6+ */
     background-size: 100%; /* Современные браузеры */
-    /* height: 800px; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -787,9 +775,7 @@ header{
     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: 100%; /* Opera 9.6+ */
     background-size: 100%; /* Современные браузеры */
-    /* height: 800px; */
     background-position-y: 48%;
-    /* background-position-x: 78%; */
 }
 
 #about_acess .overlay {
@@ -797,13 +783,9 @@ header{
 }
 #about_acess .about-project-btn {
     padding-top: 10%;
-    /* padding-bottom: 10%; */
 }
-/* /* #about_acess .about-title {
-    /* color: #000000 !important; 
-} */
+
 .about-project{
-    /* padding-top: 6%; */
     color: #ffffff !important;
 }
 .button-centre{
@@ -844,7 +826,6 @@ ul {
     font-weight: normal;
     font-stretch: normal;
     line-height: normal;
-    /* font-family: Ubuntu Med1um; */
     color: #000000;
 }
 .about-project ul {
@@ -891,7 +872,6 @@ ul {
     position: absolute;
     margin-left: 30px;
 	padding-left: 7px;	
-	/* padding-bottom: 5px; */
 	padding-top: 1px;
     font-size: 30px;
     line-height: 30px;
@@ -910,9 +890,7 @@ ul {
     position: absolute;
     margin-left: 30px;
     padding-left: 6px;	
-    /* padding-top: -20px; */
 	margin-bottom: 35px;
-	/* padding-top: -40px; */
     font-size: 30px;
     line-height: 30px;
     font-weight: 400;
@@ -937,10 +915,6 @@ ul {
     font-weight: 700
 }
 
-/* #products {
-    padding-top: 4%;
-     padding-bottom: 4%; 
-} */
 .product-service .title {
     font-size: 45px;
     font-weight: bold;
@@ -949,10 +923,8 @@ ul {
 }
 
 #products img {
-    /* height: 80%; */
     width: 100%;
     padding-top: 30px;
-    /* -o-object-fit: contain; */
 }
 #products .item-text {
     margin-top: 40px;
@@ -999,10 +971,6 @@ ul {
     padding-left: 30px;
     background: #207a34;
 }
-/* #faults {
-    padding-top: 50px;
-    padding-bottom: 6%;
-} */
 .product-service .title {
     font-size: 45px;
     font-weight: bold;
@@ -1010,7 +978,6 @@ ul {
 }
 #faults .about {
     font-size: 24px;
-    /* padding-top: 20px; */
     margin-bottom:56px;
 }
 #faults .reason-text {
@@ -1041,9 +1008,7 @@ ul {
     padding-top: 70px;
 }
 .repair-notification button {
-    /* height: 60px; */
     font-size: 22px;
-    /* font-weight: 700; */
     padding: 15px;
     background: #207a34;
 }
@@ -1051,17 +1016,6 @@ ul {
     padding-top: 40px;
 }
 #takein{
-    /* background: url("../img/coffebackground.jpg") no-repeat;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    -moz-background-size: 100%; /* Firefox 3.6+ */
-    /* -webkit-background-size: 100%; Safari 3.1+ и Chrome 4.0+ */
-    /* -o-background-size: 100%; Opera 9.6+ */
- /* background-size: 100%; Современные браузеры */
-    /* height: 800px; */
-    /* background-position-y: 58%; */
-    /* background-position-x: 28%; */ 
     background-image: url("../img/replacement-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -1070,10 +1024,7 @@ ul {
     background: rgba(0, 0, 0, 0.7);
 
 }
-/* .takein-coffee{
-    padding-top: 8%;
-    padding-bottom: 4%;
-} */
+
 .takein-coffee .about-title {
     font: 45px Ubuntu Med1um;
     padding-bottom: 20px;
@@ -1100,7 +1051,6 @@ ul {
 .takein-coffee button {
     height: 85px;
     font-size: 22px;
-    /* font-weight: 700; */
     padding-right: 24px;
     padding-left: 24px;
     background: #207a34;
@@ -1111,7 +1061,6 @@ ul {
     color: #ffffff;
     font-size: 15px;
     padding-top: 20px;
-    /* width: 400px; */
     font-weight: 500;
 }
 #maintenance {
@@ -1128,9 +1077,6 @@ ul {
 #maintenance .row .second-row {
     padding-top: 4%;
 }
-/* #maintenance .container {
-    padding-top: 4%;
-} */
 #maintenance img {
     width: 50px;
     height: 50px;
@@ -1138,7 +1084,6 @@ ul {
 #maintenance .title {
     font-size: 45px;
     font-weight: 700;
-    /* padding-bottom: 30px; */
 }
 #maintenance .description {
     font-size: 21px;
@@ -1174,7 +1119,6 @@ ul {
 }
 .maintenance-btn {
     padding-top: 30px;
-    /* padding-bottom: 40px; */
 }
 .maintenance-btn button{
     background: #207a34;
@@ -1183,23 +1127,16 @@ ul {
     padding-right: 30px;
     padding-left: 30px;
 }
-/* #breakage .container{
-    padding-top: 4%;
-    padding-bottom: 8%;
-} */
-
 #breakage .title {
     font: 45px Ubuntu Med1um;
     font-weight: 700;
 }
-  
 #breakage ul > li:before {
     left: 8%;
     content: '✓';
     position: absolute;
     margin-left: 30px;
 	padding-left: 7px;	
-	/* padding-bottom: 5px; */
 	padding-top: 1px;
     font-size: 30px;
     line-height: 30px;
@@ -1213,7 +1150,6 @@ ul {
     margin-left: -1.4em; 
 }
 #breakage img {
-    /* position: fixed; */
     background-size: 100% auto;
     top: 0;
     left: 0;
@@ -1225,12 +1161,6 @@ ul {
     -webkit-background-size:cover;
     background-size: cover;
 }
-/* #breakage .img1 {
-    width: 100%;
-} */
-/* #breakage .img3 {
-    height: 215px;
-} */
 #breakage li{
     font: 19px Ubuntu Regular;
     padding-bottom: 30px;
@@ -1267,22 +1197,15 @@ ul {
     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: 100%; /* Opera 9.6+ */
     background-size: 100%; /* Современные браузеры */
-    /* height: 800px; */
     
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 28%;
-    /* background-position-x: 28%; */
 }
 #gift .overlay {
     background: rgba(0, 0, 0, 0.4);
 }
-/* .gift-coffee{
-    padding-top: 8%;
-    padding-bottom: 4%;
-    padding-left: 10%;
-} */
 .text p{
     font-family: "Montserrat", Arial, sans-serif;
     font-size: 16px;
@@ -1334,11 +1257,7 @@ ul {
     width: 400px;
     font-weight: 500;
 }
-/* 
-#howit {
-    padding-top: 70px;
-    padding-bottom: 4%;
-} */
+
 .howit-service .title {
     font-size: 54px;
     font-weight: bold;
@@ -1347,7 +1266,6 @@ ul {
 }
 #howit .about {
     font-size: 28px;
-    /* padding-top: 20px; */
     margin-bottom:56px;
 }
 #howit .howit-text {
@@ -1377,9 +1295,7 @@ ul {
     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: 100%; /* Opera 9.6+ */
     background-size: 100%; /* Современные браузеры */
-    /* height: 800px; */
-    /* background-position-y: 28%; */
-    /* background-position-x: 28%; */
+
 }
 
 #faq .title {
@@ -1389,7 +1305,6 @@ ul {
     padding-bottom: 50px;
 }
 #faq h3 {
-    /* padding-left: 10%;   */
     text-align: center
 }
 #faq button {
@@ -1439,7 +1354,6 @@ ul {
     padding-bottom: 30px;
 }
 .contact-phone:hover {
-    /* font: 20px Ubuntu Regular; */
     color: #207a34;
 }
 #contacts button {
@@ -1453,7 +1367,6 @@ ul {
 }
 .map-container{
     overflow:hidden;
-    /* padding-bottom:56.25%; */
     position:relative;
     height:0;
     }
@@ -1518,7 +1431,6 @@ ul {
     width: 100%;
 }
 .modal .inputs {  
-    /* padding-left: 27%; */
     padding-bottom: 15px;
     
 }
@@ -1564,7 +1476,6 @@ ul {
     color: #149e4e;
 }
 #content p{
-    /* font-family: "Montserrat", Arial, sans-serif; */
     font-size: 14px;
     line-height: 1.65em;
     font-style: normal;
@@ -1580,7 +1491,6 @@ ul {
 }
 #content h2{
     font-weight: 600;
-    /* font-family: "Montserrat", Arial, sans-serif; */
     font-style: normal;
     line-height: 1.1;
     color: #333;
@@ -1596,17 +1506,14 @@ ul {
     margin-bottom: 4%
 }
 #accessories .buy-item button {
-    /* margin-bottom: 15px; */
     background: #f89c11 !important;
     font: 22px Ubuntu Regular;
 }
 
 #accessories .buy-item button:hover {
-    /* padding-bottom: 5px; */
     background: #207a34 !important;
 }
 #accessories .item .description {
-    /* padding-top: 20px; */
     font: 18px Ubuntu Regular;
 }
 #accessories .item .price {
@@ -1619,13 +1526,6 @@ ul {
 .form-control {
     margin-bottom: 2%;
 }
-
-/* .carousel-caption:hover p {
-    display: inline;
-}
-.carousel-caption:hover h5 {
-    display: inline;
-} */
 .carousel-caption {
     display: inline-block;
     background: rgba(0, 0, 0, 0.5);
@@ -1705,7 +1605,6 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
     column-count: 2;
 }
 .footer {
-    /* font-family: Source Sans Pro; */
     background-color: #0f0f0f;
     font-size: 14px;
     color: #fff;
@@ -1959,8 +1858,6 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
     text-transform:uppercase;
     margin-bottom:1rem;
     color: black;
-    /* font-weight: 600; */
-    /* font-family: Source Sans Pro; */
 }
 .order-now .request-form{
     position:relative
@@ -1981,7 +1878,6 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
     background-position:50%;
 }
 
-/* .sec-title{font-size:4rem;margin-bottom:3rem}.sec-title .colored{white-space:nowrap}.sec-title .small{font-size:3rem}@media (max-width:1199.98px){.sec-title .small{font-size:2.3rem}}.sec-title.line-bottom{margin-bottom:1.5rem}@media (max-width:1199.98px){.sec-title{font-size:3rem}}.sec-header{text-align:center}@media (max-width:767.98px){.sec-header br{display:none}} */
 /* BRANDS */
 .brands-mobile{
     display: none;
@@ -2021,11 +1917,6 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
     -ms-transform:scale(1);
     transform:scale(1)
 }
-/* .brands__item img{
-    width:70px;
-    height: auto;
-} */
-
 .show{
     display: flex;
 }
