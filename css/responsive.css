@@ -17,7 +17,7 @@
     .header-img{
         width:75%;
         height: 45px;
-        margin-left: 10px;
+        margin-left: 18px;
         margin-top: 8%;
     }
                                     /* BURGER */
@@ -25,8 +25,8 @@
         width: 15%;
     }
     .menu {
-        height: 42px;
-        width: 42px;
+        height: 35px;
+        width: 35px;
         position: relative;
         margin: auto;
         padding-top: 20px;
@@ -39,8 +39,8 @@
         -webkit-transition: 0.3s;
         transition: 0.3s;
         cursor: pointer;
-        margin-top: 29px;
-        margin-right: 10px;
+        margin-top: 33px;
+        margin-right: 18px;
         transform: rotate(90deg);
     }
     .bar {
@@ -65,8 +65,8 @@
         border-radius: 100%;
     }
     .model-4 .bar {
-        height: 15px;
-        width: 15px;
+        height: 10px;
+        width: 10px;
         background: none;
         border-bottom: 4px solid #a6a6a6;
         border-right: 4px solid #a6a6a6;
@@ -84,7 +84,7 @@
         left: 0;
     }
     .showburger__arrow{
-        top: 1px !important;
+        top: 4px !important;
     }
     .showburger{
         -moz-transform: rotate(225deg);
@@ -92,7 +92,7 @@
         -webkit-transform: rotate(225deg);
         transform: rotate(225deg) !important;
         transform-origin: 73% 102% 0;
-        top: 1.3px !important;
+        top: 3px !important;
     }
                                 /* BURGER CLOSE */
     .slidebar{
@@ -107,12 +107,17 @@
     }
     #list{
         display: none;
-        margin-left: 12%;
+        width: 65%;
+        margin-left: 17.5%;
         color: #ffffff;
         font-family: "Segoe UI";
-        font-size: 18px;
+        font-size: 19px;
         font-weight: 400;
         padding-top: 5px;
+        line-height: 30px;
+    }
+    #list > ul{
+        padding-left: 5%;
     }
     .nav-link {
         color: white !important;
@@ -128,8 +133,9 @@
         border-bottom: 1px solid white;
         text-align: right;
     }
+    
     #remont{
-        display: none;
+        display: flex;
     }
     #catalog{
         display: none;
@@ -179,9 +185,9 @@
     .slidebar-messanger{
         display: flex;
         justify-content: space-between;
-        width: 70%;
-        margin-left: 15%;
-        padding: 20 0;
+        width: 85%;
+        margin-left: 10%;
+        padding: 15 0;
     }
     .order-now__img > img {
         margin-left: 5%;

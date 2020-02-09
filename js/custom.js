@@ -155,7 +155,7 @@ function dropdown(dropdownArg) {
 
 $('.owl-carousel').owlCarousel({
     loop:true,
-    margin: 40,
+    margin: 45,
     nav:true,
     autoWidth:true,
     responsive:{
