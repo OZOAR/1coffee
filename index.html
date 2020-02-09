@@ -55,8 +55,6 @@
             </p>
         </div>
         <div class="rigth-nav-bar">
-
-                <div class="row">
             <div class="nav-info-mail">
                 <div class="nav-info-mail__text">
                     <img class="lazy" data-src="img/Icons/24call.png" width="9%" alt="">
@@ -68,20 +66,20 @@
                 <div class="messanger"> 
                 <a href="viber://add?number=375333547105"><img class="lazy icons" data-src="img/Icons/viber.png" alt=""></a>
                 <a href="tg://resolve?domain=ozoar"><img class="lazy icons" data-src="img/Icons/telegram.png" alt=""></a>
-                <a href="https://www.instagram.com/1coffeeservice/"><img class="lazy icons-size" data-src="img/Icons/Group_24.png" alt=""></a>
-
+                <a href="https://www.instagram.com/1coffeeservice/"><img class="lazy icons" data-src="img/Icons/instagram.svg" alt=""></a>
+                <a href="https://www.instagram.com/1coffeeservice/"><img class="lazy icons" data-src="img/Icons/letter.svg" alt=""></a>
             </div>
                
         
     
-            </div></div>
+            </div>
             <div class="nav-bar-style">
                 <div class="nav-bar-info">
                     <a href="">Аренда</a> 
                 </div>
                                                     <!-- DropdownMenu -->
             <div class="nav-bar-info dropdown-block">
-                <a href="#">Ремонт кофемашин</a>
+                <a href="#">Ремонт кофемашин <img class="chevrone" src="img/Icons/chevrone.svg" alt=""></a>
                     <div class="dropdown-repair"> 
                         <div class="dropdown__block"> 
                             <div class="dropdown__img">
@@ -121,7 +119,7 @@
                     </div> 
             </div>
             <div class="nav-bar-info dropdown-block">
-                <a href="#">Каталог</a>
+                <a href="#">Каталог <img class="chevrone" src="img/Icons/chevrone.svg" alt=""></a>
                     <div class="dropdown-catalog">
                             <div class="dropdown__block">
                                 <div class="dropdown__img">
@@ -446,7 +444,8 @@
             </div>
         </div>
     </section> -->
-    <section class="problems bg-grey sec">
+                                <!-- SECTION WHATS YOUR PROBLEM MOBILE -->
+    <section class="problems bg-grey sec mobile">
         <div class="container">
           <div class="sec-header mb-5">
             <h2 class="sec-title">Что случилось с вашей <span class="colored">кофемашиной</span> ?</h2>
@@ -455,7 +454,7 @@
             <div class="col-6 col-sm-4 col-lg">
               <a href="#pointer" class="problems__item" onclick="showBreakege(1)" >
                 <div class="problems__icon">
-                  <svg class="svg-inline--fa fa-mug-hot fa-w-16 fa-2x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="mug-hot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M127.1 146.5c1.3 7.7 8 13.5 16 13.5h16.5c9.8 0 17.6-8.5 16.3-18-3.8-28.2-16.4-54.2-36.6-74.7-14.4-14.7-23.6-33.3-26.4-53.5C111.8 5.9 105 0 96.8 0H80.4C70.6 0 63 8.5 64.1 18c3.9 31.9 18 61.3 40.6 84.4 12 12.2 19.7 27.5 22.4 44.1zm112 0c1.3 7.7 8 13.5 16 13.5h16.5c9.8 0 17.6-8.5 16.3-18-3.8-28.2-16.4-54.2-36.6-74.7-14.4-14.7-23.6-33.3-26.4-53.5C223.8 5.9 217 0 208.8 0h-16.4c-9.8 0-17.5 8.5-16.3 18 3.9 31.9 18 61.3 40.6 84.4 12 12.2 19.7 27.5 22.4 44.1zM400 192H32c-17.7 0-32 14.3-32 32v192c0 53 43 96 96 96h192c53 0 96-43 96-96h16c61.8 0 112-50.2 112-112s-50.2-112-112-112zm0 160h-16v-96h16c26.5 0 48 21.5 48 48s-21.5 48-48 48z"></path></svg><!-- <i class="fas fa-mug-hot fa-2x"></i> -->
+                <svg class="svg-inline--fa fa-mug-hot fa-w-16 fa-2x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="mug-hot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M127.1 146.5c1.3 7.7 8 13.5 16 13.5h16.5c9.8 0 17.6-8.5 16.3-18-3.8-28.2-16.4-54.2-36.6-74.7-14.4-14.7-23.6-33.3-26.4-53.5C111.8 5.9 105 0 96.8 0H80.4C70.6 0 63 8.5 64.1 18c3.9 31.9 18 61.3 40.6 84.4 12 12.2 19.7 27.5 22.4 44.1zm112 0c1.3 7.7 8 13.5 16 13.5h16.5c9.8 0 17.6-8.5 16.3-18-3.8-28.2-16.4-54.2-36.6-74.7-14.4-14.7-23.6-33.3-26.4-53.5C223.8 5.9 217 0 208.8 0h-16.4c-9.8 0-17.5 8.5-16.3 18 3.9 31.9 18 61.3 40.6 84.4 12 12.2 19.7 27.5 22.4 44.1zM400 192H32c-17.7 0-32 14.3-32 32v192c0 53 43 96 96 96h192c53 0 96-43 96-96h16c61.8 0 112-50.2 112-112s-50.2-112-112-112zm0 160h-16v-96h16c26.5 0 48 21.5 48 48s-21.5 48-48 48z"></path></svg><i class="fas fa-mug-hot fa-2x"></i>
                 </div>
                 <p class="problems__title">Не делает капучино</p>
             </a>
@@ -463,15 +462,15 @@
             <div class="col-6 col-sm-4 col-lg">
               <a href="#pointer" class="problems__item" onclick="showBreakege(2)">
                 <div class="problems__icon">
-                  <svg class="svg-inline--fa fa-coffee fa-w-20 fa-2x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="coffee" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M192 384h192c53 0 96-43 96-96h32c70.6 0 128-57.4 128-128S582.6 32 512 32H120c-13.3 0-24 10.7-24 24v232c0 53 43 96 96 96zM512 96c35.3 0 64 28.7 64 64s-28.7 64-64 64h-32V96h32zm47.7 384H48.3c-47.6 0-61-64-36-64h583.3c25 0 11.8 64-35.9 64z"></path></svg><!-- <i class="fas fa-coffee fa-2x"></i> -->
-                </div>
+                  <svg class="svg-inline--fa fa-coffee fa-w-20 fa-2x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="coffee" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M192 384h192c53 0 96-43 96-96h32c70.6 0 128-57.4 128-128S582.6 32 512 32H120c-13.3 0-24 10.7-24 24v232c0 53 43 96 96 96zM512 96c35.3 0 64 28.7 64 64s-28.7 64-64 64h-32V96h32zm47.7 384H48.3c-47.6 0-61-64-36-64h583.3c25 0 11.8 64-35.9 64z"></path></svg><i class="fas fa-coffee fa-2x"></i>
+              </div>
                 <p class="problems__title">Не наливает кофе</p>
             </a>
             </div>
             <div class="col-6 col-sm-4 col-lg">
                 <a href="#pointer" class="problems__item" onclick="showBreakege(3)">
                   <div class="problems__icon">
-                    <svg class="svg-inline--fa fa-tint-slash fa-w-20 fa-2x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tint-slash" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M633.82 458.1L494.97 350.78c.52-5.57 1.03-11.16 1.03-16.87 0-111.76-99.79-153.34-146.78-311.82-7.94-28.78-49.44-30.12-58.44 0-15.52 52.34-36.87 91.96-58.49 125.68L45.47 3.37C38.49-2.05 28.43-.8 23.01 6.18L3.37 31.45C-2.05 38.42-.8 48.47 6.18 53.9l588.36 454.73c6.98 5.43 17.03 4.17 22.46-2.81l19.64-25.27c5.41-6.97 4.16-17.02-2.82-22.45zM144 333.91C144 432.35 222.72 512 320 512c44.71 0 85.37-16.96 116.4-44.7L162.72 255.78c-11.41 23.5-18.72 48.35-18.72 78.13z"></path></svg><!-- <i class="fas fa-tint-slash fa-2x"></i> -->
+                    <svg class="svg-inline--fa fa-tint-slash fa-w-20 fa-2x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tint-slash" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M633.82 458.1L494.97 350.78c.52-5.57 1.03-11.16 1.03-16.87 0-111.76-99.79-153.34-146.78-311.82-7.94-28.78-49.44-30.12-58.44 0-15.52 52.34-36.87 91.96-58.49 125.68L45.47 3.37C38.49-2.05 28.43-.8 23.01 6.18L3.37 31.45C-2.05 38.42-.8 48.47 6.18 53.9l588.36 454.73c6.98 5.43 17.03 4.17 22.46-2.81l19.64-25.27c5.41-6.97 4.16-17.02-2.82-22.45zM144 333.91C144 432.35 222.72 512 320 512c44.71 0 85.37-16.96 116.4-44.7L162.72 255.78c-11.41 23.5-18.72 48.35-18.72 78.13z"></path></svg><i class="fas fa-tint-slash fa-2x"></i>
                   </div>
                   <p class="problems__title">Протекает</p>
                 </a>
@@ -479,7 +478,7 @@
             <div class="col-6 col-sm-4 col-lg">
                 <a href="#pointer" class="problems__item" onclick="showBreakege(4)">
                   <div class="problems__icon">
-                    <svg class="svg-inline--fa fa-cloud fa-w-20 fa-2x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cloud" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M537.6 226.6c4.1-10.7 6.4-22.4 6.4-34.6 0-53-43-96-96-96-19.7 0-38.1 6-53.3 16.2C367 64.2 315.3 32 256 32c-88.4 0-160 71.6-160 160 0 2.7.1 5.4.2 8.1C40.2 219.8 0 273.2 0 336c0 79.5 64.5 144 144 144h368c70.7 0 128-57.3 128-128 0-61.9-44-113.6-102.4-125.4z"></path></svg><!-- <i class="fas fa-cloud fa-2x"></i> -->
+                    <svg class="svg-inline--fa fa-cloud fa-w-20 fa-2x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cloud" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M537.6 226.6c4.1-10.7 6.4-22.4 6.4-34.6 0-53-43-96-96-96-19.7 0-38.1 6-53.3 16.2C367 64.2 315.3 32 256 32c-88.4 0-160 71.6-160 160 0 2.7.1 5.4.2 8.1C40.2 219.8 0 273.2 0 336c0 79.5 64.5 144 144 144h368c70.7 0 128-57.3 128-128 0-61.9-44-113.6-102.4-125.4z"></path></svg><i class="fas fa-cloud fa-2x"></i>
                   </div>
                   <p class="problems__title">Не делает пенку</p>
                 </a>
@@ -488,7 +487,7 @@
               <div class="col-6 col-sm-4 col-lg">
                 <a class="problems__item" onclick="showBreakege(5)">
                   <div class="problems__icon">
-                    <svg class="svg-inline--fa fa-thermometer-quarter fa-w-8 fa-2x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="thermometer-quarter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M192 384c0 35.346-28.654 64-64 64s-64-28.654-64-64c0-23.685 12.876-44.349 32-55.417V288c0-17.673 14.327-32 32-32s32 14.327 32 32v40.583c19.124 11.068 32 31.732 32 55.417zm32-84.653c19.912 22.563 32 52.194 32 84.653 0 70.696-57.303 128-128 128-.299 0-.609-.001-.909-.003C56.789 511.509-.357 453.636.002 383.333.166 351.135 12.225 321.755 32 299.347V96c0-53.019 42.981-96 96-96s96 42.981 96 96v203.347zM208 384c0-34.339-19.37-52.19-32-66.502V96c0-26.467-21.533-48-48-48S80 69.533 80 96v221.498c-12.732 14.428-31.825 32.1-31.999 66.08-.224 43.876 35.563 80.116 79.423 80.42L128 464c44.112 0 80-35.888 80-80z"></path></svg><!-- <i class="fas fa-thermometer-quarter fa-2x"></i> -->
+                    <svg class="svg-inline--fa fa-thermometer-quarter fa-w-8 fa-2x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="thermometer-quarter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M192 384c0 35.346-28.654 64-64 64s-64-28.654-64-64c0-23.685 12.876-44.349 32-55.417V288c0-17.673 14.327-32 32-32s32 14.327 32 32v40.583c19.124 11.068 32 31.732 32 55.417zm32-84.653c19.912 22.563 32 52.194 32 84.653 0 70.696-57.303 128-128 128-.299 0-.609-.001-.909-.003C56.789 511.509-.357 453.636.002 383.333.166 351.135 12.225 321.755 32 299.347V96c0-53.019 42.981-96 96-96s96 42.981 96 96v203.347zM208 384c0-34.339-19.37-52.19-32-66.502V96c0-26.467-21.533-48-48-48S80 69.533 80 96v221.498c-12.732 14.428-31.825 32.1-31.999 66.08-.224 43.876 35.563 80.116 79.423 80.42L128 464c44.112 0 80-35.888 80-80z"></path></svg><i class="fas fa-thermometer-quarter fa-2x"></i>
                   </div>
                   <p class="problems__title">Не включается</p>
                 </a>
@@ -496,17 +495,92 @@
             <div class="col-6 col-sm-4 col-lg">
               <a href="#pointer" class="problems__item" onclick="showBreakege(6)">
                 <div class="problems__icon">
-                  <svg class="svg-inline--fa fa-blender fa-w-16 fa-2x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="blender" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M416 384H160c-35.35 0-64 28.65-64 64v32c0 17.67 14.33 32 32 32h320c17.67 0 32-14.33 32-32v-32c0-35.35-28.65-64-64-64zm-128 96c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32zm40-416h166.54L512 0H48C21.49 0 0 21.49 0 48v160c0 26.51 21.49 48 48 48h103.27l8.73 96h256l17.46-64H328c-4.42 0-8-3.58-8-8v-16c0-4.42 3.58-8 8-8h114.18l17.46-64H328c-4.42 0-8-3.58-8-8v-16c0-4.42 3.58-8 8-8h140.36l17.46-64H328c-4.42 0-8-3.58-8-8V72c0-4.42 3.58-8 8-8zM64 192V64h69.82l11.64 128H64z"></path></svg><!-- <i class="fas fa-blender fa-2x"></i> -->
-                </div>
+                  <svg class="svg-inline--fa fa-blender fa-w-16 fa-2x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="blender" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M416 384H160c-35.35 0-64 28.65-64 64v32c0 17.67 14.33 32 32 32h320c17.67 0 32-14.33 32-32v-32c0-35.35-28.65-64-64-64zm-128 96c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32zm40-416h166.54L512 0H48C21.49 0 0 21.49 0 48v160c0 26.51 21.49 48 48 48h103.27l8.73 96h256l17.46-64H328c-4.42 0-8-3.58-8-8v-16c0-4.42 3.58-8 8-8h114.18l17.46-64H328c-4.42 0-8-3.58-8-8v-16c0-4.42 3.58-8 8-8h140.36l17.46-64H328c-4.42 0-8-3.58-8-8V72c0-4.42 3.58-8 8-8zM64 192V64h69.82l11.64 128H64z"></path></svg><i class="fas fa-blender fa-2x"></i>
+              </div>
                 <p class="problems__title">Не мелет зерна</p>
             </a>
             </div>
           </div>
-          <div class="col-12" id="dropdown-problem">
-           <p id="text"></p>
-         </div>
+
         </div>
-      </section>
+      </section> 
+                            <!-- SECTION WAHTS YOYR PROBLEM MOBILE CLOSE> -->
+                            <!-- SECTION WAHTS YOYR PROBLEM DESCTOP -->
+      <section class="whats-your-problem mobile-none">
+        <div class="grid-problems">
+            <div class="sec-header">
+                <h2 class="sec-title">Проблемы с <span class="colored">кофемашиной</span> ?</h2>
+                <h4>Бесплатная консультация <span class="colored">24</span>/<span class="colored">7</span> </h4>
+              </div>
+            <div class="male">
+                <img width="90%" src="img/48-layers.png" alt="">
+            </div>
+            <div class="noCapuchino">
+                    <a href="#pointer" class="problems__item" onclick="showBreakege(1)" >
+                      <div class="problems__icon">
+                        <svg class="svg-inline--fa fa-mug-hot fa-w-16 fa-2x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="mug-hot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M127.1 146.5c1.3 7.7 8 13.5 16 13.5h16.5c9.8 0 17.6-8.5 16.3-18-3.8-28.2-16.4-54.2-36.6-74.7-14.4-14.7-23.6-33.3-26.4-53.5C111.8 5.9 105 0 96.8 0H80.4C70.6 0 63 8.5 64.1 18c3.9 31.9 18 61.3 40.6 84.4 12 12.2 19.7 27.5 22.4 44.1zm112 0c1.3 7.7 8 13.5 16 13.5h16.5c9.8 0 17.6-8.5 16.3-18-3.8-28.2-16.4-54.2-36.6-74.7-14.4-14.7-23.6-33.3-26.4-53.5C223.8 5.9 217 0 208.8 0h-16.4c-9.8 0-17.5 8.5-16.3 18 3.9 31.9 18 61.3 40.6 84.4 12 12.2 19.7 27.5 22.4 44.1zM400 192H32c-17.7 0-32 14.3-32 32v192c0 53 43 96 96 96h192c53 0 96-43 96-96h16c61.8 0 112-50.2 112-112s-50.2-112-112-112zm0 160h-16v-96h16c26.5 0 48 21.5 48 48s-21.5 48-48 48z"></path></svg><!-- <i class="fas fa-mug-hot fa-2x"></i> -->
+                      </div>
+                      <p class="problems__title">Не делает капучино</p>
+                  </a>
+            </div> 
+            <div class="noCoffee">
+                <a href="#pointer" class="problems__item" onclick="showBreakege(2)">
+                  <div class="problems__icon">
+                    <svg class="svg-inline--fa fa-coffee fa-w-20 fa-2x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="coffee" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M192 384h192c53 0 96-43 96-96h32c70.6 0 128-57.4 128-128S582.6 32 512 32H120c-13.3 0-24 10.7-24 24v232c0 53 43 96 96 96zM512 96c35.3 0 64 28.7 64 64s-28.7 64-64 64h-32V96h32zm47.7 384H48.3c-47.6 0-61-64-36-64h583.3c25 0 11.8 64-35.9 64z"></path></svg><!-- <i class="fas fa-coffee fa-2x"></i> -->
+                  </div>
+                  <p class="problems__title">Не наливает кофе</p>
+              </a>
+            </div>
+            <div class="leakage"> 
+                <a href="#pointer" class="problems__item" onclick="showBreakege(3)">
+                  <div class="problems__icon">
+                    <svg class="svg-inline--fa fa-tint-slash fa-w-20 fa-2x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tint-slash" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M633.82 458.1L494.97 350.78c.52-5.57 1.03-11.16 1.03-16.87 0-111.76-99.79-153.34-146.78-311.82-7.94-28.78-49.44-30.12-58.44 0-15.52 52.34-36.87 91.96-58.49 125.68L45.47 3.37C38.49-2.05 28.43-.8 23.01 6.18L3.37 31.45C-2.05 38.42-.8 48.47 6.18 53.9l588.36 454.73c6.98 5.43 17.03 4.17 22.46-2.81l19.64-25.27c5.41-6.97 4.16-17.02-2.82-22.45zM144 333.91C144 432.35 222.72 512 320 512c44.71 0 85.37-16.96 116.4-44.7L162.72 255.78c-11.41 23.5-18.72 48.35-18.72 78.13z"></path></svg><!-- <i class="fas fa-tint-slash fa-2x"></i> -->
+                  </div>
+                  <p class="problems__title">Протекает</p>
+                </a>
+            </div>
+            <div class="noFoam">
+                <a href="#pointer" class="problems__item" onclick="showBreakege(4)">
+                    <div class="problems__icon">
+                    <svg class="svg-inline--fa fa-cloud fa-w-20 fa-2x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cloud" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M537.6 226.6c4.1-10.7 6.4-22.4 6.4-34.6 0-53-43-96-96-96-19.7 0-38.1 6-53.3 16.2C367 64.2 315.3 32 256 32c-88.4 0-160 71.6-160 160 0 2.7.1 5.4.2 8.1C40.2 219.8 0 273.2 0 336c0 79.5 64.5 144 144 144h368c70.7 0 128-57.3 128-128 0-61.9-44-113.6-102.4-125.4z"></path></svg><!-- <i class="fas fa-cloud fa-2x"></i> -->
+                    </div>
+                    <p class="problems__title">Не делает пенку</p>
+                </a>
+            </div>
+            <div class="off">
+                <a class="problems__item" onclick="showBreakege(5)">
+                    <div class="problems__icon">
+                    <svg class="svg-inline--fa fa-thermometer-quarter fa-w-8 fa-2x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="thermometer-quarter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M192 384c0 35.346-28.654 64-64 64s-64-28.654-64-64c0-23.685 12.876-44.349 32-55.417V288c0-17.673 14.327-32 32-32s32 14.327 32 32v40.583c19.124 11.068 32 31.732 32 55.417zm32-84.653c19.912 22.563 32 52.194 32 84.653 0 70.696-57.303 128-128 128-.299 0-.609-.001-.909-.003C56.789 511.509-.357 453.636.002 383.333.166 351.135 12.225 321.755 32 299.347V96c0-53.019 42.981-96 96-96s96 42.981 96 96v203.347zM208 384c0-34.339-19.37-52.19-32-66.502V96c0-26.467-21.533-48-48-48S80 69.533 80 96v221.498c-12.732 14.428-31.825 32.1-31.999 66.08-.224 43.876 35.563 80.116 79.423 80.42L128 464c44.112 0 80-35.888 80-80z"></path></svg><!-- <i class="fas fa-thermometer-quarter fa-2x"></i> -->
+                    </div>
+                    <p class="problems__title">Не включается</p>
+                </a>
+            </div>
+            <div class="noGrains">
+                <a href="#pointer" class="problems__item" onclick="showBreakege(6)">
+                  <div class="problems__icon">
+                    <svg class="svg-inline--fa fa-blender fa-w-16 fa-2x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="blender" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M416 384H160c-35.35 0-64 28.65-64 64v32c0 17.67 14.33 32 32 32h320c17.67 0 32-14.33 32-32v-32c0-35.35-28.65-64-64-64zm-128 96c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32zm40-416h166.54L512 0H48C21.49 0 0 21.49 0 48v160c0 26.51 21.49 48 48 48h103.27l8.73 96h256l17.46-64H328c-4.42 0-8-3.58-8-8v-16c0-4.42 3.58-8 8-8h114.18l17.46-64H328c-4.42 0-8-3.58-8-8v-16c0-4.42 3.58-8 8-8h140.36l17.46-64H328c-4.42 0-8-3.58-8-8V72c0-4.42 3.58-8 8-8zM64 192V64h69.82l11.64 128H64z"></path></svg><!-- <i class="fas fa-blender fa-2x"></i> -->
+                  </div>
+                  <p class="problems__title">Не мелет зерна</p>
+              </a>
+            </div>
+            <div class="female">
+                <img width="70%" src="img/female.png" alt="">
+            </div>
+            <div class="problem-text">
+               
+               <div id="dropdown-problem">
+                <p id="text"></p>
+
+              </div><div class="problem-button">
+                <button class="btn btn-custom getModal" onclick="modalActive(3)">
+                    Заказать консультацию о поломке
+                </button>
+               </div>
+            </div>
+        </div>
+    </section>
+                             <!-- SECTION WAHTS YOYR PROBLEM DESCTOP  CLOSE-->
+
         <section class="sec order-now bg-theme" id="order">
             <div class="container">
               <div class="row align-items-center">
@@ -532,7 +606,7 @@
               </div>
             </div>
           </section>
-<hr>
+   <hr>
 <section class="types sec">
     <div class="container">
       <div class="sec-header mb-5">
@@ -1220,7 +1294,7 @@
                 <div class="col-lg-3 text-lg-left mb-3 mb-lg-0">
                   <span class="copyright mb-2 d-block">
                     «КофеПрофСервис»<br>
-                    © 2012-2020
+                    © 2011-2020
                   </span>
                   <ul class="footer-ul">
                     <li>г. Минск, ул. Раковская 36</li>
@@ -1229,7 +1303,6 @@
                     <li><a href="mailto:info@1coffee.by">info@1coffee.by</a></li>
                   </ul>
                   <p class="mt-3 mb-1"><span class="mr-2">Мы в соц. сетях:</span> 
-                    <a href="https://vk.com/public187440129 " target="_blank" rel="nofollow"><svg width="12%" class="svg-inline--fa fa-vk fa-w-18 fa-sm mr-2" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="vk" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z"></path></svg><!-- <i class="fab fa-vk fa-sm mr-2"></i> --></a> 
                     <a href="https://www.facebook.com/Аромат-Кофе-107136354033240/?modal=admin_todo_tour" target="_blank" rel="nofollow"><svg width="5%" class="svg-inline--fa fa-facebook-f fa-w-9 fa-sm mr-2" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512" data-fa-i2svg=""><path fill="currentColor" d="M215.8 85H264V3.6C255.7 2.5 227.1 0 193.8 0 124.3 0 76.7 42.4 76.7 120.3V192H0v91h76.7v229h94V283h73.6l11.7-91h-85.3v-62.7c0-26.3 7.3-44.3 45.1-44.3z"></path></svg><!-- <i class="fab fa-facebook-f fa-sm mr-2"></i> --></a> 
                     <a href="https://www.instagram.com/aromatkofe.ru/" target="_blank" rel="nofollow"><svg width="10%" class="svg-inline--fa fa-instagram fa-w-14 fa-sm mr-2" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg><!-- <i class="fab fa-instagram fa-sm mr-2"></i> --></a>
                   </p>
@@ -1261,7 +1334,7 @@
                       <a href="/remont-delonghi/">Delonghi</a>
                     </li>
                     <li>
-                      <a href="/remont-miele/">Miele</a>
+                      <a href="/remont-miele/">Philips</a>
                     </li>
                     <li>
                       <a href="/remont-jura/">Jura</a>
@@ -1284,40 +1357,27 @@
                   <div class="display-table w-100">
                     <div class="display-row">
                       <div class="display-cell">
-                        <ul class="nav-bottom footer-ul">
-                          <li class="nav-bottom__item">
-                            <a href="/price/">Услуги и цены</a>
-                          </li>
-                          <li class="nav-bottom__item">
-                            <a href="/otzyvy/">Отзывы</a>
-                          </li>
-                          <li class="nav-bottom__item">
-                            <a href="/blog/">Статьи</a>
-                          </li>
-                          <li class="nav-bottom__item">
-                            <a href="/kontakty/">Контакты</a>
-                          </li>
-                          <li class="nav-bottom__item">
-                            <a href="/about/">О компании</a>
-                          </li>
-                        </ul>
-                        <ul class="nav-bottom footer-ul">
-                          <li class="nav-bottom__item">
-                            <a href="/diagnostika-kofemashin/">Диагностика</a>
-                          </li>
-                          <li class="nav-bottom__item">
-                            <a href="/garantiya-na-remont/">Гарантия</a>
-                          </li>
-                          <li class="nav-bottom__item">
-                            <a href="/srochnyj-remont/">Срочный ремонт</a>
-                          </li>
-                          <li class="nav-bottom__item">
-                            <a href="/oplata-uslug/">Оплата услуг</a>
-                          </li>
-                          <li class="nav-bottom__item">
-                            <a href="/politika-konfidencialnosti/">Политика конфиденциальности</a>
-                          </li>
-                        </ul>
+                          <p>Рейтинг и отзывы о нас в сети:</p>
+                          
+                        <div class="rating-container">
+                            <p>Google: </p>
+                            <div class="star-ratings row" style="width: 100px;">
+                                <div class="fill-ratings" style="width: 96%;">
+                                    <span>
+                                        ★★★★★
+                                    </span>
+                                </div>
+                                <div class="empty-ratings">
+                                    <span>
+                                        ★★★★★
+                                    </span>
+                                </div>
+                            </div>
+                            <div>
+                            <div class="value"></div>
+                            <div class="votes"></div>
+                            </div>
+                        </div>
                       </div>
                     </div>
                     <div class="display-row otstup"></div>
@@ -1334,7 +1394,7 @@
                   </div>
                 </div>
               </div>
-              <p class="mt-3"><small>© 1coffee.by, 2019 УНП 192195866 Все права защищены.</small></p>
+              <p class="mt-3"><small>© 1coffee.by, 2020 УНП 791166842 Все права защищены.</small></p>
             </div>
     </footer>
   

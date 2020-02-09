@@ -188,10 +188,8 @@ header{
     padding: 0 40 0 40;
 }
 .header-img{
-    margin-top: 20px;
+    margin-top: 30px;
     width: 30%;
-    height: 100%;
-
 }
 
 .header-logo {
@@ -221,7 +219,7 @@ header{
 .rigth-nav-bar{
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 45%;
     height: 100%;
 }
 .nav-info-mail{
@@ -241,7 +239,6 @@ header{
     width: 38%;
     height: 50%;
     text-align: start;
-    margin-left: 10px;
 }
 .nav-info-mail__text > a{
     color: #ffffff;
@@ -258,6 +255,7 @@ header{
 .nav-text__info > a:hover{
     color: #f89c11;
 }
+
 .btn-nav{
     font-size: 15px;
     background-color: #e0812d;
@@ -277,11 +275,15 @@ header{
     color: #eaeaea;
     padding-top: 3%;
 }
+.chevrone{
+    width: 10px;
+    transform: rotate(90deg);
+}
 .nav-bar-style{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: -10px;
+    margin-top: -15px;
 }
 .nav-bar-info > A {
     color:#ffffff; /* Цвет ссылок */
@@ -295,17 +297,15 @@ header{
 .messanger{
     padding: 0 !important;
     margin-top: -2px;
-    width: 30%;
+    width: 34.5%;
     height: 50%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .messanger > a > .icons{
-    width: 73%;
+    width: 35;
 }
-.messanger > a > .icons-size{
-    width: 103%;
-}
+
 .mobile-subheader{
     display: none;
 }
@@ -751,6 +751,7 @@ header{
     background-position-y: 78%;
     position: relative;
     top: 14%;
+    border-bottom: 1px solid #207a34;
 }
 #about-catalog{
     -moz-background-size: 100%; /* Firefox 3.6+ */
@@ -1614,6 +1615,55 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
     color: #fff;
     text-align: center;
 }
+.rating-container {
+    width: 250px;
+    padding: 0px 20px 10px 0px;
+    margin-top: -10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+.rating-container > p{
+    margin-top: 10px;
+}
+.star-ratings {
+    unicode-bidi: bidi-override;
+    color: #ccc;
+    font-size: 24px;
+    position: relative;
+    margin: 0;
+    padding: 0
+}
+.display-cell > p{
+    color: white;
+    font-size: 16px ;
+    text-align: left;
+}
+
+.value {
+    margin-top: -5px;
+    font-size: 24px;
+}
+.votes {
+    font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin-top: -5px;
+    font-size: 14px;
+}
+.star-ratings .fill-ratings {
+    color: orange;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.star-ratings .empty-ratings {
+    padding: 0;
+    display: block;
+    z-index: 0;
+}
 .display-cell {
     display: table-cell;
 }
@@ -1721,8 +1771,65 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
     -ms-transform:rotate(45deg);
     transform:rotate(45deg)
 }      
+                        /* GRID WTHATS YOUR PROBLEM */
+.whats-your-problem{
+    background-color: #ffc848;
+    border-bottom: 1px solid #207a34;
+}
+.grid-problems{
+    display: grid;
+    width: 100%;
+    grid-template-rows: 15% 25% 25% 10%;
+    grid-template-columns: 24% 10% 10% 10% 10% 24%;
+    grid-gap: 2vw;
+    grid-template-areas: 
+    "sec-header sec-header sec-header sec-header sec-header sec-header"
+    "male noCoffee leakage noFoam off female"
+    "male noCapuchino problem-text problem-text noGrains female"
+    ". . problem-text problem-text . .";
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.male{
+    grid-area: male;
+    padding-left: 15%;
+}
+.noCoffee{
+    grid-area: noCoffee;
+}
+.noCapuchino{
+    grid-area: noCapuchino;
+}
+.leakage{
+    grid-area: leakage;
+}
+.noFoam{
+    grid-area: noFoam;
+}
+.off{
+    grid-area: off;
+}
+.noGrains{
+    grid-area: noGrains;
+}
+.female{
+    grid-area: female;
+    padding-left: 20%;
+}
+.problem-text{
+    grid-area: problem-text;
+    display: flex;
+    flex-direction: column;
+}
+.problem-button > button{
+    font-size: 15px;
+    width: 100%;
+    margin-top: 5px;
+}
+                /* GRID WHATS YOUR PROBLEM CLOSE */
 .sec-header{
-    text-align:center
+    text-align:center;
+    grid-area: sec-header;
 }
 .btn-more{
     display: inline-block;
@@ -1765,7 +1872,10 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
    
 #dropdown-problem{
     display: none;
-    background-color: rgba(0,0,0,0.2);
+    background-color: white;
+    border: 1px solid #207a34;
+    border-radius: 5px;
+    padding: 5px;
 }
 #noCapuchinoOn{
     display: none;
@@ -1819,6 +1929,9 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
 
 }
                     /* FORM НЕ НАШЛИ СВОЮ ПОЛОМКУ? */
+.order-now{
+    padding-top: 5%;
+}
 .input-order-now{
     padding: 10px;
     background-color: #207a34;

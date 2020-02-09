@@ -155,7 +155,7 @@ function dropdown(dropdownArg) {
 
 $('.owl-carousel').owlCarousel({
     loop:true,
-    items: 8,
+    items: 1,
     margin: 45,
     // nav:true,
     autoWidth: 150,
@@ -188,7 +188,23 @@ $('.lazy').Lazy({
         console.log('error loading ' + element.data('src'));
     }
 });
+                                        // LAZY LOAD CLOSE
 
+    $(document).ready(function() {
+        $.getJSON("http://primeforce.pythonanywhere.com/business/1coffee", function(data) {
+
+            console.log(data);
+            $('.value').text(`${data['rating']}/5`);
+            $('.votes').text(`${data['votes']} отзывов`);
+            let rating_converted = data['rating']*20;
+            $('.fill-ratings').css({'width': `${rating_converted}%`})
+        });
+
+        var star_rating_width = $('.fill-ratings span').width();
+        $('.star-ratings').width(star_rating_width);
+    });
+
+    
 $("#submit_btn").click(function() {
 
     var user_name = $('input[name=first_name]').val();
