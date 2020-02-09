@@ -220,9 +220,7 @@
     .input-order-now{
         margin-left: 30%;
     }
-    .wrap-margin{
-        margin-top: 70%;
-    }
+
     .messanger > a > .icons{
         width: 80%;
     }
@@ -342,9 +340,9 @@
     .gift-iqos input{
         width: 300px
     }
-    .owl-carousel .owl-item img {
+    /* .owl-carousel .owl-item img {
         width: 120% !important;
-    }
+    } */
     .style-form-breakage{
         height: 120px;
         vertical-align: text-top;
@@ -501,7 +499,7 @@
         font-size: 25px;
         font-weight: 500;
         font-family: Ubuntu Med1um;
-        color: #c96c00;
+        color: white;
     }
     .icons{
         display: flex;
@@ -661,6 +659,7 @@ padding-top: 10px;
 #maintenance{
     padding-top: 20px;
     padding-bottom: 20px;
+    background: 0;
 }
 #breakage ul {
     padding-bottom: 0px;
