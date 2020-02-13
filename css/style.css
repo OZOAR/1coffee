@@ -174,25 +174,23 @@ a:hover{
     display: none;
 }
 header{
-    width: 100%;
     display: grid;
-    grid-template-rows: 35% 35% ;
-    grid-template-columns: 30% 20% 50%;
-    grid-gap: 2vw;
+    grid-template-rows: 35% 35%;
+    grid-template-columns: 30% 20% 45%;
+    grid-gap: 1vw;
     grid-template-areas: 
-    "header-img nav-text rigth-nav-bar"
-    "header-img nav-text rigth-nav-bar";
-    justify-content: space-around;
+    "header-img header__adress header-rigthbar__up"
+    "header-img header__working header-rigthbar__down";
+    align-items: center;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 5;
     background-color: #333237;
-    padding: 0 40 0 40;
+    padding: 20 40 10 40;
 }
 .header-img{
-    margin-top: 30px;
-    /* width: 30%; */
     grid-area: header-img;
 }
 
@@ -201,58 +199,52 @@ header{
     font: 32px Ubuntu Med1um;
     text-transform: uppercase;
     margin-right: 30px;
-    padding-top: 10%;
 }
 .header nav a img{
     margin-top: 15%;
 }
-.nav-text{
-    margin-top: 30px;
-    /* width: 17%; */
-    /* height: 100%; */
-    grid-area: nav-text;
-}
-.nav-text__info{
+.header__adress, .header__working{
     color: #ffffff;
     font-family: "Ubuntu";
     font-size: 15px;
     font-weight: 500;
-    margin-bottom: 3px !important;
-    padding-bottom: 12px;
-
+    grid-area: header__adress;
+    text-align: center;
 }
-.rigth-nav-bar{
-    display: flex;
-    flex-direction: column;
-    /* width: 45%; */
-    /* height: 100%; */
-    grid-area: rigth-nav-bar;
+.header__adress > p{
+    margin-bottom: 0;
 }
-.nav-info-mail{
+.header__adress p > a{
+    color: white;
+}
+.header__adress p > a:hover{
+    color: #f89c11;
+}
+.header__working > p{
+    margin-bottom: 0;
+}
+.header__working{
+    grid-area: header__working;
+}
+.header-rigthbar__up{
+    grid-area: header-rigthbar__up;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    height: 60%;    
-    width: 100%;
-    padding-top: 20px;
-    padding-left: 0px;
+    justify-content: space-between;
 }
-.nav-info-mail__text{
+.header-tel{
     font-weight: 600;
     color: #f89c11;
     font-size: 15px;
     display: inline-block;
-    width: 38%;
-    height: 50%;
-    text-align: start;
 }
-.nav-info-mail__text > a{
+.header-tel > a{
     color: #ffffff;
     font-size: 17px;
     font-weight: normal;
     font-family: Ubuntu Med1um;
 }
-.nav-info-mail__text > a:hover{
+.header-tel > a:hover{
     color: #f89c11;
 }
 .nav-text__info > a {
@@ -279,17 +271,16 @@ header{
 .nav-bar-info{
     font-size: 15px;
     color: #eaeaea;
-    padding-top: 3%;
 }
 .chevrone{
     width: 10px;
     transform: rotate(90deg);
 }
-.nav-bar-style{
+.header-rigthbar__down{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: -15px;
+    grid-area: header-rigthbar__down;
 }
 .nav-bar-info > A {
     color:#ffffff; /* Цвет ссылок */
@@ -304,7 +295,6 @@ header{
     padding: 0 !important;
     margin-top: -2px;
     width: 34.5%;
-    height: 50%;
     display: flex;
     justify-content: space-between;
 }
@@ -317,6 +307,7 @@ header{
 }
 .button-call{
     width: 27.5%;
+    text-align: center;
 }
                                         /* HEADER CLOSE  */
 
@@ -753,7 +744,7 @@ header{
     background-size: cover;
     background-position-y: 78%;
     position: relative;
-    top: 14%;
+    top: 10%;
     border-bottom: 1px solid #207a34;
 }
 #about-catalog{
