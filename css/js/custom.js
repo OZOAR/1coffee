@@ -52,9 +52,8 @@ function closeAllModels() {
 
 //                                 DROPDOWN PROBLEM
 
-function showBreakege(textDivId) {
+function showBreakege(textDivId, desctopOrMobile) {
     let text;
-    dropdownProblemId = document.getElementById('dropdown-problem');
     switch (textDivId) {
         case 1 : 
             text = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam quas vero veritatis ad alias obcaecati veniam accusantium optio, et ratione repellendus sint tempore molestiae fugit, nam, iure sunt aspernatur neque!';
@@ -78,13 +77,22 @@ function showBreakege(textDivId) {
             text = 'ТАКОГО ТЕКСТА НЕ СУЩЕСТВУЕТ';
             break;
     };
-    document.getElementById('text').innerHTML = text;
-    if (dropdownProblemId.classList.contains('show') == 0) {
-            dropdownProblemId.classList.add('show');
-            dropdownProblemId.style.display = 'flex';     
-        }else if (dropdownProblemId.classList.contains('show')) {
-            dropdownProblemId.classList.remove('show');
-            dropdownProblemId.style.display = 'none';
+    switch (desctopOrMobile) {
+        case 1 :
+            findId = document.getElementById('dropdown-problem');
+            textId = document.getElementById('text');
+            break;
+        case 2 :
+            findId = document.getElementById('dropdown-problem-mobile');
+            textId = document.getElementById('text-mobile');
+            break;
+    };
+    textId.innerHTML = text;
+    if (findId.classList.contains('show') == 0) {
+            alert(1);
+            findId.classList.add('show');
+        } else if (findId.classList.contains('show')) {
+            findId.classList.remove('show');
         };
 };
 

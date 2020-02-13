@@ -55,7 +55,10 @@ function closeAllModels() {
 
 function showBreakege(textDivId) {
     let text;
-    dropdownProblemId = document.getElementById('dropdown-problem');
+    desctop = document.getElementById('dropdown-problem');
+    mobile = document.getElementById('dropdown-problem-mobile');
+    desctopText = document.getElementById('text');
+    mobileText = document.getElementById('text-mobile');
     switch (textDivId) {
         case 1 : 
             text = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam quas vero veritatis ad alias obcaecati veniam accusantium optio, et ratione repellendus sint tempore molestiae fugit, nam, iure sunt aspernatur neque!';
@@ -79,16 +82,19 @@ function showBreakege(textDivId) {
             text = 'ТАКОГО ТЕКСТА НЕ СУЩЕСТВУЕТ';
             break;
     };
-    document.getElementById('text').innerHTML = text;
-    if (dropdownProblemId.classList.contains('show') == 0) {
-            dropdownProblemId.classList.add('show');
-            dropdownProblemId.style.display = 'flex';     
-        }else if (dropdownProblemId.classList.contains('show')) {
-            dropdownProblemId.classList.remove('show');
-            dropdownProblemId.style.display = 'none';
-        };
+    if (desctop.classList.contains('show') == 0) {
+            desctop.classList.add('show');
+            desctopText.innerHTML = text;
+        } else if (desctop.classList.contains('show')) {
+            desctop.classList.remove('show');
+    };
+    if (mobile.classList.contains('show') == 0) {
+        mobile.classList.add('show');
+        mobileText.innerHTML = text;
+    } else if (mobile.classList.contains('show')) {
+        mobile.classList.remove('show');
+    };
 };
-
 //                                    DROPDOWN PROBLEM CLOSE
 
                                             // SLIDE BAR
@@ -148,7 +154,6 @@ function dropdown(dropdownArg) {
         dropdownArg.style.display = 'none';
     }; 
 };
-
                                         // DROPDOWN CLOSE
 
 //                                          OWL CAROUSEL 2
@@ -173,7 +178,7 @@ $('.owl-carousel').owlCarousel({
     //         items:1
     //     }
     // }
-})
+});
 
 //                                       OWL CAROUSEL CLOSE
 
@@ -204,7 +209,7 @@ $('.lazy').Lazy({
         $('.star-ratings').width(star_rating_width);
     });
 
-    
+
 $("#submit_btn").click(function() {
 
     var user_name = $('input[name=first_name]').val();

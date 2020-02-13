@@ -508,8 +508,8 @@
         display: flex;
     }
     .mobile-subheader__btn{
-        margin-left: 26%;
-        width: auto;
+        margin-left: 25%;
+        width: 50%;
     }
     .btn-nav{
         font-size: 20px;
