@@ -1063,12 +1063,11 @@ ul {
     font-weight: 500;
 }
 #maintenance {
-
-    padding:80px 0 84px;
-    border-bottom:1px solid #eaeaea;
-    background:url(../img/maintenance-bg.jpg)no-repeat;
+    padding: 80px 0 84px;
+    border-bottom: 1px solid #eaeaea;
+    background: url(../img/maintenance-bg.jpg) no-repeat;
     background-position-x: 123%;
-    background-size:contain;
+    background-size: contain;
     background-color: white;
 }
     
