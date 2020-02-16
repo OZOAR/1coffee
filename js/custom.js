@@ -194,7 +194,7 @@ $('.lazy').Lazy({
     }
 });
                                         // LAZY LOAD CLOSE
-
+                            // GOOGLE OTZIVY
     $(document).ready(function() {
         $.getJSON("http://primeforce.pythonanywhere.com/business/1coffee", function(data) {
 
@@ -208,7 +208,7 @@ $('.lazy').Lazy({
         var star_rating_width = $('.fill-ratings span').width();
         $('.star-ratings').width(star_rating_width);
     });
-
+                                // GOOGLE OTZIVY CLOSE
 
 $("#submit_btn").click(function() {
 

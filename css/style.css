@@ -668,6 +668,9 @@ header{
     color: #207a34;
     text-decoration: none;
 }
+.size-form{
+    width: 60%;
+}
 .phone-us-text {
     text-decoration: underline;
     color: #207a34;
@@ -1599,8 +1602,8 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
     padding: 0;
 }
 .footer__brands {
-    -webkit-column-count: 2;
-    column-count: 2;
+    -webkit-column-count: 4;
+    column-count: 4;
 }
 .footer {
     background-color: #0f0f0f;
@@ -1614,7 +1617,7 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
     margin-top: -10px;
     text-align: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .rating-container > p{
     margin-top: 10px;
@@ -1767,12 +1770,11 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
                         /* GRID WTHATS YOUR PROBLEM */
 .whats-your-problem{
     background-color: #ffc848;
-    border-bottom: 1px solid #207a34;
 }
 .grid-problems{
     display: grid;
     width: 100%;
-    grid-template-rows: 15% 25% 25% 10%;
+    grid-template-rows: 100px 120px 120px 130px;
     grid-template-columns: 24% 10% 10% 10% 10% 24%;
     grid-gap: 2vw;
     grid-template-areas: 
@@ -1781,11 +1783,10 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
     "male noCapuchino problem-text problem-text noGrains female"
     ". . problem-text problem-text . .";
     padding-top: 5%;
-    padding-bottom: 5%;
 }
 .male{
     grid-area: male;
-    padding-left: 15%;
+    padding-left: 33%;
 }
 .noCoffee{
     grid-area: noCoffee;
@@ -1807,17 +1808,16 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
 }
 .female{
     grid-area: female;
-    padding-left: 20%;
 }
 .problem-text{
     grid-area: problem-text;
-    display: flex;
-    flex-direction: column;
 }
 .problem-button > button{
     font-size: 15px;
     width: 100%;
-    margin-top: 5px;
+}
+.problem-button{
+    padding: 0 10px 0 10px;
 }
                 /* GRID WHATS YOUR PROBLEM CLOSE */
 .sec-header{
@@ -1862,7 +1862,6 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
     height: 35px;
     border-left: 2px dashed black;
 }
-   
 #dropdown-problem, #dropdown-problem-mobile{
     display: none;
     background-color: white;
@@ -1871,14 +1870,12 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
     padding: 5px;
     margin: 10px;
 }
-
 #noCapuchinoOn{
     display: none;
 
 }
 #noCoffeeOn{
     display: none;
-
 }
 #flowOn{
     display: none;
@@ -1926,6 +1923,11 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
                     /* FORM НЕ НАШЛИ СВОЮ ПОЛОМКУ? */
 .order-now{
     padding-top: 5%;
+}
+.juraimg{
+    position: relative;
+    left: 0; top: -45;
+    width: 350px;
 }
 .input-order-now{
     padding: 10px;
