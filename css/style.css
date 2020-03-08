@@ -1,4 +1,27 @@
 @import "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css";
+/* @font-face{
+    font-family:P22-Thin;
+    font-display: block;
+    src:url(fonts/p22undergroundcypro-thin.woff) format('woff');
+}
+@font-face{
+
+    font-family:Ubuntu Regular;
+    font-display: block;
+    src:url(fonts/p22undergroundcypro-book.woff) format('woff');
+}
+@font-face{
+    font-family:Ubuntu;
+    font-display: block;
+    src:url(fonts/p22undergroundcypro-demi.woff) format('woff');
+}
+
+@font-face{
+    font-family:Ubuntu Med1um;
+    font-display: block;
+    src:url(fonts/p22undergroundcypro-heavy.woff) format('woff');
+} */
+
 @font-face{
     font-family:'Ubuntu Med1um';
     font-display: block;
@@ -13,7 +36,7 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-}
+    }
   @font-face {
     font-family: 'Ubuntu Regular';
     src: url('fonts/Ubuntu-Regular.eot');
@@ -43,53 +66,37 @@
     font-weight: 400;
     font-style: normal;
 }
+
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,900) ;
+
 @keyframes go-down {  
-   from{
-       opacity: 0;
-      height: 0;
-    }
-    to {
-        opacity: 1;
-        height: 400;
-        color: #207a34;
-    }
-}
-@keyframes buttonAnimation {  
     from {
-        transform: scale(1, 1);
-
-    }
-    50%{
-        transform: scale(1.07, 1.07); 
-
+      opacity: 0;              
     }
     to {
-        transform: scale(1, 1); 
+      opacity: 1;
     }
+  }
+
+@-webkit-keyframes slideInLeft{from{-webkit-transform:translate3d(-100%, 0, 0);transform:translate3d(-100%, 0, 0);visibility:visible;}
+to{-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);}
 }
-@keyframes slideInLeft{
-    from{
-        -webkit-transform:translate3d(-100%, 0, 0);
-        transform:translate3d(-100%, 0, 0);
-        visibility:visible;
-    }
-    to{
-        -webkit-transform:translate3d(0, 0, 0);
-        transform:translate3d(0, 0, 0);
-    }
+@keyframes slideInLeft{from{-webkit-transform:translate3d(-100%, 0, 0);transform:translate3d(-100%, 0, 0);visibility:visible;}
+to{-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);}
 }
-@-webkit-keyframes slideInLeft {
-    from{
-        -webkit-transform:translate3d(-100%, 0, 0);
-        transform:translate3d(-100%, 0, 0);
-        visibility:visible;
-    }
-    to{
-        -webkit-transform:translate3d(0, 0, 0);
-        transform:translate3d(0, 0, 0);
-    }
+body{
+    background-color: rgb(248, 248, 248);
 }
+.slideInLeft{-webkit-animation-name:slideInLeft;animation-name:slideInLeft;}
+button {
+    z-index: 1;
+  }
+  
+  button:hover {
+    cursor: pointer;
+    animation: jelly 0.5s;
+  }
+  
 @keyframes jelly {
     0%,
     100% {
@@ -104,27 +111,7 @@
     75% {
       transform: scale(0.95, 1.05);
     }
-}
-body{
-    background-color: rgb(248, 248, 248);
-}
-.slideInLeft{
-    -webkit-animation-name:slideInLeft;
-    animation-name:slideInLeft;
-}
-button {
-    z-index: 1;
-    -webkit-box-shadow: 0 0.3em 0 #196029;
-    box-shadow: 0 0.3em 0 #196029;
-    -webkit-transform:scale(1);
-    -ms-transform:scale(1);
-    transform:scale(0.96);
-    transition: ease all 0.3s 0s !important;
-}  
-button:hover {
-    cursor: pointer;
-    /* animation:  buttonAnimation 0.3s; */
-}
+  }
 h1 {
     font-style: normal;
     font-variant-ligatures: normal;
@@ -277,9 +264,9 @@ header{
     width: 165px;
     height: 27px;
     margin-left: -30px;
-    -webkit-box-shadow: none;
-    box-shadow: none; 
-
+}
+.btn-nav:hover{
+    background-color: #f89c11;
 }
 .nav-bar-info{
     font-size: 15px;
@@ -331,14 +318,12 @@ header{
     left: 63%;
     top: 85%;
     background-color: #333237;
-    width: 400px;
+    min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
     z-index: -10;
     opacity: 1;
-    overflow: hidden;
-    animation: go-down 0.5s ease-in-out;
-
+    animation: go-down 0.3s ease;
 }
 .dropdown-catalog > div{ 
     color: #ffffff;
@@ -346,7 +331,7 @@ header{
     width: 350px;
     height: 100px;
     border-bottom: 1px solid #207a34;
-
+    animation: go-down 0.3s ease;
 
 }
 .dropdown-catalog:hover {
@@ -372,8 +357,8 @@ header{
     padding: 12px 16px;
     z-index: -10;
     opacity: 0;
-    overflow: hidden;
-    animation: go-down 0.5s ease-in-out;
+    animation: go-down 0.3s ease;
+
 }
 .dropdown-repair > div{ 
     color: #ffffff;
@@ -381,17 +366,21 @@ header{
     width: 350px;
     height: 100px;
     border-bottom: 1px solid #207a34;
+    animation: go-down 0.3s ease;
 
 }
 .dropdown-block:hover > .dropdown-repair{
     z-index: 5;
     opacity: 1;
-    display: block;}
+    display: block;
+}
                                         /* DROP DOWN ОБЩЕЕ  */
                                         
 .dropdown__block{
     display: flex;
     flex-direction: row;
+    animation: go-down 0.3s ease;
+
 }
 .dropdown__block > div {
     border-bottom: 1px solid #207a34;
@@ -582,7 +571,7 @@ header{
 
 }
 .btn-custom:hover {
-    /* background: #f89c11 !important; */
+    background: #f89c11 !important;
     transform: none;
 }
 .btn-custom {
@@ -1327,9 +1316,9 @@ ul {
     animation: jelly 0.5s;
 
 }
-/* #faq button:hover {
+#faq button:hover {
     color: #f89c11 !important;
-} */
+}
 #faq span {
     color: #000000;
     font-weight: 700;
@@ -1466,7 +1455,6 @@ ul {
     background: none;
     border: 0;
     opacity: .5;
-    box-shadow: none;
 
 }
 .modal .modal-cost__closebtn {
@@ -1523,9 +1511,9 @@ ul {
     font: 22px Ubuntu Regular;
 }
 
-/* #accessories .buy-item button:hover {
+#accessories .buy-item button:hover {
     background: #207a34 !important;
-} */
+}
 #accessories .item .description {
     font: 18px Ubuntu Regular;
 }
@@ -1623,7 +1611,6 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
     color: #fff;
     text-align: center;
 }
-
 .rating-container {
     width: 250px;
     padding: 0px 20px 10px 0px;
@@ -1713,7 +1700,7 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
     color:inherit
 }
 .problems__item:hover > .problems__title {
-    color: #F77F00;
+    color: #f89c11;
 }
 .problems__title{
     display:block;
@@ -1723,7 +1710,7 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
     font-weight: 600;
 }
 .problems__title:hover{
-    color: #F77F00;
+    color: #f89c11;
 }
 .problems__icon,.problems__title{
     margin-bottom:1rem;
@@ -1759,7 +1746,7 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
     top:0;
     width:100%;
     height:100%;
-    background-color:#19381F;
+    background-color:#207a34;
     -webkit-transition-property:all;
     -o-transition-property:all;
     transition-property:all;
@@ -1782,14 +1769,7 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
 }      
                         /* GRID WTHATS YOUR PROBLEM */
 .whats-your-problem{
-    background-color: #248232;
-    /* background-image: url('/img/fon-zelenyj-cvet-siyanie.svg'); */
-    /* -moz-background-size: 100%; Firefox 3.6+ */
-    /* -webkit-background-size: 100%; Safari 3.1+ и Chrome 4.0+ */
-    /* -o-background-size: 100%; Opera 9.6+ */
-    /* background-size: 100%;  */
-    border-bottom: 1px solid #002500;
-
+    background-color: #ffc848;
 }
 .grid-problems{
     display: grid;
@@ -1803,7 +1783,6 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
     "male noCapuchino problem-text problem-text noGrains female"
     ". . problem-text problem-text . .";
     padding-top: 5%;
-    color: #fff;
 }
 .male{
     grid-area: male;
@@ -1833,20 +1812,9 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
 .problem-text{
     grid-area: problem-text;
 }
-#full-machine-list{
-    display: none;
-}
-#button-close{
-    display: none;
-    align-items: center;
-}     
-#buttonshowall{
-    align-items: center;
-}
 .problem-button > button{
     font-size: 15px;
     width: 100%;
-    background-color: #CC3F0C;
 }
 .problem-button{
     padding: 0 10px 0 10px;
@@ -1896,8 +1864,8 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
 }
 #dropdown-problem, #dropdown-problem-mobile{
     display: none;
-    background-color: #19381F;
-    border: 1px solid #241909;
+    background-color: white;
+    border: 1px solid #207a34;
     border-radius: 5px;
     padding: 5px;
     margin: 10px;
@@ -2108,9 +2076,6 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
 }
 .colored{
     color: #207a34;
-}
-.colored-yellow{
-    color: #002500;
 }
 .order-now [type=text] {
     width: 58%;

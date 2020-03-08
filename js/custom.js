@@ -38,33 +38,16 @@ window.onload = function () {
     setTimeout(modalActive,40000, 1); 
 };
                         // DROPDOWN CM
-function showAllModels(showOrClose) {
-    fullMashineList = document.getElementById('full-machine-list');
-    buttonShowAll = document.getElementById('button-showall');
-    buttonClose = document.getElementById('button-close');
-    switch (showOrClose) {
-        case 1:
-            fullMashineList.style.display = 'flex';
-            buttonShowAll.style.display = 'none';
-            buttonClose.style.display = 'flex';
-            break;
-        case 2:
-            fullMashineList.style.display = 'none';
-            buttonShowAll.style.display = 'flex';
-            buttonClose.style.display = 'none';
-            break;
-    };
-};
-// function showAllModels() {
-// document.getElementById('full-machine-list').style.display = 'flex';
-// document.getElementById('button-showall').style.display = 'none';
-// document.getElementById('button-close').style.display = 'flex';
-// };
-// function closeAllModels() {
-//     document.getElementById('full-machine-list').style.display = 'none';
-//     document.getElementById('button-showall').style.display = 'flex';
-//     document.getElementById('button-close').style.display = 'none';
-// };
+function showAllModels() {
+document.getElementById('full-machine-list').style.display = 'flex';
+document.getElementById('button-showall').style.display = 'none';
+document.getElementById('button-close').style.display = 'flex';
+}
+function closeAllModels() {
+    document.getElementById('full-machine-list').style.display = 'none';
+    document.getElementById('button-showall').style.display = 'flex';
+    document.getElementById('button-close').style.display = 'none';
+}
                     // DROPDOWN CM CLOSE
 
 
