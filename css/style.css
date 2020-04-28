@@ -1,9 +1,9 @@
 @import "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css";
-@font-face{
+/* @font-face{
     font-family:'Ubuntu Med1um';
     font-display: block;
     src:url(fonts/p22undergroundcypro-medium.woff) format('woff');
-}
+} */
 @font-face {
     font-family: 'Ubuntu Light';
     src: url('fonts/Ubuntu-Light.eot');
@@ -187,34 +187,73 @@ a:hover{
     display: none;
 }
 header{
-    display: grid;
-    grid-template-rows: 35% 35%;
-    grid-template-columns: 30% 20% 45%;
-    grid-gap: 1vw;
-    grid-template-areas: 
-    "header-img header__adress header-rigthbar__up"
-    "header-img header__working header-rigthbar__down";
-    align-items: center;
-    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 5;
+    color: white;
+    font-size: 17px;
+    font-family: Montserrat, Arial, sans-serif;
+    width: 100%;
+    height: 50;
     background-color: #333237;
-    padding: 20 40 10 40;
+    border-bottom: 1px solid #207a34;
+    z-index: 15;
 }
-.header-img{
-    grid-area: header-img;
+.header-hidden{
+    background-color: rgba(0, 0, 0, 0.76) !important
 }
+.header-top{
+    width: 100%;
+}
+.header-block{
+    display: flex;
+    flex-direction: row;
+    width: 50%;     
+    height: 51px;
+    margin: 0 0 0 105;
+    justify-content: space-around;
 
-.header-logo {
-    color: #207a34;
-    font: 32px Ubuntu Med1um;
-    text-transform: uppercase;
-    margin-right: 30px;
 }
-.header nav a img{
-    margin-top: 15%;
+.header-text{
+    padding: 10px;
+}
+.header-text > a{
+    color: white;
+}
+.header-bottom{
+    width: 100%;
+    display: flex;
+    position: relative;
+    top: 50;
+    border-bottom: 1px solid #207a34;
+    z-index: 5;
+    background-color: white;
+    height: 100;
+}
+.social{
+    display: flex;
+    width: 15%;
+    padding: 25 25 25 25;
+    justify-content: space-around;
+}
+.header-bottom > .header-logo{
+    width: 45%;
+}
+.header-logo{
+    padding: 20 0 0 115;
+}
+.header-contact{
+    width: 35%;
+    padding: 20 25 25 8%;
+}
+.header-contact > a{
+    color: black;
+    font-size: 24;
+    font-family: "Open Sans", "Myriad Pro", Arial, sans-serif;
+}
+.header-contact p > a{
+    color: #207a34;
 }
 .header__adress, .header__working{
     color: #ffffff;
@@ -680,8 +719,9 @@ header{
     text-decoration: none;
 }
 .size-form{
-    width: 60%;
+    width: 100%;
 }
+
 .phone-us-text {
     text-decoration: underline;
     color: #207a34;
@@ -758,7 +798,7 @@ header{
     background-size: cover;
     background-position-y: 78%;
     position: relative;
-    top: 10%;
+    /* top: 140; */
     border-bottom: 1px solid #207a34;
 }
 #about-catalog{
@@ -930,7 +970,10 @@ ul {
     line-height: 1.3;
     margin-top: 2%;
 }
+#products{
+    background-color: white;
 
+}
 #products img {
     width: 100%;
     padding-top: 30px;
@@ -962,8 +1005,9 @@ ul {
     border-width: 0px !important;
 }
 .coffee-title{
-    font: 2.2em Ubuntu Med1um;
+    font: Ubuntu Light !important;
     text-transform: uppercase;
+    font-weight: 600 !important;
 } 
 #partners{
     width: 100%;
@@ -990,7 +1034,7 @@ ul {
     margin-bottom:56px;
 }
 #faults .reason-text {
-    font: 19px Ubuntu Regular;
+    font: 17px Ubuntu Regular;
     line-height:1.6;
     padding-right:50px;
 }
@@ -1055,11 +1099,12 @@ ul {
     padding-bottom: 2px;
 }
 .takein-btn {
-    padding-top: 2px;
+    padding-top: 0;
     width: 100%;
 }
 .takein-btn > button{
     width: 100%;
+    padding: 10 0 10 0;
 }
 .takein-coffee button {
     height: 85px;
@@ -1536,9 +1581,7 @@ ul {
     border: none !important;
 }
 
-.form-control {
-    margin-bottom: 2%;
-}
+
 .carousel-caption {
     display: inline-block;
     background: rgba(0, 0, 0, 0.5);
@@ -1782,32 +1825,41 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
 }      
                         /* GRID WTHATS YOUR PROBLEM */
 .whats-your-problem{
-    background-color: #248232;
     /* background-image: url('/img/fon-zelenyj-cvet-siyanie.svg'); */
     /* -moz-background-size: 100%; Firefox 3.6+ */
     /* -webkit-background-size: 100%; Safari 3.1+ и Chrome 4.0+ */
     /* -o-background-size: 100%; Opera 9.6+ */
     /* background-size: 100%;  */
-    border-bottom: 1px solid #002500;
+    /* border-bottom: 1px solid #002500; */
+    padding: 0 50 0 50;
+
+}
+.whats-block{
 
 }
 .grid-problems{
     display: grid;
     width: 100%;
-    grid-template-rows: 100px 120px 120px 130px;
-    grid-template-columns: 24% 10% 10% 10% 10% 24%;
+    grid-template-rows: 100px 120px 120px 50px;
+    grid-template-columns: 17% 10% 10% 10% 10% 17%;
     grid-gap: 2vw;
+    justify-content: space-around;
     grid-template-areas: 
-    "sec-header sec-header sec-header sec-header sec-header sec-header"
+    ". sec-header sec-header sec-header sec-header ."
     "male noCoffee leakage noFoam off female"
     "male noCapuchino problem-text problem-text noGrains female"
     ". . problem-text problem-text . .";
-    padding-top: 5%;
     color: #fff;
+    background-color: #248232;
+    border-radius: 2%;
+    box-shadow:  9px 9px 18px  rgba(0, 0, 0, 0.568), 
+    -9px -9px 18px rgba(0, 0, 0, 0.568);
+   
+
 }
 .male{
     grid-area: male;
-    padding-left: 33%;
+    padding-left: 25%;
 }
 .noCoffee{
     grid-area: noCoffee;
@@ -1829,7 +1881,10 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
 }
 .female{
     grid-area: female;
+    padding-right: 10%;
+
 }
+
 .problem-text{
     grid-area: problem-text;
 }
@@ -1851,10 +1906,17 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
 .problem-button{
     padding: 0 10px 0 10px;
 }
-                /* GRID WHATS YOUR PROBLEM CLOSE */
 .sec-header{
     text-align:center;
     grid-area: sec-header;
+    padding: 20px 0 10 0;
+}
+                /* GRID WHATS YOUR PROBLEM CLOSE */
+
+#order{
+    display: flex;
+    padding: 60 150 20 150;
+    justify-content: space-around;
 }
 .btn-more{
     display: inline-block;
@@ -1958,7 +2020,7 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
 }
 .juraimg{
     position: relative;
-    left: 0; top: -45;
+    left: 0; top: -95;
     width: 350px;
 }
 .input-order-now{
@@ -1985,6 +2047,10 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
     display:block;
     margin-left:auto;
     margin-right:auto
+}
+.order-now__wrap > p{
+    font-size: 17;
+    color: black;
 }
 .order-now [type=text]{
     width:100%

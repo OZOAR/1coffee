@@ -173,6 +173,21 @@ function dropdown(dropdownArg) {
 };
                                         // DROPDOWN CLOSE
 
+
+
+                    // header hidden
+window.onscroll = function headerHidden() {
+    let header = document.getElementById('header-desctop');
+
+    if (window.pageYOffset > 50) {
+        header.classList.add('header-hidden');
+        } else{
+        header.classList.remove('header-hidden');
+
+    };
+    
+}
+
 //                                          OWL CAROUSEL 2
 
 $('.owl-carousel').owlCarousel({
