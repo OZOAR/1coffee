@@ -20,7 +20,7 @@ function modalActive(ModalTitle) {
             modalText = "EROR 404";
             break;
     };
-    modal.style.zIndex = 5;
+    modal.style.zIndex = 17;
     modal.style.opacity = 1;
     title.innerHTML= modalText;
 };

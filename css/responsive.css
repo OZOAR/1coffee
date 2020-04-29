@@ -9,10 +9,25 @@
         box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
         height: 13%;
     }
+    #header-desctop{
+        display: none;
+    }
+    .header-bottom{
+        display: none;
+    }
+    .header-mobile__top{
+        display: flex;
+    }
+    #order{
+        display: none;
+    }
     #mobile{
         display: flex;
+        flex-direction: column;
         background-color: #0f0f0f;
         height: 14%;
+        width: 100%;
+        position: relative;
     }
     .mobile {
         display: flex;
@@ -251,7 +266,7 @@
         border-radius: 10px;
     }
     #modal-title1 {
-        font: 28px Ubuntu;
+        font: 28px Ubuntu !important;
         padding-top: 0;
         margin-top: -30px;
     }
@@ -515,6 +530,35 @@
     .mobile-subheader__btn{
         margin-left: 25%;
         width: 50%;
+    }
+    .takein-btn > button{
+        width: 90%;
+    }
+    .takein-btn{
+        display: flex;
+    justify-content: space-around;
+    }
+    .repair-text{
+        display: none;
+    }
+    }
+    .coffee-text__block {
+        flex-direction: column;
+    }
+    .coffee-text__img{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    
+    .coffee-text__text {
+        width: 100%;
+        padding-top: 10px;
+    }
+    .coffee-text__text > p{
+        font-size: 17;
+        text-align: center;
     }
     .btn-nav{
         font-size: 20px;

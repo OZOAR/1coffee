@@ -113,16 +113,19 @@ body{
     animation-name:slideInLeft;
 }
 button {
+    
     z-index: 1;
     -webkit-box-shadow: 0 0.3em 0 #196029;
     box-shadow: 0 0.3em 0 #196029;
-    -webkit-transform:scale(1);
-    -ms-transform:scale(1);
-    transform:scale(0.96);
-    transition: ease all 0.3s 0s !important;
 }  
 button:hover {
     cursor: pointer;
+    -o-transform: scale(1.06) !important;
+    -ms-transform: scale(1.06) !important;
+    -moz-transform: scale(1.06) !important;
+    -webkit-transform: scale(1.06) !important;
+    transform: scale(1.06) !important;
+    transition: ease all 0.3s 0s !important;
     /* animation:  buttonAnimation 0.3s; */
 }
 h1 {
