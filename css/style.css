@@ -228,7 +228,7 @@ header{
     top: 50;
     border-bottom: 1px solid #207a34;
     z-index: 5;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     height: 100;
 }
 .social{
@@ -1125,12 +1125,17 @@ ul {
     padding: 80px 0 84px;
     border-bottom: 1px solid #eaeaea;
     background: url(../img/maintenance-bg.jpg) no-repeat;
-    background-position-x: 123%;
-    background-size: contain;
+    background-position-x: 220%;
+    background-size: 80%;
     background-color: white;
 }
-    
-
+.service-text{
+    font-size: 14px;
+}
+.repair-text{
+    width: 70%;
+    margin: 40 auto 40;
+}
 #maintenance .row .second-row {
     padding-top: 4%;
 }
@@ -1371,6 +1376,22 @@ ul {
     text-align: left;
     animation: jelly 0.5s;
 
+}
+.coffee-text__block{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 60 auto 40;
+
+}
+.coffee-text__img{
+    width: 25%;
+}
+.coffee-text__text{
+    width: 55%;
+}
+.coffee-text__text > p{
+    font: 20px Ubunto
 }
 /* #faq button:hover {
     color: #f89c11 !important;
@@ -1935,6 +1956,9 @@ input::-webkit-input-placeholder       {opacity: 1 !important; transition: opaci
     background-color: #f5a907;
 }
 .form-title{
+    font-size: 20px;
+}
+.order-p-style{
     font-size: 20px;
 }
 .howitwork__background {
