@@ -541,7 +541,6 @@
     .repair-text{
         display: none;
     }
-    }
     .coffee-text__block {
         flex-direction: column;
     }
@@ -639,6 +638,7 @@
         margin-top: 10%;
     }
 }
+
 .list-group a {
     color: #252a31;
 }
